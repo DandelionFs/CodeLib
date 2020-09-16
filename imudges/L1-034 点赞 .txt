@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+int p[1001];
+int main() {
+	int N, a, flag = 1;
+	char m;
+	cin >> N;
+
+	while (N) {
+		if (flag) {
+			cin.get();
+			flag = 0;
+		}
+		cin >> a;
+		p[a]++;
+		m = cin.get();
+		if (m == '\n') {
+			flag = 1;
+			N--;
+			continue;
+		}
+
+	}
+	int max = p[1000], k;
+	for (int i = 1000; i >= 0; i--)if (p[i] > max)k = i, max = p[i];
+	cout << k << " " << max;
+}
+/*
+4
+3 889 233 2
+5 100 3 233 2 73
+4 3 73 889 2
+2 233 123
+
+
+int  a;
+	cin >> a;
+	char m=cin.get();
+	cout << a << endl << m;
+*/

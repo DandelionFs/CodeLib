@@ -1,0 +1,117 @@
+#include<iostream>
+using namespace std;
+int pd(int a) {
+	int p[10] = { 0 }, q = 0;
+	if (a < 1000)p[0] = 1;
+	while (a) {
+		p[a % 10] = 1;
+		a /= 10;
+	}
+	for (int i = 0; i < 10; i++)if (p[i])q++;
+	return q;
+}
+int main() {
+	int birthy, step;
+	cin >> birthy >> step;
+	int k = birthy;
+	while (step) {
+		if (pd(birthy) == step) {
+			cout << birthy - k << " ";
+			if (birthy < 10)cout << "000" << birthy;
+			else if (birthy < 100)cout << "00" << birthy;
+			else if (birthy < 1000)cout << "0" << birthy;
+			else cout << birthy;
+			return 0;
+		}
+		birthy++;
+	}
+}
+
+
+
+
+
+#include<iostream>
+#include<cstdio>
+#include<cstring>
+#include<algorithm>
+#include<set>
+using namespace std;
+ 
+int main()
+{
+    set<int> s;
+    int n,k;
+    cin>>n>>k;
+    int x = n;
+    int N = n;
+    int ope = -1;
+    while(s.size()!= k){
+        s.clear();
+        if(n < 1000){ //输入的数小于1000肯定有0存在
+            s.insert(0);
+        }
+        while(x){
+            s.insert(x%10);
+            x /= 10;
+        }
+        ope++;
+        x = ++N;
+    }
+    cout<<ope<<" ";
+    printf("%04d",n+ope);
+}	
+
+
+
+
+#include <iostream>
+#include <cstdio>
+#include <string.h>
+#include <set>
+#include <cstring>
+#include <iomanip>
+using namespace std;
+int main(){
+
+       int n, m;
+
+       cin >> n >> m;
+
+       for (int i = n; i <= 3012; i++)
+
+       {
+
+              set<int> s;
+
+              int num = i;
+
+              for (int j = 0; j < 4; j++)
+
+              {
+
+                      s.insert(num % 10);     //不停除10取余放入//
+
+                      num /= 10;
+
+              }
+
+              if (s.size() == m)
+
+              {
+
+                      cout << i - n << " " << setw(4) << setfill('0') << i;    //不足四位补0//
+
+                      break;
+
+              }
+
+              s.clear();
+
+       }
+
+       return 0;
+
+ }
+
+

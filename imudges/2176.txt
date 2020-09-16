@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	char p[1000];
+	int a[1000], i, j, sum;
+	cin.getline(p, 1000);
+	for (i = 0, j = 0; p[i] != '\0'; i++)
+	{
+		if (p[i] != ' ')
+		{
+			a[j] = p[i];
+			j++;
+		}
+	}
+	a[j] = '\0';
+	sum = j;
+	int q = 0, dc = 0, su=0;
+	for (int i = 0; i < j; i++)
+	{
+		if (a[i] < a[i + 1])  dc++;
+		su = ((2 + dc) * dc) / 2;
+		sum += su;
+		if (a[i] < a[i + 1])
+	}
+	
+	/*for (int m = 0; m < j - 1; m++)
+	{
+		if (a[m] < a[m + 1])sum++;
+		
+	}
+	cout << sum;*/
+}

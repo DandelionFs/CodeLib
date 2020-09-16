@@ -1,0 +1,28 @@
+/*#include<iostream>
+using namespace std;
+struct node {
+	int data;			//数据域
+	node *next;  //指针域
+};
+int main()
+{
+	int n;
+	node* head = new node;
+	node* s = head, * p;
+	while (cin >> n && n)
+	{
+		p = new node;
+		p->data = n;
+		s->next = p;
+		p->next = NULL;
+		s = p;
+	}
+	s = head->next;
+	while (s)
+	{
+		cout << s->data << " ";
+		s = s->next;
+	}
+	return 0;
+}
+*/

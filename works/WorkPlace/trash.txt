@@ -1,0 +1,60 @@
+
+
+
+
+/*
+//  输入宏定义????
+账户管理 : 
+1. 学生信息 (普通账户) 
+    账户以及密码
+2. 教师信息 (超级账户--> 增删查改??)
+    账户以及密码
+
+心得:
+2. 查询如何保证不再输入密码的和帐号的情况下, 实现账户的查询与修改功能
+3. 临时变量的修改
+    // cout<<"学号\t"<<"名字\t"<<"课程数\t"<<"课程列表\n";
+    // cout<<StuAcc[i].ID<<'\t'<<StuAcc[i].name<<'\t'<<StuAcc[i].CCourse<<'\t';
+    //根据数字查找课程
+
+// void SuSearchSelfCourse(Te a){//教师自己教授的课程
+//     cout<<"您现在需要教授的课程一共有"<<a.CCourse<< "分别是: \n";
+//     for(int i=0;i<a.CCourse;i++){
+//         cout<<course[a.course[i]]<<endl;
+//     }
+// }
+
+//~~Cnum 表示课程的名字表示课程的名字 字符串~~
+//~~Nnum 表示课程下的学生(排序??) 记录成字符串 然后前后用标记标识起落~~
+
+选课的另外一中模式
+
+void ShowCourse(int a){ // 展示课程并进行选择
+    int num;
+    char order;
+    for(int i = 0; i<Cnum;i++) cout<<i+1<<'\t'<<course[i]<<'\n';
+    cout<<"请输入您需要选择的课程对应的序号: \n";
+    cin>>num;
+    if(num > Cnum) {
+        cout<<"请重新输入所选择的课程数. 必须存在在已列课程中! \n";
+    }
+    StuAcc[a].CCourse++;
+    StuAcc[a].course[StuAcc[a].ChooseTemp]=num,  StuAcc[a].ChooseTemp++;
+    //增加对应课程统计的数组操作
+    CourseStuSum[num-1][ CourseStuSum[num-1][0]]=StuAcc[a].num;
+    system("reset");
+    cout<<"恭喜你选课成功!  :)  . 请问继续选课(y/n)\n";
+    cin>>order;
+    if(order=='y') ShowCourse(a);
+    else if(order=='n') return;
+}
+
+void SearchCourse(int a){//学生查看自己的选课情况
+    cout<< "您现在一共选择了"<<StuAcc[a].CCourse<<"门课程, 它们分别是: "<<endl;
+    for(int i=0 ;i<StuAcc[a].CCourse;i++) cout<<i+1<<'\t'<<[StuAcc[a].course[i]]<<endl;
+    system("pause");
+}
+
+
+//增加用户的资料修改功能
+*/

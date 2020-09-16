@@ -1,0 +1,52 @@
+#include<iostream>
+using namespace std;
+int lfh(int a,int b)//分位的次数
+{
+	int c=1;
+	int g=0;
+	while (c <= a)
+	{
+		g = g * 10;
+		g = b % 10;
+
+
+
+		c++;
+	}
+}
+int main()
+{
+	const int a = 200000;
+	int i=0,sum=1,k;
+	int s;
+	while (i<=20000)
+	{
+		if (i < 100)
+		{
+			sum = i * i;
+			if (sum == i) cout << i<<"  ";
+			else if((sum%10)==i) cout << i << "  ";
+		}
+		else if (i >= 100 && i < 1000)
+		{
+			k = i;
+			int m, n;
+			m = k % 10;
+			n = (k / 10) % 10;
+			s = m * 10 + n;
+			sum = s * s;
+			if (sum == i)cout << i << "  ";
+		}
+		else if (i >= 1000 && i < 10000)
+		{
+
+		}
+		else if (i >= 10000 && i < 200000)
+		{
+
+		}
+		sum = 0;
+		i++;
+	}
+
+}
