@@ -1,3 +1,4 @@
+/*//Ncode
 // #include<bits/stdc++.h>
 // using namespace std;
 // struct Tang{
@@ -61,52 +62,26 @@
 //         }
 //     cout<<temp<<endl;
 // }
-
-
+*/
+//Leecode
 // #include<bits/stdc++.h>
 // using namespace std;
-// int main(){
-//     string a="lfhzs";
-//     string b;
-//     cin>>b;
-//     int c=a^b;
-//     cout<<c;
-// }
-
-
-// void Node::sortInsert(){
-//     Node *p=L->head;
-//     Node *bp=L->head;
-//     while (p!=NULL){
-//         if(p==L->head && L->head->data > head->data){
-//             this.
-//         }
+// class Solution {
+// public:
+//     // vector<int> twoSum(vector<int>& nums, int target) {
+//     //     map<int , int>p;
+//     //     map<int , int>::iterator it;
+//     //     int Msize=nums.size();
+//     //     for(int i=0;i<Msize;i++){
+//     //         // p.insert(i,sums[i]);
+//     //         p.insert(pair<int,int>(i,nums[i]));
+//     //     }    
+//     //     for(int j=0;j<Msize;j++){
+//     //         it=p.find(target-nums[j]);
+//     //         // ptarget-nums[j]
+//     //         return {it->first,it->second};
+//     //     }
+//     // }
+//     vector<int> twoSum(vector<int>& nums, int target) {
 //     }
-// }
-
-
-#include<bits/stdc++.h>
-using namespace std;
-class Solution {
-public:
-    // vector<int> twoSum(vector<int>& nums, int target) {
-    //     map<int , int>p;
-    //     map<int , int>::iterator it;
-    //     int Msize=nums.size();
-    //     for(int i=0;i<Msize;i++){
-    //         // p.insert(i,sums[i]);
-    //         p.insert(pair<int,int>(i,nums[i]));
-    //     }    
-    //     for(int j=0;j<Msize;j++){
-    //         it=p.find(target-nums[j]);
-    //         // ptarget-nums[j]
-    //         return {it->first,it->second};
-    //     }
-    // }
-    vector<int> twoSum(vector<int>& nums, int target) {
-
-    }
-};
-int main(){
-    
-}
+// };

@@ -1,12 +1,6 @@
 ---
-title: '[Web] Proxy'
 date: 2020-07-14 09:18:00
-toc: true
 ---
-
-### Preface
-
-收录 Ubuntu 需要规则条件下无法实现的地方.
 
 ### Git[^1] [^2] [^3]
 
@@ -45,7 +39,6 @@ git config --global --unset https.proxy
 git config http.postBuffer 524288000
 ```
 
-
 ### Yarn
 
 ```bash
@@ -58,12 +51,6 @@ yarn config delete proxy
 yarn config delete https-proxy
 ```
 
-
-
-
-
-
-
 ### npm
 
 ```bash
@@ -75,8 +62,6 @@ npm config set https-proxy http://127.0.0.1:1087
 npm config delete proxy
 npm config delete https-proxy
 ```
-
-
 
 linux 全局安装 Hexo 居然还需要 Sudo 是我没有想到的. 
 
@@ -92,8 +77,6 @@ npm WARN optional SKIPPING OPTIONAL DEPENDENCY: sha1-1TswzfkxPf+33JoNR3CWqm0UXFA
 added 78 packages from 322 contributors in 233.62s
 
 ```
-
-
 
 ### Bash
 
@@ -118,11 +101,9 @@ export http_proxy=socks5://10.0.0.52:1080 # 设置 socks5 代理
 export http_proxy=user:pass@192.158.8.8:8080 #代理使用用户名密码认证
 ```
 
-
-
 #### HTTPS
 
-　　如果需要为https网站设置代理，设置*https_proxy*环境变量即可；设置方法完全与*http_proxy*环境变量相同：
+如果需要为https网站设置代理，设置*https_proxy*环境变量即可；设置方法完全与*http_proxy*环境变量相同：
 
 ```bash
 # 任意使用一项

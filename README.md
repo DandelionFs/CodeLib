@@ -1,12 +1,15 @@
-## Preface
-
+## PREFACE
 > “Talk is cheap. Show me the code.”   --Linus Torvalds
 
 It's a self usage code lib, which displays data i've seen amd use. I wanna use it lightly everywhere, so except for img,  i shouldn't upload any big file to here, such as mp3, mp4.
 
+> + img means quoted by md docs.
+> + wiki means some knowledge containing topic.
+> + reader means others' article. 
+
 So, Here we go !!!
 
-## TOC:
+## TOC
 ```
 .
 ├── ai develop

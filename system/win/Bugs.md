@@ -1,13 +1,9 @@
-<center><font size =2 color=grey >2020-04-03 10:21:21</font></center>
+---
+2020-04-03 10:21:21</font></center>
+---
+## 文件大小&占用内存双标
 
-
-## Bug
-
-### 文件大小&占用内存双标
-
-<br>
-
-### Net端口占用
+## Net端口占用
 
 两个情况的办法：
 
@@ -24,7 +20,7 @@ netstat -aon|findstr :XXX|findstr LISTEN（netstat -ano | findstr “XXX” ）
 
 </br>
 
-### 投屏
+## 投屏
 
 > Miracast是由Wi-Fi联盟于2012年所制定，以Wi-Fi直连（Wi-Fi Direct）为基础的无线显示标准。支持此标准的3C设备(如智能手机、电视、投影、电脑等)可透过无线方式分享视频画面，也就是说在此技术下，手机可以在不借助任何连接线的情况下实现与电视、电脑等大屏设备的画面投屏。
 
@@ -39,7 +35,7 @@ netstat -aon|findstr :XXX|findstr LISTEN（netstat -ano | findstr “XXX” ）
 
 </br>
 
-### 默认应用误设
+## 默认应用误设
 
 **[官方回应]：**目前对这个也没有办法，感觉歧视处女情结（强迫症）的人……
 
@@ -80,7 +76,7 @@ netstat -aon|findstr :XXX|findstr LISTEN（netstat -ano | findstr “XXX” ）
 
 </br>
 
-### 游戏本风扇异响
+## 游戏本风扇异响
 
 **[现象]：**只有放到支架上会有哒哒哒的声音，90°立正和平躺不会？！。
 
@@ -88,7 +84,7 @@ netstat -aon|findstr :XXX|findstr LISTEN（netstat -ano | findstr “XXX” ）
 
 </br>
 
-### 电量持续显示在 92%
+## 电量持续显示在 92%
 
 **[定位]**：控制面板(大图标)>**电源选项**>更改计划设置>更改高级电源设置>电池
 
@@ -96,6 +92,25 @@ netstat -aon|findstr :XXX|findstr LISTEN（netstat -ano | findstr “XXX” ）
 
 **[延拓]：**https://zhuanlan.zhihu.com/p/114661367
 
-</br>
 
-</br>
+## [谷歌浏览器Software Reporter Tool长时间占用CPU解决办法](https://www.cnblogs.com/ShaYeBlog/p/10224349.html)
+
+Software Reporter Tool是一个Chrome清理工具,用于清理谷歌浏览器中不必要或恶意的扩展，应用程序，劫持开始页面等等。当你安装Chrome时，Software_reporter_tool.exe也j就会被下载在SwReporter文件夹下的Chrome应用数据文件夹中。
+
+这个软件在运行的过程中可能会长时间地占用CPU，导致高CPU使用率。我们虽然可以通过任务管理器手动结束进程或者选择删除SRT，但这都不是长久的解决办法。因为前者过一段时间它又会再次运行，后者在浏览器更新的时候就又会重新被下载下来。要完美地解决这一个问题我们可以进入SRT目录，默认它位于以下目录
+
+C:\Users\[YourName]\AppData\Local\Google\Chrome\User Data\SwReporter\[版本]\software_reporter_tool.exe
+
+我们还可以通过`win+r`键打开运行命令窗口并输入以下命令快速找到它
+
+%localappdata%\Google\Chrome\User Data\SwReporter
+
+![img](https://img2018.cnblogs.com/blog/153882/201901/153882-20190107141835736-1031262278.jpg)
+
+1. 右键单击software_reporter_tool.exe选择属性
+2. 转到“安全”选项卡
+![img](https://img2018.cnblogs.com/blog/153882/201901/153882-20190107141852717-999105915.jpg)
+3. 点击“高级”
+4. 点击“禁用继承”
+5. 选择"从此对象中删除所有继承的权限",之后一路点击“确定”“确定”。
+
