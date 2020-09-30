@@ -1,7 +1,5 @@
 ---
-title: '[CS]Crash Course Computer Science'
 date: 2019-11-11 00:00:00
-toc: true
 ---
 
 
@@ -18,16 +16,6 @@ toc: true
 Mega(MB)
 
 Giga(GB)
-
- 
-
-
-
- 
-
- 
-
- 
 
 ASKII：7位
 

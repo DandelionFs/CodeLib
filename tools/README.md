@@ -33,4 +33,25 @@
 
 + **Audacity**(OS): https [shi]://www.audacityteam.org
 
+
+## IMG HOSTS
+[图床](https://zhuanlan.zhihu.com/p/35270383)
++ 堆爱图床[img.duiai.cc/tc/](//img.duiai.cc/tc/)
++ SM.MS图床[sm.ms](//sm.ms/)
++ 聚合图床[superbed.cn](//www.superbed.cn)
++ 堆爱图床[img.duiai.cc/tc](//img.duiai.cc/tc/)
++ https://www.jianshu.com/p/ea1eb11db63f
+
+## LANZOU
+
+1. [Win](https://lanzous.com/b00th6sij)(b4hc)
+2. [Android](https://lanzous.com/b00th6slc)(1eva)
+3. [Ubuntu](https://lanzous.com/b00th6sof)(53ie)
+4. [DFs](https://lanzous.com/b00ti4jmd)(DND)
+
+
+
+
+
+
 To be continued...

@@ -1,9 +1,11 @@
 ---
-title: Windows批处理(cmd/bat)常用命令小结
 date: 2016-03-29 16:22:32
-categories: 学习 | Study
-description: 在Windows中善用批处理可以简化很多重复工作
 ---
+
+## LINK
+
++ http://wsgzao.github.io/post/windows-batch/
++ http://zh.wikihow.com/编写批处理文件
 
 ## 前言
 
@@ -11,18 +13,7 @@ description: 在Windows中善用批处理可以简化很多重复工作
 
 > 在Windows中善用批处理可以简化很多重复工作
 
-## 更新记录
-
-2016年03月29日 - 初稿
-
-阅读原文 - http://wsgzao.github.io/post/windows-batch/
-
-**扩展阅读**
-
-如何编写批处理文件 - http://zh.wikihow.com/编写批处理文件
-批处理常用命令总结 - 批处理常用命令总结
-
-## 什么是批处理
+## 批处理
 
 批处理(Batch)，也称为批处理脚本。顾名思义，批处理就是对某对象进行批量的处理。批处理文件的扩展名为bat。
 
@@ -34,7 +25,7 @@ description: 在Windows中善用批处理可以简化很多重复工作
 
 系统在解释运行批处理程序时，首先扫描整个批处理程序，然后从第一行代码开始向下逐句执行所有的命令，直至程序结尾或遇见exit命令或出错意外退出。
 
-## 批处理命令简介
+## 命令
 
 - echo
 - rem
@@ -46,7 +37,7 @@ description: 在Windows中善用批处理可以简化很多重复工作
 
 批处理常用命令总结
 
-## 批处理符号简介
+## 符号
 
 - 回显屏蔽 @
 - 重定向1 >与>>
@@ -57,9 +48,9 @@ description: 在Windows中善用批处理可以简化很多重复工作
 
 批处理常用命令总结
 
-## 常用DOS命令
+## 常用命令
 
-**文件夹管理**
+### 文件夹管理
 - cd 显示当前目录名或改变当前目录。
 - md 创建目录。
 - rd 删除一个目录。
@@ -68,7 +59,7 @@ description: 在Windows中善用批处理可以简化很多重复工作
 - path 为可执行文件显示或设置一个搜索路径。
 - xcopy 复制文件和目录树。
 
-**文件管理**
+### 文件管理
 - type 显示文本文件的内容。
 - copy 将一份或多份文件复制到另一个位置。
 - del 删除一个或数个文件。
@@ -79,7 +70,7 @@ description: 在Windows中善用批处理可以简化很多重复工作
 - find 搜索字符串。
 - fc 比较两个文件或两个文件集并显示它们之间的不同
 
-**网络命令**
+### 网络命令
 - ping 进行网络连接测试、名称解析
 - ftp 文件传输
 - net 网络命令集及用户管理
@@ -88,7 +79,7 @@ description: 在Windows中善用批处理可以简化很多重复工作
 - msg 给用户发送消息
 - arp 显示、修改局域网的IP地址-物理地址映射列表
 
-**系统管理**
+### 系统管理
 - at 安排在特定日期和时间运行命令和程序
 - shutdown立即或定时关机或重启
 - tskill 结束进程
@@ -505,7 +496,7 @@ xcopy d:mp3 e:mp3 /s/e/i/y
 
 
 
-# cmd批量打开网页和关闭网页的批处理代码
+## cmd批量打开网页和关闭网页的批处理代码
 
 如果浏览器的安装路径中有空格，可以用“ ”代替，如下：
  C:\Program Files\Mozilla Firefox\firefox.exe
@@ -563,4 +554,76 @@ taskkill /f /t /im chrome.exe
 taskkill /f /t /im firefox.exe 
 ```
 
-以上就是cmd批量打开网页和关闭网页的批处理代码，大家可以多测试一下
+
+## 代码实例
+
+### 黑客效果-vbs
+
+```bat
+@echo off
+:a
+color 2
+echo 1 1 1 1 1 1 0 0 0 0 1 0 1 0 1 1 1 0 0 1 1 0 1
+ping localhost -n 1 > nul
+echo 1 1 0 1 1 0 0 1 1 1 1 0 1 1 1 0 0 1 0 1 0 0 1
+echo 1 1 0 0 1 1 1 0 0 1 0 1 1 1 1 1 1 0 1 0 0 1 0
+ping localhost -n 1 > nul
+echo 1 1 1 1 1 1 0 0 0 0 1 0 1 0 1 1 1 0 0 1 1 0 1
+ping localhost -n 1 > nul
+echo 1 1 0 0 1 1 1 0 0 1 0 1 1 1 1 1 1 0 1 0 0 1 0
+ping localhost -n 1 > nul
+echo 1 1 0 1 1 0 0 1 1 1 1 0 1 1 1 0 0 1 0 1 0 0 1
+goto a
+```
+
+### 键盘跑马灯 -vbs
+
+```bat
+Set wshShell =wscript.CreateObject("WScript.Shell")
+do
+wscript.sleep 100
+wshshell.sendkeys"{CAPSLOCK}"
+wshshell.sendkeys"{NUMLOCK}"
+wshshell.sendkeys"{SCROLLLOCK}"
+loop
+```
+
+### 快速弹窗
+
+```bat
+start
+start
+start
+start
+start
+Echo off
+lots of boxes
+start box
+```
+
+### 新建文件夹
+
+```bat
+md sdkfsj jdsjksak 
+```
+
+### 喜欢我吗
+
+```bat
+x=msgbox("所以马上罢工。点击重试(R)让系统重新检测",5+48,"系统检测到你不喜欢我 哼~" )
+x=msgbox("所以你还是不喜欢我？！",0+16,"系统已经重新检测")
+do
+x=msbox("所以，我觉得一直看着你！！！",0+64,"你的系统已下线")
+loop
+```
+
+### 自动朗读机
+
+```bat
+Message=InputBox("请在下方输入文字，点击确认朗读","自动朗读机")
+Set Speak=CreateObject("sapi.spvoice")
+Speak.Speak Message
+```
+
+
+

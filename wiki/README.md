@@ -19,3 +19,59 @@
 
 + descriptor fd: **文件描述符**（File descriptor）是计算机科学中的一个术语，是一个用于表述指向[文件](https://zh.wikipedia.org/wiki/文件)的引用的抽象化概念.
 
+
+### Headset
+
+耳机口的协议有两种：
+
+## Software
+
+## Sever
+
+### Noun
+
+
+**GUI ：** **Graphical User Interface**（图形用户界面 / 图形用户接口），指采用图形方式显示的计算机操作用户界面。
+
+
+**CLI**：**C**ommand-**L**ine **I**nterface，**命令行界面**
+
+
+**Filter**（分流）
+
+
+**Whois** ：Whois.Net  ，非缩写，一个查询域名的 IP 以及 所有者信息 的传输协议，常用 TCP协议43端口 。域名被不同后缀运营商管理，如以 .com —>  VeriSign ， .cn 域名由CNNIC( China Internet Network Information Center )管理。
+
+
+> 万网、站长之家
+
+
+
+### Zh-cn & Zh
+
+
+1. 服务器 —> 伺服器
+2. U盘 —>
+3. 程序 --> 程式
+4. 软件 --> 软体
+
+
+
+#### 添加 Rejection 链接阻止规则订阅（去广告等）
+
+
+1. 点击 `Settings（设置）` -->`favorites（订阅）`-->`点击右上角+号`-->`Rejection（链接阻止）`, `name（名称）`自定义，`url（链接）`填写 Rejection 规则链接即可，记得勾选`including host name（包含主机名）`;
+1. 保存后左滑选择`Replace（替换）`.
+
+
+
+- Rejection 规则用来对去广告进行补充（不保证一直有效，如失效，可向维护者反馈），需开启`https解密`；
+- 开启`https解密`时，记得按照提示操作，**切勿忘记信任证书**；
+- `Rewrite`部分也可以通过该订阅获得。
+
+## Chat
+PGC:（Professional Generated Content）指专业生产内容。用来泛指内容个性化、视角多元化、传播民主化、社会关系虚拟化。也称为PPC,(Professionally-produced Content）由传统广电业者按照几乎与电视节目无异的方式进行制作，但在内容的传播层面，却必须按照互联网的传播特性进行调整。
+
+
+UGC（User-generated Content，用户生产内容，也称UCC，User-created Content）功不可没。随着移动互联网的发展，网上内容的创作又被细分出PGC（Professionally-generated Content，专业生产内容，也称PPC，Professionally-produced Content）和OGC（Occupationally-generated Content，职业生产内容）
+
