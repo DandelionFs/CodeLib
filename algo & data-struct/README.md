@@ -138,6 +138,57 @@ o Activities within software lifecycles
 14. Use project metrics to describe the current state of a project. [Usage]
 
 
+## ACM总结的18个计算机科学关键领域
+
+| 缩写 | 关键知识领域（英文名称） | 说明 |
+| :----: | :------------------------: | :----: |
+|AL| Algorithms and Complexity |算法与复杂度|
+|AR| Architecture and Organization| 体系结构与组织|
+|CN| Computational Science| 计算科学|
+|DS| Discrete Structures| 离散结构|
+|GV| Graphics and Visualization| 图形与可视化|
+|HCI| Human-Computer Interaction| 人机交互|
+|IAS |Information Assurance and Security| 信息安全|
+|IM |Information Management| 信息管理|
+|IS| Intelligent Systems| 智能系统|
+|NC |Networking and Communication |网络与通讯|
+|OS |Operating Systems |操作系统|
+|PBD| Platform-based Development| 基于特定平台的开发|
+|PD |Parallel and Distributed Computing| 并行与分布式计算|
+|PL |Programming Languages |编程语言|
+|SDF| Software Development Fundamentals| 软件开发基础|
+|SE| Software Engineering |软件工程|
+|SF | Systems Fundamentals| 系统基础|
+|SP| Social Issues and Professional Practice| 社会性主题与职业实践|
+http://www.acm.org/education/curricula-recommendations
+
+《Computer Science Curricula-2013》
+
+
+不要试图做你认为做不到的事情, 而当你感到自闭的时候. 那恰巧正是你意识到要发生改变的时候.
+
+
+
+
+
+## ACM的《Computer Science Curricula-2013》
+
+
+
+
+
+## 衡量计算机科学知识的掌握程度
+
+> What do you know about this ?
+> What do you know how to do ?
+> Why would you do that ?
+
+当你主要在第N层工作时，需要对第N-1和N+1层下功夫，通常就足以应付日常的工作和学习任务了
+
+
+
+
+
 
 
 [1] :全国高中数学联赛、全国中学生物理竞赛复赛、中国化学奥林匹克竞赛(初赛)、全国中学生生物学联赛、全国青少年信息学奥林匹克联赛
