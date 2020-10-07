@@ -1,8 +1,13 @@
-## BUG
+## NODE
+Node自带两个命令行程序：node和npm。node的工作是运行JavaScript程序.
 
+## NPM
+### BUG
 #### 下载SUDO 无法写文件
 
-+ 输入带有 `--unsafe-perm` 的命令[^1]
++ 输入带有 `--unsafe-perm` 的命令
+
+LINK:https://segmentfault.com/q/1010000019365121/
 
 就是说 npm 出于安全考虑不支持以 root 用户运行，即使你用 root 用户身份运行了，npm 会自动转成一个叫 nobody 的用户来运行，而这个用户几乎没有任何权限。这样的话如果你脚本里有一些需要权限的操作，比如写文件（尤其是写 /root/.node-gyp），就会崩掉了。
 
@@ -11,12 +16,13 @@
 详见: https://docs.npmjs.com/misc/config#unsafe-perm
 
 
+### LOCK
 
-## LOCK[^2]
+LINK: https://segmentfault.com/a/1190000016914977
 
 从 Yarn 横空出世推出 lock 文件以来，npm 也在 5.0 版本加入了类似的功能，lock 文件越来越被开发者们接收和认可。
 
-### 为什么需要 lock 文件
+#### 为什么需要 lock 文件
 
 
 + 确保各环境依赖版本的一致性
@@ -40,7 +46,3 @@
 
 但是至少你升级每个依赖时都要去看一下它的 change log，这样可以对每一次升级做到心中有数，这也有助于你掌握依赖的发展趋势。比如前文提到的 React 的例子，只要你在升级时看一眼它的 change log，就很容易避开可能出现的问题。
 
-
-
-[^1]:https://segmentfault.com/q/1010000019365121/
-[^2]: https://segmentfault.com/a/1190000016914977
