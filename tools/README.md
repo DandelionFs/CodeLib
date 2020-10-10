@@ -19,6 +19,7 @@
 + **天若OCR**：https://wwa.lanzous.com/ibsk0yd
 + **Acill_generator**:https://wwa.lanzous.com/ibsk9zi
 + **BvSSH**:https://wwa.lanzous.com/ibsksbi
+  + https://www.bitvise.com/ssh-client-download
 + **EWB**：https://wwa.lanzous.com/ibskseb
 + **RSS**：https://wwa.lanzous.com/ibsksgd（倒）
 + **Chrome**：https://wwa.lanzous.com/ictyigj

@@ -1,8 +1,8 @@
-### Preface
-找到一套完美的解决方案: 
+## PREFACE
 
-**[Mac/Linux/Win]**: Fluent-reader[^1]
-**[Android]**: JustRss
+解决方案: 
+- **[Mac/Linux/Win]**: Fluent-reader[^1]
+- **[Android]**: JustRss
 
 以下来源不限于:
 1. feedx.net
@@ -11,10 +11,30 @@
 
 (带有 `rsshub.app` , `feedx.net` ,`feedburner.com` 的订阅地址, 嘛都憋说, 直接捐助. 为爱发电不易, 禁止白嫖)
 
+
+## RSS
+
+#### OPML
+
+格式:
+
+```html
+<?xml version="1.0" encoding="UTF-8"?><opml version="1.0">
+    <head><title>Fluent Reader Export</title></head>
+    <body>
+    <outline text="Reader" name="Reader"><outline text="XXX" name="XXX" type="rss" xmlUrl="XXXX"/>
+    </body>
+</opml>
+```
+
+
+
+
+
+## Details
 ### Course
 + MOOC 中国: https://www.mooc.cn/feed
 + 码农俱乐部 - Golang中国: https://rsshub.app/mlog-club/projects
-+ 码农网: https://rsshub.app/codeceo/home
 
 ### Game
 + 3DM: https://rsshub.app/3dm/news

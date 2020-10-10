@@ -1,7 +1,5 @@
 ---
-title: '[GFW] China Wikipedia?!'
 date: 2020-02-08 17:05:05
-toc: true
 ---
 
 > 世界上最受欢迎的网站之一、知识宝库"维基百科"（Wikipedia.org）在中国大陆是被封锁的，必须借助代理服务器才能打开。好在维基百科采用GNU公共许可证，任何人都可以自由使用其中的内容。因此，我们可以通过一些其他网站，来查看维基百科。下面就是我所知道的几个这样的网站。
@@ -30,3 +28,7 @@ toc: true
 4. **[Veropedia](http://www.veropedia.com/)**：一个维基百科的精华版，收录了一些最有价值的条目，直接由维基百科基金会维护。
 5. [**Mobile Guru Wikipedia**](http://axa.instinct.co.nz/wiki/)：一个维基百科的手机版。国内的访问速度很快，我推荐手机用户使用。
 6. **[某个已爆的网站，致敬！](http://www.mirrorin.com/wiki/)**：太辛苦了。
+
+## MORE
+
+- **http://www.zgc261.com/wikipedia.html**

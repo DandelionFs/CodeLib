@@ -1,4 +1,5 @@
 ## 移动(缩进)代码[^1]
+[LINK] : https://segmentfault.com/q/1010000000343626
 
 + 先进visual模式，然后选中要移动的代码快，按shift+<就可以整体移动了。
 
@@ -31,14 +32,15 @@ More Details:
 
 
 
-## SHORTCUT[^2]
+## SHORTCUTS
+[LINK] :https://blog.csdn.net/HappyCodeFly/article/details/86684827
 
 |操作|效果|
 |---|---|
 |CTRL-M 或 CTRL-J|开始新行|
-|CTRL-E|		  插入光标下方的字符|
-|CTRL-Y	|	  插入光标上方的字符|
-|CTRL-A		|  插入上次插入的文本|
+|CTRL-E|插入光标下方的字符|
+|CTRL-Y	|插入光标上方的字符|
+|CTRL-A		|插入上次插入的文本|
 |CTRL-@		 | 插入上次插入的文本并结束插入模式|
 |CTRL-R {0-9a-z%#:.-="}	|插入寄存器的内容|
 |CTRL-W	|	  删除光标前的一个单词|
@@ -47,6 +49,3 @@ More Details:
 |CTRL-D		  |从当前行首删除一个移位宽度的缩进|
 |0 CTRL-D	 | 删除当前行的所有缩进|
 |^ CTRL-D	  |删除当前行的所有缩进，恢复下一行的缩进|
-
-[^1]: https://segmentfault.com/q/1010000000343626
-[^2]:https://blog.csdn.net/HappyCodeFly/article/details/86684827

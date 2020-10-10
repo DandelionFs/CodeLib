@@ -1,36 +1,24 @@
-### Ubuntu Config
+## BEAUTIFY
+装好的第一天自以为自己不会碰触美化这一块领域, 但是...... 它太漂亮了!
 
-~~暂时不考虑，浪费时间……~~
+LINUX 的桌面环境有:
+- GTK
+- Unity
+- Gname[最美]: 需要Ubuntu系统和浏览器共同安装即可运行
 
-**[打脸]**: 使用的原理是Ubuntu的 GNAME 插件，需要Ubuntu系统和浏览器共同安装即可运行
-
-#### 窗口管理移左
-
+## 窗口三金刚移左
 听说14版本前都是在左面。但是 Ubuntu18.04 移到了左面, 执行命令:
+
 ```bash
 sudo  apt install gnome-tweaks`
 # alt+f2
 gnome-tweaks
 ```
-<br>
 
-#### 输入法选择
-语言支持里可以选择实现模式.
+## FCITX-PINYIN
+**[LINK]**: https://www.zhihu.com/question/20432630/answer/161256076
 
-~~**Ibus**(不推荐, 没有联想功能)~~
-
-~~我选择了ibus的小鹤双拼的输入法，他不具备网络联想功能, 然后我意识到了网络联想真tm是个好东西，Only Shit! (我一下子想到了小学用诺基亚物理键盘敲打的费劲感觉的说)···~~
-
-~~设置大屏Ubuntu的输入法大小:~~
-
-~~这个要用到无障碍的字体放大功能，在这个地方也是很是想吐槽的说···~~
-1. ~~在Ubuntu软件仓库里，搜索“ibus”，安装其中的“ibus font setting”。~~
-2. ~~打开这个插件后就可以设置输入法候选字体的大小了。~~
-
-**Fcitx**[^2]
 可使用插件实现云输入
-
-~~Google 拼音 &~~ fcitx-pinyin
 
 ```bash
 sudo apt install language-pack-zh-hans
@@ -38,22 +26,18 @@ sudo apt-get install fcitx-googlepinyin
 sudo apt install fcitx-pinyin && sudo apt install fcitx-cloudpinyin
 ```
 
-#### 双Dock修改 
+~~**Ibus**(不推荐, 没有联想功能)~~
+~~我选择了ibus的小鹤双拼的输入法，他不具备网络联想功能, 然后我意识到了网络联想真tm是个好东西，Only Shit! (我一下子想到了小学用诺基亚物理键盘敲打的费劲感觉的说)···~~
+~~设置大屏Ubuntu的输入法大小:~~
+~~这个要用到无障碍的字体放大功能，在这个地方也是很是想吐槽的说···~~
+1. ~~在Ubuntu软件仓库里，搜索“ibus”，安装其中的“ibus font setting”。~~
+2. ~~打开这个插件后就可以设置输入法候选字体的大小了。~~
+~~Google 拼音 &~~
 
-+ 禁用 Ubuntu Dock 的方法 ->  https://zhuanlan.zhihu.com/p/48078003
-+ 为什么会有两个 Dock 的贴 -> https://qastack.cn/ubuntu/975387/why-do-i-have-two-docks-in-ubuntu-17-10-desktop.
+## 主题美化
 
-我采用的是移除 Gnome Shell Ubuntu Dock 包 , 后果是 有的时候开机亮度无法调节, 设置里面的Dock 失效, 前者可以重启解决, 总之问题不大.
-```
-sudo apt remove gnome-shell-extension-ubuntu-dock
-```
-
-#### 主题美化
-
-**Address**: https://www.gnome-look.org/
-
-**Position**: ~/.themes
-
+- **Address**: https://www.gnome-look.org/
+- **Position**: `~/.themes`
 ```bash
 mkdir -p ~/.themes
 tar -xvf Ant-Dracula.tar -C ~/.themes
@@ -61,9 +45,21 @@ gsettings set org.gnome.desktop.interface gtk-theme "XXX"
 gsettings set org.gnome.desktop.wm.preferences theme "XXX"
 ```
 
-<br>
+### Dash-to-Dock
 
-#### 使用跨系统字体[^3]
+- 禁用 Ubuntu Dock 的方法 ->  https://zhuanlan.zhihu.com/p/48078003
+- 为什么会有两个 Dock 的贴 -> https://qastack.cn/ubuntu/975387/why-do-i-have-two-docks-in-ubuntu-17-10-desktop.
+
+我采用的是移除 Gnome Shell Ubuntu Dock 包 , 后果是 有的时候开机亮度无法调节, 设置里面的Dock 失效, 前者可以重启解决, 总之问题不大.
+```
+sudo apt remove gnome-shell-extension-ubuntu-dock
+```
+
+
+
+## Font
+
+[LINK]: https://zhuanlan.zhihu.com/p/40434062
 
 **单系统:** https://zhuanlan.zhihu.com/p/40434062
 
@@ -73,37 +69,71 @@ gsettings set org.gnome.desktop.wm.preferences theme "XXX"
 ln -s /Windowsdrive/Windows/Fonts /usr/share/fonts/WindowsFonts # 将字体位置链接到你的 Linux 系统的字体文件夹
 fc-cache # 重新生成 fontconfig 缓存
 ```
-<br>
+
+## SOFTWARE
+
+**TOC**:
+
+- Music
+  - Netease Music
+    - https://music.163.com/#/download
+  - QQ Music
+    - https://github.com/gorquan/QQMusic
+- Editor/Works
+  - Typora
+  - VsCode
+  - Vim
+  - Chrome
+  - WPS
+  - BaidunetDisk
+  - XMind
+  - Master Reader
+    - Shortcuts: https://code-industry.net/masterpdfeditor-help/keyboard_shortcuts/
+  - Cailbre
+  - Audacity
+  - GitKaken
+  - JetBrains
+  - Clash
+  - Darktable
+  - GIMP
+  - OBS
+  - TeamViewer
+  - Mypainter
+  - Krita
+  - **Make Soteware**:
+    - 坚果云
+    - GoldenDict
+    - Mircosoft To Do
+    - FluentRSS
+- Chat
+  - QQ
+  - Wechat
+  - Telegram
+- Sys Tools
+  - PulseAudio: 音量调节
+  - Blueman: 蓝牙管理器
+  - dconf: 系统编辑器
+  - Flameshot: 截图助手
 
 ### Apt
-
 一般来说, 安装命令有：
 
 ```bash
 # 使用apt安装软件,譬如安装tree,这里的 -y 参数是为了在安装的时候默认选择yes
 sudo apt install tree -y
-
 # deb包安装
 sudo dpkg -i xxx.deb
 sudo gdebi ???
 sudo apt install gdebi
 sudo gdebi netease-cloud-music_1.2.1_amd64_ubuntu_20190428.deb
-
 #安装依赖（如果提示需要的话）
 sudo apt install -f
-
 #另一种deb包安装方式
 sudo apt install ./xxxx.deb 
-
 #安装filename.tar.gz软件,然后在解压目录或者bin文件夹中执行setup.sh文件
 tar -xzvf file.tar.gz
 ```
-
- **源码安装**
-
-有些软件没有被收录进软件镜像源，或者说开发者需要去使用他们最新的版本，这时候就要自己去他们的官网或者是代码托管平台下载最新的Linux源码，自己来build。这种方式安装需要解决很多的依赖，安装前多Google。
-
-此处还是以tree为例：
+**源码安装**: 有些软件没有被收录进软件镜像源，或者说开发者需要去使用他们最新的版本，这时候就要自己去他们的官网或者是代码托管平台下载最新的Linux源码，自己来build。这种方式安装需要解决很多的依赖，安装前多Google。此处还是以tree为例：
 
 - 先下载最新的源码包
 
@@ -132,7 +162,7 @@ wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add - && sudo a
 # 配合修改 : QQ修改IPV6
 ```
 
-#### Uninstall
+### Uninstall
 
 ```bash
 sudo apt remove --purge XXX
@@ -198,10 +228,6 @@ sudo sysctl -p && sudo touch /etc/rc.local && sudo chmod 755 /etc/rc.local
 /etc/init.d/procps restart
 exit 0
 ```
-
-#### 网易云音乐
-
-Debian： https://music.163.com/#/download
 
 #### ~~flash插件(卒)-见下一条~~
 
@@ -478,8 +504,8 @@ linux下有很多文本编辑器，其中系统都会自带nano和vi这两个最
 [More] -> https://zhuanlan.zhihu.com/p/139305626
 
 [^1]: https://blog.csdn.net/ysy950803/article/details/78507892 
-[^2]: https://www.zhihu.com/question/20432630/answer/161256076
-[^3]: https://zhuanlan.zhihu.com/p/40434062
+[^2]: 
+[^3]: 
 [^4]: https://qastack.cn/server/250224/how-do-i-get-apt-to-ignore-some-dependencies
 [^5]: https://zhuanlan.zhihu.com/p/144286142
 [^6]: https://github.com/qingshuisiyuan/electron-ssr-backup/blob/master/Ubuntu.md
