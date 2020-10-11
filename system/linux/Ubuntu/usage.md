@@ -114,6 +114,9 @@ fc-cache # 重新生成 fontconfig 缓存
   - Blueman: 蓝牙管理器
   - dconf: 系统编辑器
   - Flameshot: 截图助手
+- Play
+  - steam
+    - proxychains
 
 ### Apt
 一般来说, 安装命令有：

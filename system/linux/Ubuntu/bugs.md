@@ -276,7 +276,7 @@ StartupNotify=false；	#设置软件启动是不通知
 Hidden=false			#菜单是否隐藏，类似NoDisplay属性
 ```
 
-## Proxy Proxy
+## Proxy
 
 开电脑的时候很少时候不用修网. 然而网络堵塞原因是多层面的, 以下是自己常常遇到的情况;
 
