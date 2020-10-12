@@ -1,11 +1,7 @@
 ## PREFACE
 > “Talk is cheap. Show me the code.”   --Linus Torvalds
 
-It's a self usage code lib, which displays data i've seen amd use. I wanna use it lightly everywhere, so except for img,  i shouldn't upload any big file to here, such as mp3, mp4.
-
-> + img means quoted by md docs.
-> + wiki means some knowledge containing topic.
-> + reader means others' article. 
+A self usage code lib, which displays data i've seen or used. I wanna use it lightly everywhere I worked, so except for little size imgs,  i shouldn't push any big files to here, such as mp3, mp4, xmind, word, excel, ppt, etc.
 
 So, Here we go !!!
 
@@ -13,7 +9,7 @@ So, Here we go !!!
 
 ```
 .
-├── ai dev
+├── ai_dev
 ├── algo & data-struct
 │   ├── img
 │   ├── imudges
@@ -30,7 +26,7 @@ So, Here we go !!!
 │   │       └── L1-048
 │   └── wiki
 │       └── img
-├── android dev
+├── android_dev
 ├── language
 │   ├── cpp
 │   ├── java
@@ -39,8 +35,12 @@ So, Here we go !!!
 ├── math
 ├── pc
 │   ├── encoding
-│   └── hardware
-├── security dev
+│   │   └── img
+│   ├── hardware
+│   │   └── img
+│   └── trial
+│       └── img
+├── security_dev
 ├── system
 │   ├── linux
 │   │   ├── deepin
@@ -49,11 +49,13 @@ So, Here we go !!!
 │   │   └── Ubuntu
 │   │       └── img
 │   └── win
-│       ├── dos
-│       └── Game World
+│       └── dos
 ├── tools
-│   └── reader
-├── web dev
+│   ├── code
+│   ├── img
+│   ├── reader
+│   └── work
+├── web_dev
 │   ├── html & css & js
 │   ├── img
 │   ├── php
@@ -62,16 +64,23 @@ So, Here we go !!!
 │   ├── service
 │   └── tcp && ip
 ├── wiki
+│   ├── books
+│   ├── english
+│   └── film
 ├── workplace
 │   ├── Course
-│   └── cpp
+│   ├── cpp
+│   ├── javascript
+│   └── python
 └── works
-    ├── how long U have benn dealied_你白活了多久
+    ├── how_long_U_have_benn_dealied_白活
     ├── Html
     │   └── Blog Index
-    ├── install packege
-    ├── Software Engineer Summer
+    ├── install_packege
+    ├── software_engineer_summer
     ├── Student_Choose_Course_System
     │   └── data
-    └── wlan ancity paper
+    └── wlan_ancity_paper
+
+72 directories
 ```
