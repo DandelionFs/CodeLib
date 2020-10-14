@@ -93,6 +93,8 @@ fc-cache # 重新生成 fontconfig 缓存
   - Audacity
   - GitKaken
   - JetBrains
+    - Clion
+    - Pycharm
   - Clash
   - Darktable
   - GIMP
@@ -100,11 +102,14 @@ fc-cache # 重新生成 fontconfig 缓存
   - TeamViewer
   - Mypainter
   - Krita
-  - **Make Soteware**:
+  - **Build Soteware**:
     - 坚果云
     - GoldenDict
     - Mircosoft To Do
     - FluentRSS
+    - Ao
+    - Flowchar
+    - Bookworn
 - Chat
   - QQ
   - Wechat
@@ -112,11 +117,11 @@ fc-cache # 重新生成 fontconfig 缓存
 - Sys Tools
   - PulseAudio: 音量调节
   - Blueman: 蓝牙管理器
-  - dconf: 系统编辑器
+  - Dconf: 系统编辑器
   - Flameshot: 截图助手
 - Play
-  - steam
-    - proxychains
+  - Steam
+    - Proxychains
 
 ### Apt
 一般来说, 安装命令有：

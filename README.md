@@ -8,6 +8,7 @@ So, Here we go !!!
 ## TOC
 
 ```
+$ tree -d
 .
 ├── ai_dev
 ├── algo & data-struct
