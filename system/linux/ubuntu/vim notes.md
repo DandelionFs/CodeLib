@@ -1,3 +1,16 @@
+## Change Vim/Vim-gtk
+
+[LINK] : https://askubuntu.com/questions/1208159/how-do-i-install-vim-gnome-on-ubuntu-19-10
+
+因为 19.10 把 vim-gnome 移除了, 所以搜不到.
+
+## Config
+
+[LINK] : https://www.jianshu.com/p/6bb4e8491132
+
+Vim 的设置文件不会自动保存设置文件, 所以需要自己写.
+
+
 ## 移动(缩进)代码[^1]
 [LINK] : https://segmentfault.com/q/1010000000343626
 
