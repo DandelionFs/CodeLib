@@ -69,7 +69,7 @@ M. Jia提出了两种算法，即
 - 亚马逊的弹性云、微软的Azure平台、Google的App Engine和Salesforce是目前流行的一些公共云。
 - 移动云计算（Mobile Cloud Computing， MCC）
 - 
-
+    
 
 
 
