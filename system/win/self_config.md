@@ -1,5 +1,5 @@
 ---
-Create Date: 2020-02-05 04:22:00
+date: 2020-02-05 04:22:00
 ---
 
 ## Preface
@@ -22,10 +22,12 @@ Create Date: 2020-02-05 04:22:00
 **" 个性化设置！"**
 
 ### ~~Youdao Note~~
-
 ~~打开自己有道云的安装路径下的这个文件：`\Youdao\YoudaoNote\theme\default\skin.xml`开始编辑。后`Ctrl+F`搜索`PanelAd`把`PanelAd Bounds`的值`0.0.0.0`(修改之前记得提前做好备份……) `<PanelAd Bounds="0,0,0,161" DockStyle="bottom"></PanelAd>`~~
 ~~<font size =1>[吐槽]:从小米便签的编辑功能到它的待办功能，只做差不多的小米生态彻底失望了。便签反馈了三年，开卡了三年无果，真的只剩下骂街了，可能是受众小的缘故吧。待办换Microsoft的TODO，笔记换来换去还是有道云的吧，**排版的方式多、直接暴力保存网页，想要的内容点点手指就可以、关键是公司相比较靠谱……**说起来生态，又有一个经济学原理验证了——“科斯定律“，也可能我没必要要求一个手机公司在应用生态方面做的和高三个层次的Apple相比。</font>~~
+
 ### Firefox&Chrome
+
+**[Dev Link]** : https://developer.mozilla.org/zh-CN/docs/Mozilla/Developer_guide/Source_Code/Downloading_Source_Archives
 
 #### ~~缩放比例~~
 ~~about:config :火狐标签页，修改配置~~
@@ -40,9 +42,7 @@ Create Date: 2020-02-05 04:22:00
 像Chrome参数可以改为`200.0.20.80.8.50`；火狐打开`about:config`标签页找到`general.smoothScroll.mouseWheel.durationMaxMS
 general.smoothScroll.mouseWheel.durationMinMS`这两个值，分别改为200和50即可。这个和Chrome参数前面的200和0相似.
 
-更多的细节还在Firefox的开发源码[^1]中，这里不再涉及。
 
-</br>
 
 #### 搜索引擎
 
@@ -98,6 +98,7 @@ https://emojipedia.org/search/?q=%s&utm_source=opensearch
 + **Copy as Plain Text**
 + **uTab - Custom New Tab**
 + **Tampermonkey**
+  + 智慧树
 + 捕捉网页截图 
 + Dark Reader
 + XDown
@@ -110,6 +111,8 @@ https://emojipedia.org/search/?q=%s&utm_source=opensearch
 + Stylish-为任意网站自定义主题
 + GitZip for github
 + 安全外壳 (SSH)
++ Vimium
+
 
 ### Typera
 
