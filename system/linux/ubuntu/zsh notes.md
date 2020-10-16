@@ -115,5 +115,14 @@ firewall-cmd --reload
 2. --permanent：表示设置为持久；
 3. --add-port：标识添加的端口；
 
+## More
+- https://www.sysgeek.cn/install-zsh-shell-ubuntu-18-04/
+- https://my.oschina.net/u/2266513/blog/3103451
+- https://zhuanlan.zhihu.com/p/37195261
+- https://www.jianshu.com/p/b61473e22c8b
+
+
+
+
 [^1]:https://qastack.cn/superuser/232457/zsh-output-whole-history
 [^2]:https://github.com/ohmyzsh/ohmyzsh/issues/31

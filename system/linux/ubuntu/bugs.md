@@ -11,6 +11,9 @@ acpi_osi=linux nomodeset
 
 ## N卡驱动
 
+**[LINK]** https://blog.csdn.net/ysy950803/article/details/78507892 
+
+
 进去之后要换aliyun的源, 进去发现分辨率是锁死的(反正不是1080P)，~~是Ubuntu自带的显卡驱动背的锅~~(好像Ubuntu20.04LTS 已经自带 N卡 驱动了......)，更新N卡驱动: 
 
 ```bash
@@ -26,6 +29,85 @@ blacklist nvidiafb
 sudo update-initramfs -u &&  reboot # 刷新重启
 ```
 
+
+## Touchpad
+[LINK] : https://www.thefanclub.co.za/how-to/ubuntu-touchpad-gestures-install
+
+```bash
+#!/bin/bash
+#
+# Gestures install 
+# version 1.3
+# 
+# by The Fan Club 2020
+#
+# NOTE: run as sudo
+#
+#
+# Remove if selected 
+if [ "$1" = "--remove" ]; then 
+	echo "[Gestures] Gestures uninstall started..."
+	python3 -m pip uninstall gestures
+	rm /usr/local/bin/gestures
+	rm /usr/share/applications/org.cunidev.gestures.desktop
+	rm /usr/share/metainfo/org.cunidev.gestures.appdata.xml
+	rm /usr/share/icons/hicolor/scalable/apps/org.cunidev.gestures.svg
+	# remove libinput-gestures
+	su $SUDO_USER libinput-gestures-setup stop
+	su $SUDO_USER libinput-gestures-setup autostop
+	libinput-gestures-setup uninstall	
+	echo "[Gestures] Gestures removal complete."
+	exit 
+fi
+#
+# Install libinput-gestures - https://github.com/bulletmark/libinput-gestures
+echo "[Gestures] Gestures install started..."
+#
+# Add user to input group
+gpasswd -a $SUDO_USER input
+echo "[Gestures] $SUDO_USER added to input user group"
+# Install prerequisites
+echo "[Gestures] Install all depedencies"
+apt-get install xdotool wmctrl libinput-tools python3 python3-setuptools python3-gi python-gobject python3-pip build-essential git 
+# Install/Update
+if [ -d libinput-gestures ]; then
+	rm -r libinput-gestures 
+fi
+echo "[Gestures] Downloading libinput-gestures from GitHub..."
+git clone https://github.com/bulletmark/libinput-gestures.git
+cd libinput-gestures
+make install
+cd ..
+echo "[Gestures] libinput-gestures installed"
+#
+# Install Gestures - https://gitlab.com/cunidev/gestures
+#
+# Install 
+if [ -d gestures ]; then
+	rm -r gestures 
+fi
+echo "[Gestures] Downloading Gestures from GitLab..."
+git clone https://gitlab.com/cunidev/gestures
+cd gestures
+python3 setup.py install
+# Cleanup
+cd ..
+rm -r gestures 
+rm -r libinput-gestures 
+echo "[Gestures] Gestures installation complete"
+# Autostart libinput-gestures at boot and start now for current user
+su $SUDO_USER libinput-gestures-setup stop
+su $SUDO_USER libinput-gestures-setup autostart
+su $SUDO_USER libinput-gestures-setup start
+echo "[Gestures] libinput-gestures started for $SUDO_USER"
+# Autostart Gestures 
+cp /usr/share/applications/org.cunidev.gestures.desktop /home/$SUDO_USER/.config/autostart/
+sed -i 's/=gestures/=gestures\&/g' /home/$SUDO_USER/.config/autostart/org.cunidev.gestures.desktop
+chown $SUDO_USER:$SUDO_USER /home/$SUDO_USER/.config/autostart/org.cunidev.gestures.desktop
+echo
+echo "[Gestures] Reboot to complete the installation"
+```
+解决无法支持三指和四指的遗憾.
 
 
 ## 亮度异常

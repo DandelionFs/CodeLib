@@ -1,3 +1,29 @@
+## PREFACE
+
+Gedit Namo Vim Vi
+1. https://developer.aliyun.com/article/309383
+2. https://ubuntuqa.com/zh-tw/article/1230.html
+
+linux下有很多文本编辑器，其中系统都会自带nano和vi这两个最基本的编辑器。
+
++ Nnno非常適合編輯配置文件，但是如果要進行編程，最好使用Vim或Emacs。 Nano支持突出顯示。但這是非常主觀的。
+
++ vi是老式的文字处理器，功能已经很齐全。不管好不好用，既然大家这么推崇，肯定有他的好处，我们先学习了肯定不会有坏处。vi使用于文本编辑，但是vim更适用于coding。
+
++ vim是vim 的升级版, Vim是模態的意思是每個鍵在不同的模式中意味著不同的東西。
+  + 多级撤消 : vi里按 u只能撤消上次命令
+  + 易用性: 运行于unix,windows ,mac等操作平台
+  + 语法加亮: vim可以用不同的颜色来加亮你的代码。
+  + 可视化操作: 即vim不仅可以在终端运行，也可以运行于x window、 mac os、 windows。
+  + 对vi的完全兼容: 某些情况下，你可以把vim当成vi来使用。
+
++ Geany 有很好的功能，內置終端窗口非常好。我將它用於大多數編程項目。
+
++ Gedit 是图形化的编辑程序, 学习成本低, 簡單輕巧，但你必須安裝一堆插件才能趕上Geany的普通內置功能，比如代碼折疊等。而Geany插件將為您提供額外的功能，如版本控製集成，可選和non-intrusive項目管理，在功能定義和聲明等之間跳轉。而Geany中可用的可配置鍵綁定允許您幾乎完全按照自己的喜好進行設置 – 盡管默認值也很不錯。 Gedit可以捆綁Python解釋器，但是Geany捆綁了整個虛擬終端。
+
++ Emacs 具有語法突出顯示並支持擴展, 並且可以通過其嵌入的Lisp(elisp)方言進行擴展。它還具有許多統計程序的模式，支持tex，日曆，郵件閱讀實用程序，俄羅斯方塊甚至精神科醫生。 Emacs(或Vim，但對於統計數據不太好)值得學習，因為它們都是跨平台的，並且支持世界上幾乎所有的編程語言。
+
+
 ## Change Vim/Vim-gtk
 
 [LINK] : https://askubuntu.com/questions/1208159/how-do-i-install-vim-gnome-on-ubuntu-19-10
