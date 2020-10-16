@@ -1,7 +1,7 @@
 ## PREFACE
 > “Talk is cheap. Show me the code.”   --Linus Torvalds
 
-A self usage code lib, which displays data i've seen or used. I wanna use it lightly everywhere I worked, so except for little size imgs,  i shouldn't push any big files to here, such as mp3, mp4, xmind, word, excel, ppt, etc.
+A self-using code lib, which displays data i've seen or used. I wanna use it lightly everywhere I worked(so other name called blog! \^_\^).Thus, except for little size imgs,  i shouldn't push any big files to here, such as `mp3`, `mp4`, `xmind`, `word`, `excel`, `ppt`, etc.
 
 So, Here we go !!!
 
