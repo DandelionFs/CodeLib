@@ -181,6 +181,9 @@ pip intssll jupyter
 2. 修改 JavaScript 验证: https://blog.csdn.net/qq_38774121/article/details/100123956
 
 
+
+记得区设置里面把代理选项勾上
+
 ## 参考资料
 
 [1]. VSCode Docs: https://code.visualstudio.com/docs
