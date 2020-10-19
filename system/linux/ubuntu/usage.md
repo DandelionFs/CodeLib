@@ -168,6 +168,16 @@ To Be Continued......
 
 [More] -> https://zhuanlan.zhihu.com/p/139305626
 
+
+## ORDER
+### AR
+**[LINK]**: https://baike.baidu.com/item/ar/7426017
+
+用于创建、修改备存文件（archive），或从备存文件中提取成员文件。ar命令最常见的用法是将目标文件打包为静态链接库。
+
+压缩的复杂命令可以用SHELL 来简化.
+
+
 ## TRASH SOTWARE
 ### 福昕阅读 & Okular
 地址: https://www.foxitsoftware.cn/pdf-reader/
