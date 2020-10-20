@@ -1,13 +1,10 @@
 ---
-title: '[Proxy] Scienctific Net'
 date: 2020-06-14 00:20:00
-toc: true
 ---
 
-### Preface
-
-**一些机场:**[^1]
-
+## PREFACE
+**机场:**
+- **[Link](https://10101.io/2019/10/27/internet-provider)**
 + [CCCAT](//cccat.io)
 + [召唤师](//zhs.today/auth/register?code=ILoveMask)
 + [蓝岸](//my.v2fly.club/#/register?code=1bzRvUqk)
@@ -20,11 +17,18 @@ toc: true
 + [YTOO](//ytoo.li/clientarea.php)
 + [魅影](//maying.co)
 
-**VPS脚本** [^2][^3] [^4] [^5] [^6] 
+**VPS脚本** 
+- **[LINK]**
+  - https://teddysun.com
+  - https://doub.io
+  - https://www.oldking.net
+  - https://github.com/tcp-nanqinlang
+  - https://v2ray666.com
 + VPS综合性能测试脚本
-  + [Bench.sh](//teddysun.com/444.html)[^7]
+  + [Bench.sh](//teddysun.com/444.html)
     ```bash
     wget -qO- bench.sh | bash
+    # https://github.com/oooldking/script/blob/master/superbench.sh
     ```
   + [SuperBench.sh](//www.oldking.net/350.html)
     
@@ -91,19 +95,28 @@ toc: true
   wget https://raw.githubusercontent.com/iiiiiii1/tcp_nanqinlang-test/master/tcp_nanqinlang-test.sh
   bash tcp_nanqinlang-test.sh
   ```
-<br>
 
-### Noun
+## NOUN & PROBLEMS
+### NOUN
+- IPLC: IPLC是国际线路 ( International Private Leased Circuit )，即国际私有租赁线路.延迟低&速度快 专线延迟可低至25ms, 甚至低于日本CN2线路不用担心IP不可用: 真正意义上的IPLC是完全内网通讯, 流量不像普通VPS经过某些审查; 三大运营商是付费网间结算，暂时没有免费对等互联。要中继的原因一部分是三大国际出口网络质量不一样，一部分是小运营商几乎没啥国际出口，所以要借助其他表现好的。
+- 中继节点: 中继分公网中继/专线传输。公网就是还走三大统一出国，专线是国内国外两头内网传输。用户——中继入口服务器——中继服务器2——中继服务器N——落地服务器——用户访问的网站用户直接通过代理协议（ss、v2等），通过公网与中继入口服务器进行通讯。一般情况下中继入口是放在国内的，中继的入口到落地之间穿越防火墙的这一段一般会使用一些隧道协议，以实现负载均衡、高可用、防止被墙等效果。当然也有一些用单纯的端口转发过墙传输数据的，这种情况比较容易被墙。中继入口也有可能会通过IPLC/IEPL等专线出国，这种情况下连只需进行端口转发也不会被墙。
+- 隧道
+- 透明代理: 
+- 代理的不同平台:
+  - armv6、armv7、armv7s、armv8、armv64 : 简而言之 armv8 == arm64/aarch64 是我自己手机使用的型号.
+  - i386	x86_64	i386|x86_64	是电脑的型号.
+  - 详见: https://blog.csdn.net/tony_vip/article/details/105889734
+  - https://blog.csdn.net/u012505617/article/details/89205642
+  - https://www.zhihu.com/question/63627218
 
+### PROBLEMS
+- **[201020]** CFM 无法使用中转换节点--测速失败. 怀疑是内核的问题, 未找到问题. 
 
-+ IPLC: IPLC是国际线路 ( International Private Leased Circuit )，即国际私有租赁线路.延迟低&速度快 专线延迟可低至25ms, 甚至低于日本CN2线路不用担心IP不可用: 真正意义上的IPLC是完全内网通讯, 流量不像普通VPS经过某些审查; 三大运营商是付费网间结算，暂时没有免费对等互联。要中继的原因一部分是三大国际出口网络质量不一样，一部分是小运营商几乎没啥国际出口，所以要借助其他表现好的。
+### SS
 
-+ 中继节点: 中继分公网中继/专线传输。公网就是还走三大统一出国，专线是国内国外两头内网传输。用户——中继入口服务器——中继服务器2——中继服务器N——落地服务器——用户访问的网站用户直接通过代理协议（ss、v2等），通过公网与中继入口服务器进行通讯。一般情况下中继入口是放在国内的，中继的入口到落地之间穿越防火墙的这一段一般会使用一些隧道协议，以实现负载均衡、高可用、防止被墙等效果。当然也有一些用单纯的端口转发过墙传输数据的，这种情况比较容易被墙。中继入口也有可能会通过IPLC/IEPL等专线出国，这种情况下连只需进行端口转发也不会被墙。
-
-+ 隧道
-
-
-### SS[^8] [^9]
+**[LINK]**
+1. https://233v2.com/
+2. https://vpsland.xyz/
 
 + [Shadowsocks脚本](https://teddysun.com/486.html)
 
@@ -115,22 +128,16 @@ chmod +x shadowsocks-all.sh
 # 配置文件：/etc/shadowsocks-libev/config.json
 ```
 
-纪念大佬@clowwindy
-
-[Ori]：https://printempw.github.io/about-clowwindy-archive/
+[纪念酸酸乳大佬](https://printempw.github.io/about-clowwindy-archive/) [@clowwindy](https://github.com/shadowsocks/shadowsocks-iOS/issues/124)
 
 > Two days ago the police came to me and wanted me to stop working on  this. Today they asked me to delete all the code from GitHub. I have no  choice but to obey.
 >
 > I hope one day I’ll live in a country where I have freedom to write any code I like without fearing.
 >
 > I believe you guys will make great stuff with Network Extensions.
->
-> Cheers!
->
-> from: https://github.com/shadowsocks/shadowsocks-iOS/issues/124
 
-<br>
 
+## PROTOCOLS
 ### SSR
 
 + [ShadowsocksR脚本](https://doub.io/ss-jc42/)
@@ -167,7 +174,6 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/WithdewHua/doub
 #配置文件：/etc/shadowsocksr/user-config.json
 ```
 
-
 ### V2ray
 
 + [V2Ray脚本](https://v2ray666.com/post/1/)
@@ -200,33 +206,37 @@ v2ray update.sh#更新V2Ray管理脚本
 v2ray uninstall#卸载V2Ray
 #配置文件：/etc/v2ray/config.json
 ```
-<br>
 
-### Clash [^10]
+## [CLASH](https://docs.cfw.lbyczf.com/)
 
-`Clash`是一款用`Go`开发的支持多平台的代理工具，支持`ss`/`v2ray`/`snell`（不支持`ssr`），支持规则分流（类似于 Surge 的配置）。
+> 一款用`Go`开发的支持多平台的代理工具，支持`ss`/`v2ray`/`snell`（不支持`ssr`），支持规则分流（类似于 Surge 的配置）。
 + Clash: https://github.com/Dreamacro/clash
 + ClashX For Mac: https://github.com/yichengchen/clashX/
-+ Clash for Windows By [Fndroid](https://github.com/Fndroid): https://github.com/Fndroid/clash_for_windows_pkg
++ [Clash For Windows](https://github.com/Fndroid/clash_for_windows_pkg) By [Fndroid](https://github.com/Fndroid)
++ Clash For Android
++ Clash For Magisk
 
-**[Tip]**：
 
-+ 了解策略组、规则等等（特别是没有托管需要自己编辑配置文件的用户，如 [神机规则](https://github.com/ConnersHua/Profiles/blob/master/Clash/Pro.yaml)；同时推荐看下 Fndroid 大佬的[关于策略组的理解](https://github.com/Fndroid/jsbox_script/wiki/关于策略组的理解)；掌握了策略分流的概念后，Clash、Quantumult、Surge、Surfboard 等工具的使用也能更清晰明白了。
-+ 如果想要使用便携模式（如将`.7z`解压至移动硬盘、U盘等），需将`config.yml`和[Country.mmdb](https://asset.10101.io/externalLinksController/chain/Country.mmdb?ckey=8hY08nReECvarf4iCbIHXFlx80mL43thUQmjf6KnKh512UdFMDeEn%2BH5I%2BkJOnl%2F)放置在软件目录下`resources/static/files`文件夹中。
-+ 可点击`General`页面的`Clash for Windows`字样重启客户端，点击旁边的版本号可以检查更新，点击小猫咪可以开启暗黑模式；
-+ `General`页面的信息只能通过修改`C:\Users\用户名\.config\clash\config.yml`来更改，即`profiles`中的配置文件内包含的 General 信息不会生效；
-+ 若不想启用系统代理的话，需要自己配置 http 或 socks5 代理，具体端口信息可以在`General`页面找到；
-+ 当 Surge 托管链接的`URL参数`在两个及以上(由`&`连接)的话，请先对托管连接进行 [URL 编码](http://tool.chinaz.com/tools/urlencode.aspx)；
-图标状态显示：蓝色——默认；红色——核心启动失败；黄色——系统代理开启；
+### USAGE
+- **策略组、规则**
+  - [神机规则](https://github.com/ConnersHua/Profiles/blob/master/Clash/Pro.yaml)
+  - Fndroid 大佬的[关于策略组的理解](https://github.com/Fndroid/jsbox_script/wiki/关于策略组的理解)
+  - 当 Surge 托管链接的`URL参数`在两个及以上(由`&`连接)的话，请先对托管连接进行 [URL 编码](http://tool.chinaz.com/tools/urlencode.aspx)；
+  - Clash、Quantumult、Surge、Surfboard 等工具
+-  便携(必要)模式: 将`config.yml`和`Country.mmdb`放置在软件目录下`resources/static/files`文件夹中。
+- 若不想系统代理，需要自己配置 http 或 socks5 代理，具体端口信息可以在`General`页面找到；
+
+
+
+### CLASH FOR WINDOW
 + `v0.4.5`版本后可以自定义系统代理需要绕过的域名或 IP ，用于解决部分应用检测代理后拒绝响应的问题（如 UWP 版网易云音乐）。具体编写方法见[官方文档——绕过系统代理](https://docs.cfw.lbyczf.com/contents/bypass.html)；（建议在`C:\Users\用户名\.config\clash\config.yml`中修改，这样可以在不同的配置文件中都起到作用）
 + 如果需要 UWP 应用走系统代理的话，可以点击打开`General`页面的`EnableLoopback.exe`，然后勾选需要代理的应用后保存；对于少数不遵守系统代理的 UWP 应用，可以使用 Tap 模式(详见 [TAP 模式](https://docs.cfw.lbyczf.com/contents/tap.html))
 
 
-
-
-#### Clash for Windows 界面简介
-
+- 图标状态显示：蓝色——默认；红色——核心启动失败；黄色——系统代理开启；
 - `General（常规）`：
+  - 可点击`General`页面的`Clash for Windows`字样重启客户端，点击旁边的版本号可以检查更新，点击小猫咪可以开启暗黑模式；
+  -  `General`页面的信息只能通过修改`C:\Users\用户名\.config\clash\config.yml`来更改，即`profiles`中的配置文件内包含的 General 信息不会生效；
   - `Port`、`Socks Port`；分别为 HTTP、SOCKS 代理端口，点击终端图案可以打开一个配置了代理的命令行窗口，点击端口数字可以复制该命令；
   - `Allow LAN`：启用局域网共享代理功能，此开关仅为短暂开启，如需启用请在修改配置文件中进行修改；‘
   - `Log Level`：日志等级；
@@ -246,17 +256,11 @@ v2ray uninstall#卸载V2Ray
 - `Connections (连接)`: 显示当前的 TCP 连接，可对某个具体连接执行关闭操作；
 - `Feedback（反馈）`：显示软件、作者相关信息，内含捐赠码，欢迎打赏[Fndroid](https://github.com/Fndroid)
 
-<br>
-
 #### 添加配置文件
-
 有托管 / 订阅情况
-
 - 如果机场直接提供 Clash 托管配置，复制好托管链接，下一步;
 - 如果拥有 Surge 托管，可以使用大佬提供的接口转换 Surge 配置为 Clash 可用配置。  
   **接口使用方法**：`https://tgbot.lbyczf.com/surge2clash?url=Surge托管地址`；例：托管地址为`http://example.com`, 那么使用接口后的远端配置地址为`https://tgbot.lbyczf.com/surge2clash?url=http://example.com`。
-
-<br>
 
 #### 具体步骤
 
@@ -296,8 +300,8 @@ v2ray uninstall#卸载V2Ray
 - 可以直接拖拽`yml`格式的配置文件到`Profiles`面板中快速导入，详见操作示例（来自 Fndroid 大佬的 [GitHub](https://github.com/Fndroid/clash_for_windows_pkg)
 
 + 方法三：利用 JSBox 脚本
-
-iOS 用户可以利用大佬的 [JSBox](https://itunes.apple.com/us/app/jsbox-learn-to-code/id1312014438?mt=8) 脚本—— [lhie1 规则生成](https://xteko.com/install?id=77&lang=zh-Hans)——添加节点，然后将脚本目录下的`data.js`发送给托管机器人 [rules_lhie1_bot](https://telegram.me/rules_lhie1_bot)即可获取 Surge 托管链接，再按照以上[有托管 / 订阅链接情况](https://10101.io/2018/10/27/how-to-use-clash-for-windows#有托管+%2f+订阅情况)操作。[^11]
+  [LINK](https://github.com/tindy2013/subconverter/blob/master/README-cn.md)
+  iOS 用户可以利用大佬的 [JSBox](https://itunes.apple.com/us/app/jsbox-learn-to-code/id1312014438?mt=8) 脚本—— [lhie1 规则生成](https://xteko.com/install?id=77&lang=zh-Hans)——添加节点，然后将脚本目录下的`data.js`发送给托管机器人 [rules_lhie1_bot](https://telegram.me/rules_lhie1_bot)即可获取 Surge 托管链接，再按照以上[有托管 / 订阅链接情况](https://10101.io/2018/10/27/how-to-use-clash-for-windows#有托管+%2f+订阅情况)操作。
 
 #### 自定义字段
 
@@ -324,25 +328,34 @@ iOS 用户可以利用大佬的 [JSBox](https://itunes.apple.com/us/app/jsbox-le
 日志（点击左下角核心状态显示可直达 log 文件夹）: `C:\Users\用户名\.config\clash\logs`
 
 - `Can't load mmdb: error opening database: invalid MaxMind DB file`错误。  
-     **解决办法**：自行下载 [Country.mmdb](https://asset.10101.io/externalLinksController/chain/Country.mmdb?ckey=8hY08nReECvarf4iCbIHXFlx80mL43thUQmjf6KnKh512UdFMDeEn%2BH5I%2BkJOnl%2F)
+     **解决办法**：自行下载 Country.mmdb
 - 拨号连接用户IE代理正常，其他浏览器系统代理无法使用。
      **解决办法**：重命名拨号连接，将中文名更改为英文名字，然后重启。
 - 打开 Profiles 界面空白无内容
      **解决办法**：打开 Home Directory，删除文件夹下所有内容后重启软件。
 
-<br><br><br>
+### CLASH FOR LINK/ANDROID/MAGISK
 
-### Reference:
+因为 LINUX 和 CFM 上使用的是`CLASH`核心, 所以遇到的情况都大同小异, 总结一下:
+- 配置文件有问题
+  - 变量的大小写问题
+  - 变量的端口的有无
+  - 映射端口是否对应
+  - 值得吐槽的是`Win`&`Linux`的文件在机场主是区别对待的, 或者说对使用者的门槛更高.
+- 命令行`./clash -d .` 和`./clash` 的效果不一致.
+- 开了系统代理但是没有打开`Clash`
+- 开了`Clash`没有开启系统代理
+- 套餐过期
+- 场主起飞
+......
 
+日常的检修记录如下:
 
-[^1]:https://10101.io/2019/10/27/internet-provider
-[^2]:https://teddysun.com
-[^3]:https://doub.io
-[^4]:https://www.oldking.net
-[^5]:https://github.com/tcp-nanqinlang
-[^6]:https://v2ray666.com
-[^7]:https://github.com/oooldking/script/blob/master/superbench.sh
-[^8]:https://233v2.com/
-[^9]:https://vpsland.xyz/
-[^10]:https://docs.cfw.lbyczf.com/
-[^11]:https://github.com/tindy2013/subconverter/blob/master/README-cn.md
+1. 关闭系统代理端口转发后打开`clash.razord.top/#/settings`.
+2. 执行Clash, 发现此页面会刷新. 表示 Clash 的外部映射端口几次场子的配置问题没有问题. 
+3. 选择节点, 开启代理, 进行测试.
+
+之前启示还用的好好的, 可以开机傻瓜的代理. 但是某一天就不可以用了. 可能是自己的Ubuntu又改了什么设置而我没有发现吧......
+
+尝试傻瓜代理, to be continued.
+
