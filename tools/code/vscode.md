@@ -1,6 +1,6 @@
-<center><font size =2 color=grey >2020-07-06 18:50:00</font></center>
-
-## VSCode
+---
+date: 2020-07-06 18:50:00
+---
 
 > Any application that can be written in JavaScript, will eventually be written in JavaScript
 >
@@ -10,10 +10,65 @@
 
 自带 TypeScript 和 JavaScript 提示, MIT开源.
 
-<br><br>
+[LINK] :
+1. https://code.visualstudio.com/docs
+   1. https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+   2. https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf 
+2. https://juejin.im/post/5cb87c6e6fb9a068a03af93a
+
+
+## Plugin
+- **Theme:** 
+  - Atom One Light/Dark
+  - Materoal icon theme
+  - Panda Theme
+  - Community Material Theme
+- **Font:** 
+  - 首选等宽字体
+  - **https://github.com/abertsch/Menlo-for-Powerline**
+- Markdown
+  - Markdownlint
+  - Markdown Preview Enhanced
+- Python
+  - Python
+  ```python
+  pip install yapf # “python.formatting.provider”
+  pip intssll jupyter
+  ```
+- C++
+  - C/C++
+  - Visual Studio IntelliCode
+  - environment config:  https://zhuanlan.zhihu.com/p/87864677
+- Java
+  - Beautify：代码高亮
+  - Terminal：直接唤起终端
+  - Project Manager：多个项目切换
+  - Auto Close Tag：标签自动闭合（其实我觉得可以内置的）
+- HTML
+  - Svg viver
+  - VS Color Picker
+  - Regex Previewer
+  - Quokka.js
+  - Open in Browser
+  - Liver Sever
+  - Html Snippets
+  - HTML Boilerplate
+  - CSS Peek
+  - color info
+  - Code runner
+  - Auto Close Tag
+
+## Tips
+### Proxy
+
+- 勾选设置里面把代理选项.
+- 无法在只读文本中编辑
+  - [在终端编译](https://blog.csdn.net/weixin_41594045/article/details/86568571)
+  - [修改 JavaScript](https://blog.csdn.net/qq_38774121/article/details/100123956)  
+- [上下拆分窗口](https://jingyan.baidu.com/article/a948d6511f93c70a2ccd2e49.html): View->Editor Layout
+
 
 ## ShortCut
-
 | Mac 快捷键          | Win 快捷键               | 作用                                          | 备注                 |
 | :------------------ | :----------------------- | :-------------------------------------------- | :------------------- |
 | **Cmd + Shift + P** | **Ctrl + Shift + P**，F1 | 显示命令面板                                  |                      |
@@ -115,79 +170,3 @@
 按住快捷键「Cmd + Shift + P」，弹出命令面板，在命令面板中输入“快捷键”，可以进入快捷键的设置。
 
 当然，你也可以选择菜单栏「偏好设置 --> 键盘快捷方式」，进入快捷键的设置：
-
-## Plugin
-
-**[Theme] :** Community Material Theme
-
-**[Font] :** **https://github.com/abertsch/Menlo-for-Powerline**
-
-### Markdown
-
-1. Markdownlint
-2. Markdown Preview Enhanced
-
-### Python
-
-1. Python
-
-```python
-pip install yapf # “python.formatting.provider”
-pip intssll jupyter
-# ......
-```
-### C++
-
-1. C/C++
-2. Visual Studio IntelliCode
-
-### Java
-
-1. Beautify：代码高亮
-2. Terminal：直接唤起终端
-3. Project Manager：多个项目切换
-4. Auto Close Tag：标签自动闭合（其实我觉得可以内置的）
-
-### Front-End
-
-1. Svg viver
-2. VS Color Picker
-3. Regex Previewer
-4. Quokka.js
-5. Open in Browser
-6. Liver Sever
-7. Html Snippets
-8. HTML Boilerplate
-9. CSS Peek
-10. color info
-11. Code runner
-12. Auto Close Tag
-
-## Config
-
-### Cpp
-
-#### 配置
-
-[来源] : https://zhuanlan.zhihu.com/p/87864677
-
-## Bugs
-
-### 无法在只读文本中编辑
-
-[解决方案] :
-
-1. 在终端编译: https://blog.csdn.net/weixin_41594045/article/details/86568571
-2. 修改 JavaScript 验证: https://blog.csdn.net/qq_38774121/article/details/100123956
-
-
-
-记得区设置里面把代理选项勾上
-
-## 参考资料
-
-[1]. VSCode Docs: https://code.visualstudio.com/docs
-[2]. VSCode ShortCUt For Window: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
-[3].VSCode ShortCut For Linux: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf 
-[4]. https://juejin.im/post/5cb87c6e6fb9a068a03af93a
-
