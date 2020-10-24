@@ -1,6 +1,7 @@
 ---
 date: 2020-07-06 18:50:00
 ---
+# VSCode
 
 > Any application that can be written in JavaScript, will eventually be written in JavaScript
 >
