@@ -1,7 +1,7 @@
 ## PREFACE
 > “Talk is cheap. Show me the code.”   --Linus Torvalds
 
-Hello, I'm a Student of IMU, in Inner Mogolia. This is a self-using code lib, which displays data(knowledge) and mind i've seen or used. I wanna use it lightly everywhere I worked(so other name called blog! \^_\^).Thus, except for little size imgs,  i shouldn't push any big files to here, such as `mp3`, `mp4`, `xmind`, `word`, `excel`, `ppt`, etc.
+Hello, I'm a student frome IMU, borned in Inner Mogolia. This is a self-using code lib, which displays data(knowledge) and mind i've seen or used. I wanna use it lightly everywhere I worked(so other name called blog! \^_\^).Thus, except for little size imgs,  I   shouldn't push any big files to here, such as `mp3`, `mp4`, `xmind`, `word`, `excel`, `ppt`, etc.
 
 So, Here we go !!!
 
@@ -87,5 +87,7 @@ $ tree -d
 ```
 
 ## EXPERIENCE
-- Always write `#` is a good habits, which could do a lot in search function.
-- Dont use phone in a long time one day, especially maintain 5 hours, cause phone would waste much of time in interaction. In most cases, button is enough and effective. 
+- Always write `#` is a good habits, which could play roles in searching function.
+- Don't use phone in a long time once, especially maintain 5 mins/once 5 hours/day, cause phone would waste much of time in interaction. In most cases, button is enough and effcient.
+- Things using heart would be effcient. Such as I put my heart in writting and creating, thus that would be interactive friendly, which is clear in limitation of each thing and ecouraging me to do better than the moment now.
+
