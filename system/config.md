@@ -29,6 +29,7 @@ date: 2020-02-05 04:22:00
   - [Netease Music](https://music.163.com/#/download)
   - QQ Music
     - https://github.com/gorquan/QQMusic
+    - https://www.linzhuotech.com/
 - **Editor/Works**
   - Typora
   - [VsCode](https://code.visualstudio.com/Download)
