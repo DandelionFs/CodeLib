@@ -4,12 +4,65 @@
 Vim 的设置文件不会自动保存设置文件, 所以需要自己写.
 
 ```shell
-
+"===========================
+"  文件设置
+"===========================
+set encoding=utf-8
+set termencoding=utf-8
+set fileencoding=utf-8
+set fileencodings=ucs-bom,utf-8,chinese,cp936
+"解决菜单乱码
+source $VIMRUNTIME/delmenu.vim
+source $VIMRUNTIME/menu.vim
+set autoread         "设置当文件在外部被修改，自动更新该文件
+"vim提示信息乱码的解决
+language messages zh_CN.utf-8
+set nobackup        " 不要备份
+set noundofile      " 不生成undo文件
+set nowritebackup
+set nowrap
+colorscheme elflord " 颜色主题
+set nu          " 显示行号
+set history=500     " 保留历史记录
+set backspace=2     " 退格键可用
+"===========================
+" 插件设置
+"===========================
+call plug#begin( '$VIMRUNTIME/plugged' )
+Plug 'vim-airline/vim-airline'
+Plug 'zxqfl/tabnine-vim'
+call plug#end()
+"===========================
+"代码设置
+"===========================
+syntax enable "打开语法高亮
+syntax on "打开语法高亮
+set showmatch "设置匹配模式，相当于括号匹配
+set smartindent "智能对齐
+filetype on
+filetype plugin indent on
+"===========================
+"查找/替换相关的设置
+"===========================
+set hlsearch "高亮显示查找结果
+set incsearch "增量查找
 ```
 
 ### MORE
+- **复制**: `y`
+  - `n+yy`    复制n行
+  - `yy`   复制当前光标行整行内容
+- **粘贴**: `p`
+- **删除** `d`
+  - `行数+两次d`: 可删除从当前行+n行的数据
+- **撤回**: `u`
 - **减少行换行**: `Shief+J`
-- **全选** `ggvG`/`ggVG`: 其中 `gg`是让光标移到首行**[vim特有]**, `v/V`切换到可视化(Visual), `G`则移到最后一行, `d`是删除(剪切), `y`是复制. 另外, 关于Vim下只可以粘贴50行的Bug, VSCode并没有遇到.摘录网上的解释
+- **当前行新起一空行且进入插入模式**: o
+- **全选** `ggvG`/`ggVG`: 其中 `gg`是让光标移到首行 **[vim特有]**, 
+  - `v/V`切换到可视化(Visual),
+  - `G`则移到最后一行`:$`
+  - `d`是删除(剪切)
+  - `y`是复制
   - https://blog.csdn.net/dadoneo/article/details/6003415
   - https://blog.csdn.net/u012948976/article/details/50493431
   > vim中默认有多个寄存器(粘贴板)，其中使用命令y和p是将内容复制粘贴到vim内部剪切板中，即意味着不能用到其他程序中。但是 `“*` 和 `“+` 这两个寄存器与系统相通, 可以将vim中的内容复制到其他程序中.
@@ -25,6 +78,8 @@ Vim 的设置文件不会自动保存设置文件, 所以需要自己写.
 
 ## SHORTCUTS
 [LINK] :https://blog.csdn.net/HappyCodeFly/article/details/86684827
+
+### Insert
 
 |操作|效果|
 |---|---|

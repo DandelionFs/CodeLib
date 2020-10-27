@@ -30,37 +30,34 @@ date: 2020-02-05 04:22:00
   - QQ Music
     - https://github.com/gorquan/QQMusic
     - https://www.linzhuotech.com/
-- **Editor/Works**
-  - Typora
-  - [VsCode](https://code.visualstudio.com/Download)
-  - Vim
-  - Chrome
+- **Works**
   - [WPS](https://linux.wps.cn/)
-  - [BaidunetDisk](https://pan.baidu.com/download)
+  - [BaidunetDisk-百度网盘](https://pan.baidu.com/download)
   - [XMind](https://www.xmind.net/) + 果壳
   - Master Reader
     - [Shortcuts](https://code-industry.net/masterpdfeditor-help/keyboard_shortcuts/)
   - Cailbre
-  - Audacity
-  - [GitKaken](https://www.gitkraken.com/)
-  - JetBrains
-    - Clion
-    - Pycharm
-  - **Clash**
+  - [Audacity](https://audacity.org)  
   - Darktable
   - GIMP
   - OBS
   - TeamViewer
   - Mypainter
   - Krita
-  - **Build Soteware**:
-    - 坚果云
-    - GoldenDict
-    - Mircosoft To Do
-    - FluentRSS
-    - Ao
-    - Flowchar
-    - Bookworn
+- **Proxy**
+  - **Clash**
+    - Clash For Android
+    - Clash For Magisk / Linux
+    - Clash For Window
+- Tools For Beaytifying
+- **Build Soteware**:
+  - 坚果云
+  - GoldenDict
+  - Mircosoft To Do
+  - FluentRSS
+  - Ao
+  - Flowchar
+  - Bookworn
 - **Chat**
   - QQ
   - Wechat
@@ -70,17 +67,43 @@ date: 2020-02-05 04:22:00
   - Blueman: 蓝牙管理器
   - Dconf: 系统编辑器
   - Flameshot: 截图助手
+  - **V16config**：https://wwa.lanzous.com/icv18ob
+  - **Pondoc输入法词库Bin转换**：https://wwa.lanzous.com/ibsjp2f
+  - **搜狗输入法简化版**：https://wwa.lanzous.com/ibsjy8f
+  - **黑科下载器**：https://wwa.lanzous.com/ibsjyhe
+  - **Fliqlo 屏保**：https://wwa.lanzous.com/ibsjzha
+  - **Bandica 录屏**：https://wwa.lanzous.com/ibsjzjc
+  - **Acill_generator**:https://wwa.lanzous.com/ibsk9zi
+  - **Rockdock**：https://wwa.lanzous.com/iaD3Wdbvvij
 - **Play**
   - Steam
     - Proxychains
   - Uplay
+- Code
+  - [GitKaken](https://www.gitkraken.com/)
+  - **JetBrains**
+    - Clion
+    - Pycharm
+  - **Typora** / MarkEditor
+    - [Pandoc](https://github.com/jgm/pandoc/releases)
+  - [VsCode](https://code.visualstudio.com/Download)
+  - **Dev-Cpp**：https://wwa.lanzous.com/ifYm8diuo1g
+  - **Vim / GVim-for-gtk**
+  - **BvSSH**:
+    - https://wwa.lanzous.com/ibsksbi
+    - https://www.bitvise.com/ssh-client-download
 
+## IMG HOSTS
+[图床](https://zhuanlan.zhihu.com/p/35270383)
++ [堆爱图床](//img.duiai.cc/tc/)
++ [SM.MS图床](//sm.ms/)
++ [聚合图床](//www.superbed.cn)
++ [堆爱图床](//img.duiai.cc/tc/)
 
 ### FCITX-PINYIN
 **[LINK]**: https://www.zhihu.com/question/20432630/answer/161256076
 
 可使用插件实现云输入
-
 ```bash
 sudo apt install language-pack-zh-hans
 sudo apt-get install fcitx-googlepinyin
@@ -214,7 +237,7 @@ https://emojipedia.org/search/?q=%s&utm_source=opensearch
 + **Vimium**
 
 
-### Typera
+### Typora
 
 页边距：相关主题下的CSS里面搜索`write`找到`max-width`就是显示的页边距，自行调整
 
@@ -224,16 +247,16 @@ wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
 sudo add-apt-repository 'deb https://typora.io/linux ./' && sudo apt update && sudo apt install typora
 ```
 
-### Gmail & Outlook
-众多邮箱手机客户端可以丝滑登录Google以及代收邮件，电脑端169收费。
-
-> 据我们的技术说，gmail被屏蔽了，但是仍有一部分地址是漏网之鱼，可以通过这些地址来接收到墙外的邮件。因为只有少部分地址是可以用的，所以你们看现在号称能够接收gmail的客户端，大多都是手机的app，不开放电脑端是因为无法承受大流量的接入，会过载。
-
-### Word To MD[^2]
+### Word To MD
 **[LINK]** https://www.zhihu.com/question/24170089
 +  在线工具：https://word2md.com/
    + 项目[源码](https://github.com/benbalter/word-to-markdown).
 + [Writage](http://www.writage.com/)插件
+
+### Gmail & Outlook
+众多邮箱手机客户端可以丝滑登录Google以及代收邮件，电脑端169收费。
+
+> 据我们的技术说，gmail被屏蔽了，但是仍有一部分地址是漏网之鱼，可以通过这些地址来接收到墙外的邮件。因为只有少部分地址是可以用的，所以你们看现在号称能够接收gmail的客户端，大多都是手机的app，不开放电脑端是因为无法承受大流量的接入，会过载。
 
 
 ### Deepin QQ && Deepin Wechat
@@ -254,8 +277,6 @@ sudo wget "https://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.qq.im/de
 # Tim
 sudo wget "https://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.qq.office/deepin.com.qq.office_2.0.0deepin4_i386.deb" && sudo dpkg -i *qq.office*deb
 ```
-
-
 
 #### QQ Image Question
 - 禁用IPV6......
