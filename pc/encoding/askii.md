@@ -1,5 +1,9 @@
 # ASKII
 
+![](pc/encoding/img/ascii_table_lge.png)
+
+![](pc/encoding/img/askii_code.gif)
+
 控制字符（ Control Character）或者功能码（Function Code）。
 
 | 二进制   | 十进制 | 十六进制 | 缩写/字符                                    | 解释                               |
