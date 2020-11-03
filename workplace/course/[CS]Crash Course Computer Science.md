@@ -371,7 +371,33 @@ Atlas通过调度解决可以在一个CPU上运行多个程序，在单个CPU上
 
 ### 0x1b Internet
 
-
+- 第一个计算机网络出现在1950~1960年代
+- **"球鞋网络"**(sneakernet): 非正式的术语，用于通过在计算机之间物理移动介质（例如磁带，软盘，光盘，USB闪存驱动器或外部硬盘驱动器）来传输电子信息，而不是通过计算机网络进行传输.
+- **LAN**
+  - 最著名和成功的是"以太网", 
+  - 开发于1970年代
+  - "帕洛阿尔托研究中心"诞生
+- **MAC(Media Access Control address)**
+  - 这个唯一的地址放在头部，作为数据的前缀发送到网络中
+  - **监听以太网电缆**, 只有看到自己的 MAC 地址，才处理数据
+- **载波侦听多路访问(Carrier Sense Multiple Access, or CSMA)**: 很多计算机同时侦听载体
+- 载体传输数据的速度 叫"带宽"
+- **指数退避(Exponential Backoff)**: 遇到错误: 会等一秒+随机时间-> 网络拥塞
+- **冲突域(the Collision Domain)**
+- **路由(routing)**
+  - 数据传输时, 全球的路由器协同工作，找出最高效的线路
+- **报文交换(Message Switching)**: 传输数据的另一个方法
+- **数据包(packets)**: 将大报文分成很多小块
+  - 数据包都有目标地址
+  - 具体格式由"互联网协议"定义
+  - TCP/IP(Internet Protocol), 可以解决乱序问题, 将数据拆分成多个小数据包，然后通过灵活的路由传递
+  - 优点: 
+    - **去中心化** being decentralized 
+    - **没有中心权威机构  没有单点失败问题** with no central authority or single point of failure.
+-  "因特网控制消息协议"(ICMP, Internet Control Message Protocol)
+- "边界网关协议"(BGP) the Border Gateway Protocol 
+- 现代互联网的祖先是 ARPANET, 来源于美国高级研究计划局Advanced Research Projects Agency. 
+- "物联网""internet of things".
 
 ### 0x1c The World Wide Web
 
