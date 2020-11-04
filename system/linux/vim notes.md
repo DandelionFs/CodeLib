@@ -1,6 +1,15 @@
 # Vim Notes
+**Best Wish To:**
+1. [简明 VIM 练级攻略](https://coolshell.cn/articles/5426.html)
+2. [GVIM配置](https://www.jianshu.com/p/6bb4e8491132)
+3. https://blog.csdn.net/HappyCodeFly/article/details/86684827
+4. https://askubuntu.com/questions/1208159/how-do-i-install-vim-gnome-on-ubuntu-19-10
+5. https://developer.aliyun.com/article/309383
+6. https://ubuntuqa.com/zh-tw/article/1230.html
+
+
+
 ## Config
-**[LINK]** https://www.jianshu.com/p/6bb4e8491132
 Vim 的设置文件不会自动保存设置文件, 所以需要自己写.
 
 ```shell
@@ -77,8 +86,6 @@ set incsearch "增量查找
     - 移动到需要处理的末行，<'a
 
 ## SHORTCUTS
-[LINK] :https://blog.csdn.net/HappyCodeFly/article/details/86684827
-
 ### Insert
 
 |操作|效果|
@@ -97,9 +104,6 @@ set incsearch "增量查找
 |^ CTRL-D	  |删除当前行的所有缩进，恢复下一行的缩进|
 
 ## DIFF- Gedit && Namo && Vim && Vi
-**[LINK]**:
-1. https://developer.aliyun.com/article/309383
-2. https://ubuntuqa.com/zh-tw/article/1230.html
 
 - 系统都会自带nano和vi这两个最基本的编辑器。
 + Nnno非常適合編輯配置文件，但是如果要進行編程，最好使用Vim或Emacs。 Nano支持突出顯示。但這是非常主觀的。
@@ -115,6 +119,5 @@ set incsearch "增量查找
 + Emacs 具有語法突出顯示並支持擴展, 並且可以通過其嵌入的Lisp(elisp)方言進行擴展。它還具有許多統計程序的模式，支持tex，日曆，郵件閱讀實用程序，俄羅斯方塊甚至精神科醫生。 Emacs(或Vim，但對於統計數據不太好)值得學習，因為它們都是跨平台的，並且支持世界上幾乎所有的編程語言。
 
 ## Change Vim/Vim-gtk
-**[LINK]**  https://askubuntu.com/questions/1208159/how-do-i-install-vim-gnome-on-ubuntu-19-10
 
 > 因为 19.10 把 vim-gnome 移除了, 所以搜不到.
