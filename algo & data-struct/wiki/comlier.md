@@ -1,6 +1,8 @@
-# C++
-
-## Birth[^1]
+# C++ COMLIER(C++ 编译)
+THX FOR:
+- [C++诞生历史](https://blog.csdn.net/zxxssdsd/article/details/9309203).
+- [C/C++ 误区二：void main()](https://blog.csdn.net/fengyuruhui/article/details/1682319).
+## Birth
 
 在Bjarne博士等人试图去分析UNIX的内核的时候(1979.04)，当时由于没有合适的工具能够有效的**分析由于内核分布而造成的网络流量**，以及怎样将内核模块化。
 
@@ -13,8 +15,6 @@
 2. 尽量避免在语言应用领域的限制。
 
 在这种情况下，一个很自然的想法就是让C++从C语言继承过来，但是我们的**Bjarne为了避免受到C语言的局限性，参考了很多的语言，例如：从Simula继承了类的概念，从Algol68继承了运算符重载、引用以及在任何地方声明变量的能力，从BCPL获得了//注释，从Ada得到了模板、名字空间，从Ada、Clu和ML取来了异常**。下图是C++标准的上个世纪的历史：
-
-![](http://m.qpic.cn/psc?/V13aSAY12tLYCN/NrBG0KpF3EQEf3NYGEmEN*H.YIN8jHeb6sBXCnj7XDv.Wbnk3lZpZLUVayybksTq14q9jJKdSanFvXsVYNXn3Q!!/b&bo=kS9DAwAAAAADB9w!&rf=viewer_4&t=5)
 
 作为Linux源码的C从B语言发展而来……
 
@@ -43,7 +43,7 @@ int main(void){// 圆括号（）表明main是一个函数，void表明main 函�
 
 **main函数**
 
-误区：**void main()**[^2]
+误区：**void main()**
 
 > C/C++ 中从来没有定义过**void main( )** 。**C++** 之父 **Bjarne Stroustrup** 在他的主页上的 **FAQ** 中明确地写着：
 >
@@ -242,14 +242,3 @@ gcc hello.o –o hello #将编译输出文件hello.o链接成最终可执行文�
     **Execute（执行）/Run（运行）**运行程序。通常，如果您还没有执行前面的步骤，Run将在运行程序之前完成这些步骤。
     **Debug（调试）**以步进方式执行程序
     编译器可能让您选择要生成调试版还是发布版。调试版包含额外的代码，这会增大程序、降低执行速度，但可捷供详细的调试信息
-
-
-
-
-
-[^1]: [C++诞生历史](https://blog.csdn.net/zxxssdsd/article/details/9309203).
-
-[^2]:1 [C/C++ 误区二：void main()](https://blog.csdn.net/fengyuruhui/article/details/1682319).
-
-
-

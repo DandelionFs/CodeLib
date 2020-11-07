@@ -1,13 +1,10 @@
----
-date: 2020‎-0‎1‎-30‎ ‎20:42:39
----
+# BASIC ALGO - 基础优化思想
+记录一些较为基础(普世)的代码思想, 面对的语言是c99.
 
-## Preface
-
+## PREFACE
 > 学习数据结构和算法其实是明白数据的存储结构和操作逻辑，然后更好的去实现代码的编辑。
 
 函数原型 : 
-
 > 函数原型( **Function prototype** ) 或**函数接口**（**Function interface**）是用于**指定函数的名称和类型特征**（元数，参数的数据类型和返回值类型）的一种省略了函数体的函数声明。虽然函数声明规定了函数是如何被实现的，但仅包括对接口的定义（即接受的数据类型和返回的数据类型），并不包括对函数体的定义。
 >
 > 函数原型被广泛应用于C、C++ 语言程序代码的上下文中，**通过在头文件中放置函数的前向声明来允许将代码拆分为多个翻译单元**。即**编译器可以单独编译目标文件的这部分内容,然后由链接器组合成可执行文件或库**。现代编译器（如Arduino IDE）不再需要函数原型，因为这些是在编译时确定和声明的。
@@ -1015,18 +1012,13 @@ static inline uint32_t next_power_of_2(uint64_t x) {
 
 
 
-## Reference
-
-### books
-
-1. 《C++ Primer Plus 中文（第六版）》
-2. 《算法竞赛入门经典第三册——习题与解答》
-3. **[Bjarne Stroustrup](http://www.research.att.com/~bs/homepage.html) 的 C++ 风格与技术 [FAQ](www.stroustrup.com/bsfaq2cn.html)（中文版）**
-4. [C++ Style and Technique FAQ （中文版）](http://www.stroustrup.com/bstechfaq.htm)
+## REFERENCES
+[1]. 《C++ Primer Plus 中文（第六版）》
+[2].《算法竞赛入门经典第三册——习题与解答》
+[3].**[Bjarne Stroustrup](http://www.research.att.com/~bs/homepage.html) 的 C++ 风格与技术 [FAQ](www.stroustrup.com/bsfaq2cn.html)（中文版）**
+[4]. [C++ Style and Technique FAQ （中文版）](http://www.stroustrup.com/bstechfaq.htm)
 
 
-
-[^1]: 
 [^2]: [关于C语言开大数组溢出的问题](https://blog.csdn.net/qq_21882325/article/details/65445810).Leaviathan
 [^3]: [局部变量，静态局部变量，全局变量，静态全局变量在内存中的存放区别(转)](https://www.cnblogs.com/bakari/archive/2012/08/05/2623637.html).Linux云计算网络
 [^4]: [c++中函数参数的求值顺序](https://www.cnblogs.com/Leon-Yan/p/7567766.html). Leon_Yan

@@ -1,4 +1,6 @@
-# Sort Summary[^1]
+# Sort Summary(排序总结)
+THX FOR:
+- https://www.cnblogs.com/laizhenghong2012/p/8442270.html
 
 | 排序法     | 最差时间分析 | 平均时间复杂度 | 稳定度 | 空间复杂度    |
 | ---------- | ------------ | -------------- | ------ | ------------- |
@@ -12,9 +14,6 @@
 | 归并排序   | ...          | O（n*log2n）   | ...    | ...           |
 
 ## 冒泡
-
-冒泡泡一般的排序算法
-
 ```c++
 void bubbles(int p[], int m) {
 	int i, j;
@@ -27,7 +26,6 @@ void bubbles(int p[], int m) {
 ```
 
 ## 选择
-
 ```c++
 void selections(int p[], int m) {
 	int k, i, j;
@@ -201,9 +199,3 @@ int main() {
 	return 0;
 }
 ```
-
-
-
-
-
-[^1]: https://www.cnblogs.com/laizhenghong2012/p/8442270.html
