@@ -16,7 +16,7 @@ To Be Continue...
 
 ## AFTERWARDS
 
-Forgive me that use half-angle signal in every docs, couse shiefing Chinese and English made me in a mess using markdown.(crying)
+Forgiving me that used half-angle signal in every docs, couse shiefing Chinese and English made me in a mess using markdown.(crying)
 
 THX FOR:
 - [中文技术文档写作风格指南](https://zh-style-guide.readthedocs.io/zh_CN/latest/)
@@ -25,7 +25,5 @@ THX FOR:
   - [微软写作风格指南](https://docs.microsoft.com/en-us/style-guide/welcome/)
   - [芝加哥手册指南](https://www.chicagomanualofstyle.org/)  [Q&A](https://www.chicagomanualofstyle.org/qanda/latest.html)
   - [英语使用中的常见错误](https://brians.wsu.edu/common-errors/) 
-  - [Kubernetes 文档风格指南](https://kubernetes.io/docs/contribute/style/style-guide/) 
-- 
-
-
+  - [Kubernetes 文档风格指南](https://kubernetes.io/docs/contribute/style/style-guide/)
+ 
