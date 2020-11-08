@@ -1,6 +1,5 @@
 ## PREFACE
-> Talk is cheap. Show me the code.   
-> Said By Linus Torvalds
+> Talk is cheap. Show me the code.   -- Linus Torvalds
 
 Hello, I'm a student in IMU. This is a self-using code lib, which displays data(knowledge) and mind i've seen or used towards code. I wanna use it lightly everywhere I worked(so other name called blog! \^_\^).
 
@@ -17,7 +16,7 @@ To Be Continue...
 
 ## AFTERWARDS
 
-Forgiving me who had used half-angle signal in every docs, cause shiefing Chinese and English made my mind in a mess.(-_-)
+Forgiving me who had used half-angle punctuation in every docs, cause shiefing Chinese and English again and again made my mind in a mess.(-_-)
 
 THX FOR:
 - [中文技术文档写作风格指南](https://zh-style-guide.readthedocs.io/zh_CN/latest/)
