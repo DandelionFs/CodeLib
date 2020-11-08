@@ -1,6 +1,3 @@
----
-date: 2020-07-06 18:50:00
----
 # VSCode
 
 > Any application that can be written in JavaScript, will eventually be written in JavaScript
@@ -61,13 +58,13 @@ date: 2020-07-06 18:50:00
 
 ## Tips
 ### Proxy
-
 - 勾选设置里面把代理选项.
 - 无法在只读文本中编辑
   - [在终端编译](https://blog.csdn.net/weixin_41594045/article/details/86568571)
   - [修改 JavaScript](https://blog.csdn.net/qq_38774121/article/details/100123956)  
 - [上下拆分窗口](https://jingyan.baidu.com/article/a948d6511f93c70a2ccd2e49.html): View->Editor Layout
 
+### [自动换行](https://www.zhihu.com/question/35042902)
 
 ## ShortCut
 | Mac 快捷键          | Win 快捷键               | 作用                                          | 备注                 |
