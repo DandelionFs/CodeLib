@@ -1,14 +1,15 @@
 ## PREFACE
-> “Talk is cheap. Show me the code.”   --Linus Torvalds
+> Talk is cheap. Show me the code.   
+> Said By Linus Torvalds
 
-Hello, I'm a student frome IMU, borned in Inner Mogolia. This is a self-using code lib, which displays data(knowledge) and mind i've seen or used. I wanna use it lightly everywhere I worked(so other name called blog! \^_\^).Thus, except for little size imgs,  I   shouldn't push any big files to here, such as `mp3`, `mp4`, `xmind`, `word`, `excel`, `ppt`, etc.
+Hello, I'm a student in IMU. This is a self-using code lib, which displays data(knowledge) and mind i've seen or used towards code. I wanna use it lightly everywhere I worked(so other name called blog! \^_\^).
 
 So, Here we go !!!
 
 ## TOC
 
 To Be Continue...
-
+  
 ## EXPERIENCE
 - Always write `#` is a good habits, which could play roles in searching function.
 - Don't use phone in a long time once, especially maintain 5 mins/once 5 hours/day, cause phone would waste much of time in interaction. In most cases, button is enough and effcient.
@@ -16,7 +17,7 @@ To Be Continue...
 
 ## AFTERWARDS
 
-Forgiving me that used half-angle signal in every docs, couse shiefing Chinese and English made me in a mess using markdown.(crying)
+Forgiving me who had used half-angle signal in every docs, cause shiefing Chinese and English made my mind in a mess.(-_-)
 
 THX FOR:
 - [中文技术文档写作风格指南](https://zh-style-guide.readthedocs.io/zh_CN/latest/)
