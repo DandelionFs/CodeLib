@@ -5,10 +5,12 @@ Hello, I'm a student in IMU. This is a self-using code lib, which displays data(
 
 So, Here we go !!!
 
+
+
 ## TOC
 
 To Be Continue...
-  
+
 ## EXPERIENCE
 - Always write `#` is a good habits, which could play roles in searching function.
 - Don't use phone in a long time once, especially maintain 5 mins/once 5 hours/day, cause phone would waste much of time in interaction. In most cases, button is enough and effcient.
@@ -26,4 +28,3 @@ THX FOR:
   - [芝加哥手册指南](https://www.chicagomanualofstyle.org/)  [Q&A](https://www.chicagomanualofstyle.org/qanda/latest.html)
   - [英语使用中的常见错误](https://brians.wsu.edu/common-errors/) 
   - [Kubernetes 文档风格指南](https://kubernetes.io/docs/contribute/style/style-guide/)
- 
