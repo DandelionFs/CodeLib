@@ -5,3 +5,10 @@
 THX FOR:
 - [程序员英语词汇宝典](https://learn-english.dev/)
 
+## Word
+- 初中 2000 
+- 高中 3500
+- 四级 4500
+- 六级
+
+

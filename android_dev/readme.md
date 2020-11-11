@@ -61,7 +61,14 @@ MIUI Root的两个条件：**BL锁** + 开发版及以上（系统支持 —— 
 3. Xposed: Magisk的原理简单的说就是在系统boot时将其img挂载到自己的分区下，构建一个虚拟文件系统，和system分区无关，以不修改系统文件为前提，从而达到修改系统文件的效果。通过这种方式绕过谷歌安全机制，系统OTA升级，部分"被禁"软件都可以正常使用。而Xposed相反，框架一旦被加载就会修改系统，改动会影响在安全机制保护下的APP，所以一些理财软件,比如某某银行可能就无法使用，这些应用对root权限非常敏感。总的来说Magisk是通过systemless方式获取root，xposed则需要root才可以工作。所以magisk虽然集合了各种功能，但延展性上不如Xposed，两者虽有一些相似之处，但本质上完全不同，Magisk是创建新的分区而Xposed是直接修改系统文件。现在最好的结果就是二者相辅相成，按自己需要。
    1. **[原理]** : Xposed框架的原理就是替换安卓系统的app_process文件，从而实现对系统的接管，通过回调模块的方式来达到不用修改APK就能改变其表现行为的目的。用通俗的话来说就是是在任意进程启动之前，能加载特定Xposed模块的代码，从而控制任意进程的行为。这些特定的Xposed模块，能在App进程启动之前执行特定代码。app_process其实是存放在systen/bin目录下的一个程序，其作用就是启动zygote，在Android中，zygote是整个系统创建新进程的核心进程。Xposed框架Hook了核心进程Zygote，而其他应用启动都是从Zygote进程fork而来，就够达到针对系统上所有的应用程序进程的Hook。举个例子，比如很著名的某微信模块，就是你在启动微信之前，首先要运行模块内的一些脚本，这些脚本会劫持微信这个APP里的所有行为，所以最终能够实现微信内容防撤回，自定义微信摇骰子和石头剪刀布。
 4. [Termux](https://github.com/termux/termux-app): **0.90及以上** 版本需要 **Android7.0 及以上版本的系统**。此安装包由 **F-Droid 编译并签名**，且**保证与此源代码 tarball 保持一致**。
-
+5. [clash 镜像](https://tmpclashpremiumbindary.cf/) 
+6. https://github.com/Dreamacro/clash/releases/tag/v1.2.0
+7. [clash 在 linux 系统下的使用（含Country.mmdb下载链接）](https://www.pianshen.com/article/65381161602/)
+8. [china ip ](https://github.com/alecthw/mmdb_china_ip_list)
+9. [太极 ](https://taichi.cool/zh/doc/taichi-magisk.html)
+10. [太极 ](https://github.com/taichi-framework/TaiChi/wiki/FAQ)
+7. [框架 ](https://github.com/taichi-framework/TaiChi/releases/tag/5.8.2)
+8. https://github.com/taichi-framework/TaiChi/wiki/taichi-magisk-beta
 
 ## Google GMS
 
@@ -140,3 +147,8 @@ MMS是Multimedia Messaging Service的缩写，中文意为多媒体短信业务�
 2. **操作系统角度**: Apple IOS，apple开发的移动设备操作系统。IOS的内核使用的是darwin os，该内核与linux的宏内核操作系统不同，是一个类似于windows的混合型内核。有点类型微内核的感觉，不过就性能而言，与Linux相比应该没有什么优势。但是，因为ios的应用程序是使用objective c编码，最终被直接编译为ARM指令集。因此，在实际设备运行过程中，应用程序相当于直接在CPU上运行，避免了虚拟机的指令翻译开销，所以ios的应用程序执行效率相比android要高。Google Android，是基于Linux操作系统的一个应用程序框架。它大致由以下几个组件组成：Linux内核、Android运行库、通用组件库、应用程序框架和应用程序本身。最终的用户应用程序均运行在一个个隔离的“沙箱”环境中，彼此隔离。其中，最重要的是，Android应用程序的指令不是机器指令，而是dalvik虚拟机指令。也就是说，Android提供了一个Dalvik虚拟机，将Android应用程序的dalvik指令翻译成最终的arm机器指令。这中间虚拟机的翻译过程是有性能损耗的。
 3. **应用程序角度**: IOS禁止应用程序在后台运行，所有切换到后台的应用程序被操作系统自动休眠，只有前台程序可以占用CPU；相比较，Android就开放得多，它运行应用程序任意创建后台服务Service，所有Service都可以在后台任意占用CPU和内存。因此，当Android安装的应用程序越来越多，且应用程序毫无节制地创建后台服务的话，系统前台应用就被迫和越来越多的后台服务共享CPU资源，从而拖慢了整个系统的速度。也不能说Android这种真正的多任务模式不好，它是一把双刃剑，给应用程序更广阔的发挥空间的前提下，也给了应用程序滥用CPU的权限。因此，从这方面讲，IOS更有利于应用程序发挥流畅性，但代价是应用程序无法再后台工作；Android更有利于发挥应用程序功能，例如后台收离线消息，后台下载等应用。
 4. 从**屏幕分辨率**来看，IOS只有有限几种分辨率，最高也就1136*640，都没有达到1080P全高清的级别。比较而言，Nexus5的分辨率达到了1080*1920全高清级别。为此，应用程序需要更多资源来渲染图像，比较而言，IOS的应用程序就可以更容易达到流畅的帧数；但Nexus5的屏幕则可以达到更锐利，更清晰的图像。
+
+
+## Software
+### Weread
+- 下载书的目录: `/data/data/com.tencent.weread/databases/210837723/books/database`

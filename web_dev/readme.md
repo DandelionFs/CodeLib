@@ -1,3 +1,9 @@
+# WEB DEV
+ 
+THX FOR:
+- [少侠，请收下这份前端开发自学资料（书籍+教程）~](https://segmentfault.com/a/1190000037730709)
+
+
 ## INTERNET STRUCT
 
 ![](./img/Internet结构.png)
@@ -13,10 +19,7 @@
 ##### 了解Internet的工作原理
 
 
-
-
-
-
+fixed 
 
 ###### 学习一些计算机网络的基础知识
 
