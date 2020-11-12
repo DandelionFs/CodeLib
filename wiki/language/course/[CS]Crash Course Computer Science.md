@@ -1,8 +1,3 @@
----
-date: 2019-11-11 00:00:00
----
-
-
 ### 0x00 Preface
 
 [Github] : https://github.com/1c7/crash-course-computer-science-chinese
