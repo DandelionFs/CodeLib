@@ -1,7 +1,3 @@
-<center><font size =2 color=grey >2020-02-14 21:06:33</font></center>
-
-</br>
-
 ### Git 
 
 版本控制系统 —— 记录每次文件的改动，协作编辑，避免管理一堆类似的文件了，也不需要把文件传来传去。
@@ -647,3 +643,5 @@ git config http.postBuffer 524288000
 [5]. [V2ex](https://www.v2ex.com/t/574303).
 
 [6]. [修改Host](https://blog.51cto.com/11887934/2051323)的方法，有缘再会……
+
+[7]. https://blog.darkthread.net/blog/git-author-n-committer/

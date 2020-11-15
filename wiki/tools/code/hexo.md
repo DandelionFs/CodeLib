@@ -1,15 +1,18 @@
-<center><font size =2 color=grey >2019-12-23 23:00:00</font></center>
+# HEXO
 
-</br>
+嗯, 烂大街到游戏社区(小黑盒)都能看到这个博客的教程, 如果你的 Github 的Img不显示问题了，定是配置文件没写全(；′⌒`)
 
-> ~~烂大街的Hexo博客，主站是[在这里](https://dandelionflowers.xyz/).~~
-> 主站的地址: http://dfslfh.cn
+- 推荐一个主题:
+  - [Suka Theme](https://theme-suka.skk.moe/docs/)
+- 整合一下看到的[图床](https://zhuanlan.zhihu.com/p/35270383) : 
+  - 堆爱图床<a href="//img.duiai.cc/tc/">img.duiai.cc/tc/</a>
+  - SM.MS图床<a href="//sm.ms/">sm.ms</a>
+  - 聚合图床<a href="//www.superbed.cn">superbed.cn</a>
+  - 堆爱图床<a href="//img.duiai.cc/tc/">img.duiai.cc/tc</a>
+  - 拓展阅读：https://www.jianshu.com/p/ea1eb11db63f
+- 表情：[Emoji](https://www.webfx.com/tools/emoji-cheat-sheet/)
 
-
-
-## 0x01 Hexo
-
-### 1.1 搭建Hexo 🔨
+## 搭建Hexo 🔨
 
 **[前提]：**
 
@@ -72,7 +75,7 @@ Hexo 有三种默认布局：`post`、`page` 和 `draft`  ，它们分别对应�
 
 如果你的草稿文件写完了，想要发表到post中，`hexo publish draft newpage`就会自动把newpage.md发送到post中。
 
-### 1.2 Coding部署 📋
+## Coding部署 📋
 
 去创建一个`DevOps`项目，名称和地址和你的用户名一样，把上面的`SSH`再次配置到你的设置里
 
@@ -95,9 +98,7 @@ deploy:
 
 之后 `hexo clean`  再`hexo g -d` 部署到Coding上面。去构建与部署里面找到静态网站后开启就可以构建了，可以用这里的网址直接进行访问。
 
-</br>
-
-### 1.3 分流绑定域名 🔒
+## 分流绑定域名 🔒
 
 首先绑定GitHub的，去你的域名控制台，添加域名是`@`和`www`的双`CNAME`记录类型，然后解析线路选择海外。以下列举**域名解析记录**的不同区别:
 
@@ -113,21 +114,14 @@ deploy:
 
 然后是Coding，添加域名是`@`和`www`的双`CNAME`记录类型，然后解析线路选择默认，添加解析即可。访问速度那是嗖嗖的。
 
-</br>
-
-</br>
-
-### 1.4  Setting 
+## Setting 
 
 **[config.yml]**：参照[官方](https://hexo.io/zh-cn/docs/configuration)。
 
 **[主题修改]**：参照[官方]( https://hexo.io/themes/ )操作。
 
-</br>
 
-</br>
-
-## 0x02 Q&A
+## Q&A
 
 ### 放弃Coding为博客代理
 
@@ -148,35 +142,10 @@ deploy:
 
 </br>
 
-### 2.3 取消TOC的自动排序 😤 
+### 取消TOC的自动排序 😤 
 
 找到布局里面的`ejs`文件，一般在`post`里面，找到`<%- toc(post.content) %>`改成`<%- toc(post.content, {list_number: false}) %>`。
 
 ---
 
 暂时就到……
-
-</br>
-
-</br>
-
-## 0x03 Reference
-
-突然理解自己一开始为什么Github 的Img不显示问题了，定是配置文件没写全(；′⌒`)
-
-整合一下看到的[图床](https://zhuanlan.zhihu.com/p/35270383) : 堆爱图床<a href="//img.duiai.cc/tc/">img.duiai.cc/tc/</a>、SM.MS图床<a href="//sm.ms/">sm.ms</a>、聚合图床<a href="//www.superbed.cn">superbed.cn</a>、堆爱图床<a href="//img.duiai.cc/tc/">img.duiai.cc/tc</a>.
-
-</br>
-
-拓展阅读：https://www.jianshu.com/p/ea1eb11db63f
-
-开放部分蓝奏链接(最后一个不开放)：
-
-1. [Win](https://lanzous.com/b00th6sij )(b4hc)
-2. [Android](https://lanzous.com/b00th6slc)(1eva)
-3. [Ubuntu](https://lanzous.com/b00th6sof)(53ie)
-4. [DFs](https://lanzous.com/b00ti4jmd)(DND! Please!!!)
-
-</br>
-
-留下表情的链接：[https://www.webfx.com/tools/emoji-cheat-sheet/](https://www.webfx.com/tools/emoji-cheat-sheet/)

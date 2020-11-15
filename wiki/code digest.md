@@ -141,3 +141,9 @@ Linus Torvalds，一个芬兰人，用英语注释他的代码（很明显这对
 
 - 记住，如果你分享压缩后的文件，那么收件人需要同样的程序才能打开你创建的文件类型。
 - 在Windows系统中，7-Zip是最常用的开源软件。你可以从7-zip.org/download.html上下载它。
+
+
+
+## [What benefit do we get by thinking of objects as “sending messages to each other”?](https://softwareengineering.stackexchange.com/questions/417896/what-benefit-do-we-get-by-thinking-of-objects-as-sending-messages-to-each-other?newreg=f33ab7e2647346d6b8ff7749ae7a6a6d)
+
+

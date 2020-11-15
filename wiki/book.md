@@ -21,9 +21,13 @@
    > EPUB（Electronic Publication 的缩写，电子出版）是一种电子图书标准，由国际数字出版论坛（IDPF）提出；其中包括 3 种文件格式标准（文件的附文件名为 .epub），这个格式已取代了先前的 Open eBook 开放电子书标准。
 
 
+## Conversion
+
+-Pandoc: [Customizing pandoc to generate beautiful pdf and epub from markdown](https://learnbyexample.github.io/customizing-pandoc/)
+
+
 
 ## FIND BOOKS
-
 
 ### 综合性
 - [鸠摩搜索](https://www.jiumodiary.com)，提供各类电子书搜索下载，聚合其他电子书网站的内容，有多种格式下载。
