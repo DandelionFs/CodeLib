@@ -1,3 +1,18 @@
+# VERILOG HDL
+
+半条命在这里...
+
+THX FOR
+
+**FLAG**
+- 
+
+**EXPERIENCE**
+- 被 赋值 与 OUTPUT 的 变量 都应该定义为 `REG`
+- always 行为描述
+- => 非阻塞式赋值
+- 时序计数
+
 ### Prerface
 
 贴出~~自己~~别人的作业.
