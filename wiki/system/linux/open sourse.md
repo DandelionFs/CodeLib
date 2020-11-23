@@ -1,6 +1,23 @@
-# Open Sourse License
+# Open Sourse
 
-记录开源协议的部分内容. 涉及的协议有
+记录开源协议的部分内容. 
+
+THX FOR:
+- [如何理解Apache License, Version 2.0（整理）](https://www.cnblogs.com/Renyi-Fan/p/8148658.html)
+- [APACHE LICENSE, VERSION 2.0¶](http://www.apache.org/licenses/LICENSE-2.0.html)
+- [谈谈创作共用许可证（Creative Commons licenses）](http://www.ruanyifeng.com/blog/2008/04/creative_commons_licenses.html)
+-  [Creative Commons官方网站](http://creativecommons.org/)
+- [創用 CC  ─  Creative Commons Taiwan](http://creativecommons.org.tw/)
+
+## 开源共享精神
+
+软件程序与源代码文件一起打包提供给用户，让用户在不受限制地使用某个软件功能的基础上还可以按需进行修改，或编制成衍生产品再发布出去。用户具有使用自由、修改自由、重新发布自由以及创建衍生品的自由。
+
+低风险、高品质、低成本、更透明
+
+世界上现在有 60 多种被开源促进组织（ Open Source Initiative）认可的开源许可协议来保证开源工作者的权益。
+
+涉及的协议有
 - AL
 - CC
 - MPL
@@ -9,12 +26,14 @@
 - GPL
 - BSD
 
-THX FOR:
-- [如何理解Apache License, Version 2.0（整理）](https://www.cnblogs.com/Renyi-Fan/p/8148658.html)
-- [APACHE LICENSE, VERSION 2.0¶](http://www.apache.org/licenses/LICENSE-2.0.html)
-- [谈谈创作共用许可证（Creative Commons licenses）](http://www.ruanyifeng.com/blog/2008/04/creative_commons_licenses.html)
--  [Creative Commons官方网站](http://creativecommons.org/)
-- [創用 CC  ─  Creative Commons Taiwan](http://creativecommons.org.tw/)
+## PREFACE
+
+稻盛和夫 在《活法》中有这样一段话：
+
+> **“工作马马虎虎，只想在兴趣和游戏中寻觅快活，充其量只能获得一时的快感，绝不能尝到从心底涌出的惊喜和快乐，但来自工作的喜悦并不像糖果那样放进嘴里說甜味十足，而是需要从苦劳与艰辛中渗出，因此当我们聚精会神，孜孜不倦，克服艰辛后的成就感，世上没有哪种喜悦可以类比”。**
+> 
+> **“更何况人类生活中工作占据了较大的比重，如果不能从劳动中、工作中获得充实感，那么即使从别的地方找到快乐，最终我们仍然会感到空虚和缺憾”。**
+
 
 ## Apache License
 > **我下载了apache的一个jar包，在我自己的盈利性公司的产品里用上了**。我没有更改任何下载下来的东西，只是用了它。之后我可以发布我自己的新产品了。那么我要向apache交费么？
@@ -64,15 +83,27 @@ THX FOR:
     - 署名-非商业用途-相同方式共享（by-nc-sa license）
     - 署名-相同方式共享（by-sa license）
 
-##  MPL (Mozilla Public License) 协议
 
-## MIT 协议
 
-## LGPL 协议
+## **GNU GPL GNU General Public License GNU**
 
-## GPL 协议
+LGPL 协议??
 
-## BSD协议
+只要软件中包含了遵循 GPL 协议的产品或代码，该软件就必须也遵循 GPL 许可协议且开源、 免费，因此这个协议并不适合商用软件。遵循该协议的开源软件数量极其庞大，包括 Linux系统在内的大多数的开源软件都是基于这个协议的。 GPL 开源许可协议最大的 4 个特点：
+
+1. **复制自由**：允许把软件复制到任何人的电脑中，并且不限制复制的数量。
+2.** **传播自由**： 允许软件以各种形式进行传播。
+3.* **收费传播**：允许在各种媒介上出售该软件，但必须提前让买家知道这个软件是可以免费获得的；因此，一般来讲， 开源软件都是通过为用户提供有偿服务的形式来盈利的。
+4. **修改自由**：允许开发人员增加或删除软件的功能，但软件修改后必须依然基于GPL 许可协议授权。
+
+## BSD Berkeley Software Distribution
+
+用户可以使用、修改和重新发布遵循该许可的软件，并且可以将软件作为商业软件发布和销售，前提是需要满足下面 3 个条件：
+
+1. 如果再发布的软件中包含源代码，则源代码必须继续遵循 BSD 许可协议。
+2. 如果再发布的软件中只有二进制程序，则需要在相关文档或版权文件中声明原始代码遵循了 BSD 协议。
+3. 不允许用原始软件的名字、作者名字或机构名称进行市场推广。
+
 
 BSD开源协议是一个给于使用者很大自由的协议。可以自由的使用，修改源代码，也可以将修改后的代码作为开源或者专有软件再发布。当你发布使用了BSD协议的代码，或者以BSD协议代码为基础做二次开发自己的产品时，需要满足三个条件：
 
@@ -80,3 +111,20 @@ BSD开源协议是一个给于使用者很大自由的协议。可以自由的�
 如果再发布的只是二进制类库/软件，则需要在类库/软件的文档和版权声明中包含原来代码中的BSD协议。
 不可以用开源代码的作者/机构名字和原来产品的名字做市场推广。
 BSD代码鼓励代码共享，但需要尊重代码作者的著作权。BSD由于允许使用者修改和重新发布代码，也允许使用或在BSD代码上开发商业软件发布和销 售，因此是对商业集成很友好的协议。很多的公司企业在选用开源产品的时候都首选BSD协议，因为可以完全控制这些第三方的代码，在必要的时候可以修改或者 二次开发。
+
+
+## Apache Apache License Version
+在为开发人员提供版权及专利许可的同时，允许用户拥有修改代码及再发布的自由。该许可协议适用于商业软件，现在热门的 Hadoop、 Apache HTTP Server、 MongoDB 等项目都是基于该许可协议研发的,程序开发人员在开发遵循该协议的软件时，要严格遵守下面的 4 个条件：
+
+1. 该软件及其衍生品必须继续使用 Apache 许可协议。
+2. 如果修改了程序源代码，需要在文档中进行声明。
+3. 若软件是基于他人的源代码编写而成的，则需要保留原始代码的协议、商标、专利声明及其他原作者声明的内容信息。
+4. 如果再发布的软件中有声明文件，则需在此文件中标注 Apache 许可协议及其他许可协议。
+
+## MPL Mozilla Public License Mozilla 
+
+相较于 GPL 许可协议，MPL 更加注重对开发者的源代码需求和收益之间的平衡。
+
+## MIT Massachusetts Institute of Technology 
+
+目前限制最少的开源许可协议之一，只要程序的开发者在修改后的源代码中保留原作者的许可信息即可，因此普遍被商业软件所使用。
