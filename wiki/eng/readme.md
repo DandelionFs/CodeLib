@@ -4,6 +4,7 @@
 
 THX FOR:
 - [程序员英语词汇宝典](https://learn-english.dev/)
+  - [most-frequent-technology-english-words](https://github.com/Wei-Xia/most-frequent-technology-english-words)
 
 ## Word
 - 初中 2000 

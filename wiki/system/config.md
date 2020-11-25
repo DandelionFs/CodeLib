@@ -1,7 +1,10 @@
 # CONFIG
 
-## PREFACE
 > 一切的优化只为让自己的产品走出去，如果不希望花太多时间在磨刀上，那就请把问题聚焦在解决问题上
+
+THX FOR:
+- [Deepin-Apps-Installation](https://github.com/Jactor-Sue/Deepin-Apps-Installation)
+
 
 ## DECORATION 
 - **Window:** 
@@ -27,8 +30,10 @@
 - **Music**
   - [Netease Music](https://music.163.com/#/download)
   - QQ Music
-    - https://github.com/gorquan/QQMusic
-    - https://www.linzhuotech.com/
+    - [Deepin-QQ](https://github.com/gorquan/QQMusic)
+    - [X-Droid](https://www.linzhuotech.com/)
+    - [QQMusic QMC Decoder (convert QMC File to MP3 or FLAC)](https://github.com/Presburger/qmc-decoder)
+    - [Unlock Music 音乐解锁](https://github.com/ix64/unlock-music)
 - **Works**
   - [WPS](https://linux.wps.cn/)
   - [BaidunetDisk-百度网盘](https://pan.baidu.com/download)
@@ -66,14 +71,11 @@
   - Blueman: 蓝牙管理器
   - Dconf: 系统编辑器
   - Flameshot: 截图助手
-  - **V16config**：https://wwa.lanzous.com/icv18ob
-  - **Pondoc输入法词库Bin转换**：https://wwa.lanzous.com/ibsjp2f
-  - **搜狗输入法简化版**：https://wwa.lanzous.com/ibsjy8f
-  - **黑科下载器**：https://wwa.lanzous.com/ibsjyhe
-  - **Fliqlo 屏保**：https://wwa.lanzous.com/ibsjzha
-  - **Bandica 录屏**：https://wwa.lanzous.com/ibsjzjc
-  - **Acill_generator**:https://wwa.lanzous.com/ibsk9zi
-  - **Rockdock**：https://wwa.lanzous.com/iaD3Wdbvvij
+  - [**V16config**](https://wwa.lanzous.com/icv18ob)：
+  - [**搜狗输入法简化版**](https://wwa.lanzous.com/ibsjy8f)
+  - [**Fliqlo 屏保**](https://wwa.lanzous.com/ibsjzha)
+  - [**Bandica 录屏**](https://wwa.lanzous.com/ibsjzjc)
+  - [**Rockdock**](https://wwa.lanzous.com/iaD3Wdbvvij)
 - **Play**
   - Steam
     - Proxychains
@@ -88,9 +90,9 @@
   - [VsCode](https://code.visualstudio.com/Download)
   - **Dev-Cpp**：https://wwa.lanzous.com/ifYm8diuo1g
   - **Vim / GVim-for-gtk**
-  - **BvSSH**:
+  - [**BvSSH**](https://www.bitvise.com/ssh-client-download):
     - https://wwa.lanzous.com/ibsksbi
-    - https://www.bitvise.com/ssh-client-download
+
 
 ## IMG HOSTS
 [图床](https://zhuanlan.zhihu.com/p/35270383)
@@ -109,8 +111,7 @@ sudo apt-get install fcitx-googlepinyin
 sudo apt install fcitx-pinyin && sudo apt install fcitx-cloudpinyin
 ```
 
-### Clash
-**[GitHub]** https://github.com/Dreamacro/clash
+### [Clash](https://github.com/Dreamacro/clash)
 
 ```bash
 tar -zxvf clash-linux-amd64-vXXXX.gz

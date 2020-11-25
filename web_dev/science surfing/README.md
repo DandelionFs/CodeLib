@@ -229,6 +229,10 @@ v2ray uninstall#卸载V2Ray
 + Clash For Android
 + Clash For Magisk
 
+- 下载替代Github镜像
+  - https://tmpclashpremiumbindary.cf/
+- MMDB 维护
+  - https://github.com/alecthw/mmdb_china_ip_list
 
 ### USAGE
 - **策略组、规则**

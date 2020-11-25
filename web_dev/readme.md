@@ -2,6 +2,8 @@
  
 THX FOR:
 - [少侠，请收下这份前端开发自学资料（书籍+教程）~](https://segmentfault.com/a/1190000037730709)
+- [jstraining|全栈工程师培训材料](https://github.com/ruanyf/jstraining)
+
 
 ## Preface
 

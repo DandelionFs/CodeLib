@@ -1,74 +1,96 @@
 # Android Dev
-
-记录自己在安卓手机方面的所见所闻.而现如今, 手机到底应该是什么? 它的定位到底在哪里?如今的我觉得更多的只是一个收集信息的盒子, 那些零散在各个平台的
-- 生产力?
-  - 绘画工具
-  - 笔记软件
-- B站/爱奇艺 启动器?
-  - 泡面盖子?
-  - 打发日常琐碎的时间?
-  - 极致的游戏体验?
-如果你有不一样的想法, 请一定告诉我.
+记录自己在安卓手机方面的所见所闻.
 
 Android 是一个适用于移动设备的开源操作系统，也是由 Google 主导的对应开源项目。根据Android 开源项目 (AOSP)，手机厂商可以创建定制的Android 操作系统版本，将设备和配件移植到 Android 平台。
 
 THX FOR:
-1. https://www.zhihu.com/question/33423859/answer/57133469
-2. https://www.zhihu.com/question/22836307/answer/22853689
-3. https://zhidao.baidu.com/question/21473984
-4. http://www.oneplusbbs.com/thread-942394-1-1.html
-5. https://www.coolapk.com/feed/17973123?shareKey=OTliMmY4NTlkMWNkNWY0NTExYTQ~
-6. https://www.coolapk.com/feed/19489640?shareKey=MDUzNjMzMzk2ZTVmNWY0NTExNTA~
-7. https://zhuanlan.zhihu.com/p/66478028
-8. [通用线刷教程](http://www.miui.com/shuaji-393.html)
+1. [为什么PC配置那么好，跑安卓虚拟机还是卡，是技术原因，还是硬件原因？](https://www.zhihu.com/question/33423859/answer/57133469)
+2. [SMS短信,EMS短信,MMS短信,,都是什么啊](https://zhidao.baidu.com/question/21473984)
+3. [转载：TWRP的使用方法&双清、三清、四清解释，刷机必看](http://www.oneplusbbs.com/thread-942394-1-1.html)
+4. [Magisk精通指南（小白向）](https://www.coolapk.com/feed/17973123?shareKey=OTliMmY4NTlkMWNkNWY0NTExYTQ~)
+5. [浅谈magisk(面具)和xposed框架运行原理](https://www.coolapk.com/feed/19489640?shareKey=MDUzNjMzMzk2ZTVmNWY0NTExNTA~)
+6. [Google GMS 是什么鬼](//zhuanlan.zhihu.com/p/66478028)
+7. [通用线刷教程](http://www.miui.com/shuaji-393.html)
+8. [小米手机刷机教程（高通机型）](https://www.xiaomi.cn/post/5326872)
+9. [太极·Magisk和EdXposed如何选择？](https://www.zhihu.com/question/316497403)
 
-## MIUI Root 解锁
+## CPU 架构
++ aarch64
++ arm
++ ×86_64
++ ×86
++ Sig
+
+## [Screen](//bilibili.com/BVITE411v7Mo)
+
+**优先外屏**：纯原触摸
+| 外屏技术                     | 特点                                                        |
+| ---------------------------- | ----------------------------------------------------------- |
+| incell贴合技术屏幕——玻璃盖板 | （IPhone 6Plus）LCD ：背光，比较贵                          |
+| G+F贴合技术屏幕触摸屏（TP）  | （华为畅享）外挂触摸，液晶，屏幕厚，触摸功能片              |
+| OGS贴合技术                  | （小米4）屏幕薄、特别脆，外屏损伤一点就不可用，触摸（涂层） |
+**注意：**后两者容易出现的问题：IC过大，电流乱跳不准、纯元触摸、跳触。
+**Wiki**：光学胶
+
+## 魔改|刷机
+
+1. 线刷|gz
+2. 卡刷|zip
+
+两种刷机方式不兼容, 也就是各有各的包, 如今线刷包越来越少, 官方卡版本, 不循序进行降级操作, 卡刷包同样无法降级, 只能在开机的时候才可以刷入. 值得一提的是: 如果将卡刷包刷入线刷后会报错:`“couldn't find script”`.详见[帖子](https://www.mobile01.com/topicdetail.php?f=634&t=5994087)
+
+### 仓库
+
+- [MIUI官方ROM仓库](https://roms.miuier.com/weekly/)
+- [台湾镜像](https://mirom.ezbox.idv.tw/)
+
+### MIUI Root 解锁
 
 MIUI Root的两个条件：**BL锁** + 开发版及以上（系统支持 —— 意思是OV请换（虚拟）机）
 + BL: **[MI FLash](https://lanzous.com/id0jgad)**
 +（IPhone越狱）: **[[Checkra1n](https://checkra.in/)]**
 
-### [刷机](https://www.xiaomi.cn/post/5326872)
-1. 线刷(gz)
-2. [卡刷(zip)仓库](https://roms.miuier.com/weekly/)
-3. 其他仓库
-   1. https://mirom.ezbox.idv.tw/
-两种刷机方式不兼容, 也就是各有各的包, 如今线刷包越来越少, 官方卡版本, 不循序进行降级操作, 卡刷包同样无法降级, 只能在开机的时候才可以刷入.
+### Recovery--TWRP
 
-值得一提的是: 如果将卡刷包刷入线刷后会报错:`“couldn't find script”`.详见帖子
-- https://www.mobile01.com/topicdetail.php?f=634&t=5994087
+刷第三方Recovery: TeamWin Recovery Project; **全触控操作 + 操作便捷**（同等对比下的 CWM ）
 
-### Rec
-刷第三方Recovery: 网上查了一圈，一致地推荐第三方Recovery —— **TWRP**（TeamWin Recovery Project）; 特点是 全触控操作 + 操作便捷（同等对比下的 CWM ）
+> 用CWM双清或者三清甚至是四清，是一件很麻烦很痛苦的事情，因为你要一个一个点，非常不方便，这时TWRP方便的地方就体现出来了，TWRP可以勾选多个选项，一次性完成工作，不需要一个一个清（当然如果你愿意，一个一个清也是可以的）在刷机的时候，可不单单只刷rom，可能我还要刷补丁，刷Gapps，刷内核，刷什么乱七八糟各种玩意儿，这时用CWM又十分蛋疼了，乖乖的一个一个选，一个一个刷进去吧，而TWRP也可以一次性选择多个包，自动按顺序帮你刷进去，十分方便。
 
-> 用CWM双清或者三清甚至是四清，是一件很麻烦很痛苦的事情，因为你要一个一个点，非常不方便，这时TWRP方便的地方就体现出来了，TWRP可以勾选多个选项，一次性完成工作，不需要一个一个清（当然如果你愿意，一个一个清也是可以的）
->
-> 在刷机的时候，可不单单只刷rom，可能我还要刷补丁，刷Gapps，刷内核，刷什么乱七八糟各种玩意儿，这时用CWM又十分蛋疼了，乖乖的一个一个选，一个一个刷进去吧，而TWRP也可以一次性选择多个包，自动按顺序帮你刷进去，十分方便。
+### Magisk
+> 随着SuperSu (XDA非常著名的开发者ChainFire维护的一款作品) 走向商业化（很久没有更新），安卓5.0之后，谷歌封堵了大量的漏洞，一些以商业化模式运作的各种所谓的一键ROOT工具全都玩完!，这些东西相对来说还非常危险，因为基本任何商业化或者第三方机构给出的超级用户管理工具，都等于是把你的手机变成别人的了，甚至他们还可以比流氓还流氓!。而SuperSU不一样，它一直是保持着非商业化运作，并且更新非常积极，但遗憾的是在2017年10月，开发者ChainFire发布声明不再参与维护SU，好像是把SuperSU卖给了中国的一家商业化运作的公司，自此更新节奏非常缓慢，目前SuperSU已经不能实现安卓O(8.0)以上更高版本的ROOT了，而取代这一切的，是Magisk。Magisk 是一位中国台湾的学生 @topjohnwu 开发的 Android 框架，它不但可以获取Root权限，而且支持Magisk模块。其第一个版本发布于2016年8月， 由于当时Magisk刚刚出现，支持的模块并不多，且SuperSu依然流行，Magisk还鲜为人知。直到SuperSu的消亡，人们才想起Magisk，此后Magisk迅速流行起来，成为每一个玩机爱好者的必备工具。
 
+- **[原理]** : Magisk 则另辟蹊径，通过挂载一个与系统文件相隔离的文件系统来加载自定义内容，为系统分区打开了一个通往平行世界的入口，所有改动都只在那个世界（Magisk 分区）里发生，并不直接修改系统分区，这样大大减小了Magisk的变砖概率，而且就算变砖也可以通过卸载Magisk来恢复原来的系统分区。比如我们的/system/xbin中没有su，我们可以通过刷入相应的模块，在系统启动初期，将su映射到/system/xbin下来获取root.
+- 使用教程
+  1. 通过rec刷入Magisk（推荐）
+  2. 直接安装（需要Root权限）(系统版本小于Android P，你可能需要先解锁系统分区)
+  3. 通过修补boot安装 (选中Rom解压后的boot.img，并在rec中直接刷入修补后的boot文件。)
+  4. 详见: 
+      1. [教程](https://www.coolapk.com/feed/17697847?shareKey=ODg2YmRkZmRiNGRmNWY0NTExMTQ~)
+      2. **[救砖]** : https://mp.weixin.qq.com/s/Os8j55GNmazqSt2UYrwy1g
+- [Module|模块]
+  - Clash for Magisk Prumium
+  - Taiji
 
-### Usage
+### Xposed
+
+> Magisk的原理简单的说就是在系统boot时将其img挂载到自己的分区下，构建一个虚拟文件系统，和system分区无关，以不修改系统文件为前提，从而达到修改系统文件的效果。通过这种方式绕过谷歌安全机制，系统OTA升级，部分"被禁"软件都可以正常使用。而Xposed相反，框架一旦被加载就会修改系统，改动会影响在安全机制保护下的APP，所以一些理财软件,比如某某银行可能就无法使用，这些应用对root权限非常敏感。总的来说Magisk是通过systemless方式获取root，xposed则需要root才可以工作。所以magisk虽然集合了各种功能，但延展性上不如Xposed，两者虽有一些相似之处，但本质上完全不同，Magisk是创建新的分区而Xposed是直接修改系统文件。现在最好的结果就是二者相辅相成，按自己需要。
+
+**[原理]** : Xposed框架的原理就是替换安卓系统的app_process文件，从而实现对系统的接管，通过回调模块的方式来达到不用修改APK就能改变其表现行为的目的。用通俗的话来说就是是在任意进程启动之前，能加载特定Xposed模块的代码，从而控制任意进程的行为。这些特定的Xposed模块，能在App进程启动之前执行特定代码。app_process其实是存放在systen/bin目录下的一个程序，其作用就是启动zygote，在Android中，zygote是整个系统创建新进程的核心进程。Xposed框架Hook了核心进程Zygote，而其他应用启动都是从Zygote进程fork而来，就够达到针对系统上所有的应用程序进程的Hook。举个例子，比如很著名的某微信模块，就是你在启动微信之前，首先要运行模块内的一些脚本，这些脚本会劫持微信这个APP里的所有行为，所以最终能够实现微信内容防撤回，自定义微信摇骰子和石头剪刀布。
+1. **[MODULE|模块]** : 
+   1. [QNotified|QQ辅助性功能增强](https://github.com/ferredoxin/QNotified)
+   2. [Zhiliao|知乎去广告Xposed模块](https://github.com/shatyuka/Zhiliao)
+   3. [其他](https://repo.xposed.info/module-overview)
+
+### [Taiji](https://github.com/taichi-framework/TaiChi)
+
+关于 Wiki Doc 详见[官网](https://taichi.cool/), 是我选择的可以替代Xpose的更加稳定的模块, 
+
+### Usage|使用记录
 1. 薅厂商羊毛: 如果手机厂商和其他大常合作做出来些共赢的功能模块，我想处于灰色地带的Root用户会用这个软件来方便自己的生活，譬如我。甚至用系统API来薅羊毛也是有可能的，当然只希望止步于部分爱搞机的群体来使用这部分，或者说，正是爱搞机的这部分人的灵活运用带来了实际生活上的部分便利。用我现在的心情来说的话就是：属实万幸！
-2.  Magisk[^2]
-   > 随着SuperSu (XDA非常著名的开发者ChainFire维护的一款作品) 走向商业化（很久没有更新），安卓5.0之后，谷歌封堵了大量的漏洞，一些以商业化模式运作的各种所谓的一键ROOT工具全都玩完!，这些东西相对来说还非常危险，因为基本任何商业化或者第三方机构给出的超级用户管理工具，都等于是把你的手机变成别人的了，甚至他们还可以比流氓还流氓!。而SuperSU不一样，它一直是保持着非商业化运作，并且更新非常积极，但遗憾的是在2017年10月，开发者ChainFire发布声明不再参与维护SU，好像是把SuperSU卖给了中国的一家商业化运作的公司，自此更新节奏非常缓慢，目前SuperSU已经不能实现安卓O(8.0)以上更高版本的ROOT了，而取代这一切的，是Magisk。Magisk 是一位中国台湾的学生 @topjohnwu 开发的 Android 框架，它不但可以获取Root权限，而且支持Magisk模块。其第一个版本发布于2016年8月， 由于当时Magisk刚刚出现，支持的模块并不多，且SuperSu依然流行，Magisk还鲜为人知。直到SuperSu的消亡，人们才想起Magisk，此后Magisk迅速流行起来，成为每一个玩机爱好者的必备工具。
+2. [Termux](https://github.com/termux/termux-app): **0.90及以上** 版本需要 **Android7.0 及以上版本的系统**。此安装包由 **F-Droid 编译并签名**，且**保证与此源代码 tarball 保持一致**。
+3. [vtools](https://github.com/helloklf/vtools): Sence
 
-   **[原理]** : Magisk 则另辟蹊径，通过挂载一个与系统文件相隔离的文件系统来加载自定义内容，为系统分区打开了一个通往平行世界的入口，所有改动都只在那个世界（Magisk 分区）里发生，并不直接修改系统分区，这样大大减小了Magisk的变砖概率，而且就算变砖也可以通过卸载Magisk来恢复原来的系统分区。比如我们的/system/xbin中没有su，我们可以通过刷入相应的模块，在系统启动初期，将su映射到/system/xbin下来获取root[^3].
-    1. 通过rec刷入Magisk（推荐）
-    2. 直接安装（需要Root权限）(系统版本小于Android P，你可能需要先解锁系统分区)
-    3. 通过修补boot安装 (选中Rom解压后的boot.img，并在rec中直接刷入修补后的boot文件。)
-    4. 详见: [教程](https://www.coolapk.com/feed/17697847?shareKey=ODg2YmRkZmRiNGRmNWY0NTExMTQ~)
-    5. **[救砖]** : https://mp.weixin.qq.com/s/Os8j55GNmazqSt2UYrwy1g
 
-3. Xposed: Magisk的原理简单的说就是在系统boot时将其img挂载到自己的分区下，构建一个虚拟文件系统，和system分区无关，以不修改系统文件为前提，从而达到修改系统文件的效果。通过这种方式绕过谷歌安全机制，系统OTA升级，部分"被禁"软件都可以正常使用。而Xposed相反，框架一旦被加载就会修改系统，改动会影响在安全机制保护下的APP，所以一些理财软件,比如某某银行可能就无法使用，这些应用对root权限非常敏感。总的来说Magisk是通过systemless方式获取root，xposed则需要root才可以工作。所以magisk虽然集合了各种功能，但延展性上不如Xposed，两者虽有一些相似之处，但本质上完全不同，Magisk是创建新的分区而Xposed是直接修改系统文件。现在最好的结果就是二者相辅相成，按自己需要。
-   1. **[原理]** : Xposed框架的原理就是替换安卓系统的app_process文件，从而实现对系统的接管，通过回调模块的方式来达到不用修改APK就能改变其表现行为的目的。用通俗的话来说就是是在任意进程启动之前，能加载特定Xposed模块的代码，从而控制任意进程的行为。这些特定的Xposed模块，能在App进程启动之前执行特定代码。app_process其实是存放在systen/bin目录下的一个程序，其作用就是启动zygote，在Android中，zygote是整个系统创建新进程的核心进程。Xposed框架Hook了核心进程Zygote，而其他应用启动都是从Zygote进程fork而来，就够达到针对系统上所有的应用程序进程的Hook。举个例子，比如很著名的某微信模块，就是你在启动微信之前，首先要运行模块内的一些脚本，这些脚本会劫持微信这个APP里的所有行为，所以最终能够实现微信内容防撤回，自定义微信摇骰子和石头剪刀布。
-4. [Termux](https://github.com/termux/termux-app): **0.90及以上** 版本需要 **Android7.0 及以上版本的系统**。此安装包由 **F-Droid 编译并签名**，且**保证与此源代码 tarball 保持一致**。
-5. [clash 镜像](https://tmpclashpremiumbindary.cf/) 
-6. https://github.com/Dreamacro/clash/releases/tag/v1.2.0
-7. [clash 在 linux 系统下的使用（含Country.mmdb下载链接）](https://www.pianshen.com/article/65381161602/)
-8. [china ip ](https://github.com/alecthw/mmdb_china_ip_list)
-9. [太极 ](https://taichi.cool/zh/doc/taichi-magisk.html)
-10. [太极 ](https://github.com/taichi-framework/TaiChi/wiki/FAQ)
-7. [框架 ](https://github.com/taichi-framework/TaiChi/releases/tag/5.8.2)
-8. https://github.com/taichi-framework/TaiChi/wiki/taichi-magisk-beta
 
 ## Google GMS
 
@@ -97,23 +119,7 @@ EMS（Enhanced Message Service）增强短信业务是SMS的增强版本，是�
 
 MMS是Multimedia Messaging Service的缩写，中文意为多媒体短信业务，这项业务是根据3GPP和WAP论坛的标准制定的。用术语讲多媒体短信业务是在GPRS网络或cdma2000 1X网络的支持下，以WAP无线应用协议为载体传送视频片段、图片、声音和文字。支持语音、因特网浏览、电子邮件、会议电视等多种高速数据业务，实现即时的手机端到端、手机终端到互联网或互联网到手机终端的多媒体信息传送。这种业务的出现可以替代部分电子邮件的功能，可以作为明信片的电子版，提供的服务内容极为丰富。这种业务发展的最大障碍是目前2.5G网络速度的限制，网络速度慢直接导致了资费过高，虽然价格已经下降很多，但仍然是大多数用户不能承受的。
 
-## CPU 架构
-+ aarch64
-+ arm
-+ ×86_64
-+ ×86
-+ Sig
 
-## [Screen](BVITE411v7Mo)
-
-**优先外屏**：纯原触摸
-| 外屏技术                     | 特点                                                        |
-| ---------------------------- | ----------------------------------------------------------- |
-| incell贴合技术屏幕——玻璃盖板 | （IPhone 6Plus）LCD ：背光，比较贵                          |
-| G+F贴合技术屏幕触摸屏（TP）  | （华为畅享）外挂触摸，液晶，屏幕厚，触摸功能片              |
-| OGS贴合技术                  | （小米4）屏幕薄、特别脆，外屏损伤一点就不可用，触摸（涂层） |
-**注意：**后两者容易出现的问题：IC过大，电流乱跳不准、纯元触摸、跳触。
-**Wiki**：光学胶
 
 ## Emulator Slow - 模拟器速度太慢
 1. Intel X86/64 上运行 ARM , 指令异常, 所以采用模拟, 模拟带来的时间损耗是数量级的. 利用QEMU转x86解释执行，效率远低于hyper-v的x86硬件虚拟化。

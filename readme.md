@@ -28,3 +28,7 @@ THX FOR:
   - [芝加哥手册指南](https://www.chicagomanualofstyle.org/)  [Q&A](https://www.chicagomanualofstyle.org/qanda/latest.html)
   - [英语使用中的常见错误](https://brians.wsu.edu/common-errors/) 
   - [Kubernetes 文档风格指南](https://kubernetes.io/docs/contribute/style/style-guide/)
+  - **[提問的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)**
+  - [中文技术文档写作风格指南](https://github.com/yikeke/zh-style-guide)
+- **[ Programming-Alpha-To-Omega | 「从零开始」系列](https://github.com/justjavac/Programming-Alpha-To-Omega)**
+- [How-to-Be-A-Programmer-CN](https://github.com/ahangchen/How-to-Be-A-Programmer-CN)
