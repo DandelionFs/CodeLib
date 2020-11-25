@@ -1,5 +1,14 @@
 # Research on Dynamic Deployment Strategy of Edge Services Based on Deep Reinforcement Learning
 
+**THX FOR:**
+- [D2D通信是什么？](https://www.zhihu.com/question/22278845) 
+- [eNodeB](https://baike.baidu.com/item/eNodeB/7210354)
+- [MME](https://baike.baidu.com/item/MME%E5%8A%9F%E8%83%BD/16597292)
+- [边缘计算：通过cloudlet案例看如何实现“边缘智能化”](https://searchcio.techtarget.com.cn/8-23497/)
+- [贝尔曼方程](https://www.jiqizhixin.com/graph/technologies/9a91aa59-8dc1-4eff-833b-6180ba53cb68)
+- 
+
+
 ## 云计算(Cloud Computing, CC)
 云中可用的大量资源可以被用来为支持资源受限的终端设备提供弹性计算能力和存储能力。
 
@@ -231,6 +240,16 @@ ATARI游戏
 !!!!!!!!!!!!!!!!!!!!!!
 
 ## 部署算法
+
+### 建模
+
+
+
+
+图胜千言，图片搬运工
+
+网络协议结构设计
+
 
 ### 强化学习 马尔可夫
 !!!!!!!!!!!!!!!!!!!!!!

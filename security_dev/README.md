@@ -107,6 +107,17 @@ Cookie是由计算机上的网页存储的少量信息。
 3. 广告Cookie：我们使用它们向您展示其他网站上的Goldcar.es广告。 这种形式的广告称为“重定向”，主要基于您在我们页面上的活动，例如您搜索过的目的地或您咨询过的住宿。 我们与此类Cookie的合作者包括：Google，Criteo，Tradedoubler，CJ Affiliate，Trabber，Bing，Yandex，Kayak，Skyscanner，YouTube，Facebook，Doubleclick，Trustpilot，Tutiempo.net和yahoo.com。    Cookie的管理    您可以通过配置计算机上安装的浏览器选项来允许，阻止或删除计算机上安装的Cookie。        
 
 
+### 为何访问一些网站总出现在下方的提示条
+
+> European Union laws require you to give European Union visitors information about cookies used and data collected on your blog. In many cases, these laws also require you to obtain consent. Out of courtesy, we have added a notice on your blog to explain Google's use of certain Blogger and Google cookies, including use of Google Analytics and AdSense cookies, and other data collected by Google. You are responsible for confirming that this notice actually works for your blog, and that it displays. If you employ other cookies, for example by adding third-party features, this notice may not work for you. If you include functionality from other providers there may be extra information collected from your users.
+
+欧盟法律要求您向欧盟访问者提供有关所用Cookie和博客上收集的数据的信息。 在许多情况下，这些法律还要求您获得同意。
+
+出于礼貌，我们在您的博客上添加了一条通知，以解释Google对某些Blogger和Google cookie的使用，包括对Google Analytics（分析）和AdSense cookie的使用以及Google收集的其他数据。
+
+您有责任确认此通知确实适用于您的博客并显示。 如果您使用其他cookie（例如通过添加第三方功能），则此通知可能对您不起作用。 如果您包括其他提供商的功能，则可能从您的用户那里收集了更多信息。
+
+
 + Firefox浏览器的更多信息请访问: http://support.mozilla.org/es/products/firefox/cookies
 + Chrome浏览器的更多信息，请访问: http://support.google.com/chrome/bin/answer.py?hl=zh_CN&answer=95647
 + Explorer浏览器浏览器的更多信息：http://windows.microsoft.com/eses/windows7/how-to-manage-cookies-in-internet-explorer-9
