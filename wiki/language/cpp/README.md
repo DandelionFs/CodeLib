@@ -9,6 +9,7 @@ THX FOR:
 - [从4行代码看右值引用](https://www.cnblogs.com/qicosmos/p/4283455.html)
 - [非常量引用的初始值必须为左值的问题](http://blog.sina.com.cn/s/blog_78955cec0101lame.html)
 - [C语言中void*详解及应用](https://www.cnblogs.com/wuyudong/p/c-void-point.html)
+- [stackoverflow-top-cpp|stackoverflow 上对 C/C++ 问题的整理、总结和翻译。](https://github.com/ethsonliu/stackoverflow-top-cpp)
 
 - Tip:
   - char数组写的时候一定要记住最后的'\0'，因为他的后面可能是随机数，也可能全是0，好点的编译器会给你加\0,但是不要侥幸。
