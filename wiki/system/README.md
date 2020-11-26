@@ -9,6 +9,8 @@ THX FOR:
 3. https://mp.weixin.qq.com/s/tTgqO4kM29uKm2Sy5KSbiA
 4. https://www.jb51.net/article/176264.htm
 5. https://mp.weixin.qq.com/s/enFpkGGeoNw9v_pGzhe2uw
+6. [美丽新世界：linux 下的惬意生活](https://github.com/yangyangwithgnu/the_new_world_linux)
+7. 
 
 ## Environment Var
 ### Linux
