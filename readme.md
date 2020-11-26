@@ -1,16 +1,23 @@
-<br>
-
-<br>
-
-> <center> "Talk is cheap. Show me the code." --Linus Torvalds </center>
-
-<br>
-
-<br>
-
 ## PREFACE
 
-Hello, I'm a student in IMU. This is a self-using code lib, which displays data(knowledge) and mind i've seen or used towards coding. I wanna use it lightly everywhere I worked(so other name called blog! \^_\^).
+> "Talk is cheap. Show me the code." 
+>  
+> --Linus Torvalds 
+
+
+> To follow the path | 沿着这样一条道路:
+> 
+> look to the master | 寻找大师，
+> 
+> follow the master | 跟随大师.
+> 
+> walk with the master | 与大师通行,
+> 
+> see through the master | 洞察大师,
+> 
+> become the master | 成为大师.
+
+This is a self-using code lib, which displays data(knowledge) and mind I've seen or used towards coding. I wanna use it lightly everywhere I worked(so other name called blog! \^_\^).
 
 So, Here we go !!!
 
@@ -41,17 +48,3 @@ Forgiving me who had used half-angle punctuation in every docs, cause shiefing C
 - [fucking-algorithm|刷算法全靠套路，认准 labuladong 就够了！](https://github.com/labuladong/fucking-algorithm)
 - [cskaoyan|提供计算机考研和软件工程考研专业的各个学校 考研真题](https://github.com/csseky/cskaoyan)
 - [LeetCode-Go|题解](https://github.com/halfrost/LeetCode-Go)
-
-
-> To follow the path | 沿着这样一条道路:
-> 
-> look to the master | 寻找大师，
-> 
-> follow the master | 跟随大师.
-> 
-> walk with the master | 与大师通行,
-> 
-> see through the master | 洞察大师,
-> 
-> become the master | 成为大师.
-
