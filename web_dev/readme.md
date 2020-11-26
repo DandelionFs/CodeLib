@@ -3,8 +3,8 @@
 THX FOR:
 - [少侠，请收下这份前端开发自学资料（书籍+教程）~](https://segmentfault.com/a/1190000037730709)
 - [jstraining|全栈工程师培训材料](https://github.com/ruanyf/jstraining)
-
-
+- [html|HTML Standard](https://github.com/whatwg/html)
+s
 ## Preface
 
 > 查了三个小时的英文 Wikipedia 无果，科学上网 倒腾了4个小时无果，Github CLone 奇慢,  我只想说在国内查资料的门槛太高了...... In 2020-01-15 00:00:00

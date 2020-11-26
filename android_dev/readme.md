@@ -79,7 +79,9 @@ MIUI Root的两个条件：**BL锁** + 开发版及以上（系统支持 —— 
 1. **[MODULE|模块]** : 
    1. [QNotified|QQ辅助性功能增强](https://github.com/ferredoxin/QNotified)
    2. [Zhiliao|知乎去广告Xposed模块](https://github.com/shatyuka/Zhiliao)
-   3. [其他](https://repo.xposed.info/module-overview)
+   3. [ChiMi|MIUI扩展插件（xposed）](https://github.com/yonghen/chimi-)
+   4. [其他](https://repo.xposed.info/module-overview)
+
 
 ### [Taiji](https://github.com/taichi-framework/TaiChi)
 
@@ -89,7 +91,8 @@ MIUI Root的两个条件：**BL锁** + 开发版及以上（系统支持 —— 
 1. 薅厂商羊毛: 如果手机厂商和其他大常合作做出来些共赢的功能模块，我想处于灰色地带的Root用户会用这个软件来方便自己的生活，譬如我。甚至用系统API来薅羊毛也是有可能的，当然只希望止步于部分爱搞机的群体来使用这部分，或者说，正是爱搞机的这部分人的灵活运用带来了实际生活上的部分便利。用我现在的心情来说的话就是：属实万幸！
 2. [Termux](https://github.com/termux/termux-app): **0.90及以上** 版本需要 **Android7.0 及以上版本的系统**。此安装包由 **F-Droid 编译并签名**，且**保证与此源代码 tarball 保持一致**。
 3. [vtools](https://github.com/helloklf/vtools): Sence
-
+4. [kiwibrowser/src](https://github.com/kiwibrowser/src)
+5. 
 
 
 ## Google GMS
