@@ -1,16 +1,28 @@
 # English WIki
 
-这里主要收录一些短语的缩写以及来源, 目录里的内容是自己日常英语的学校打卡, 来源是`公众号`以及`ChinaDaily`. 
+主要收录一些短语的缩写以及来源, 目录里的内容是自己日常英语的学校打卡, 来源是`公众号`以及`ChinaDaily`. 
 
-THX FOR:
-- [程序员英语词汇宝典](https://learn-english.dev/)
-  - [most-frequent-technology-english-words](https://github.com/Wei-Xia/most-frequent-technology-english-words)
+## PREFACE
 
-## Word
+**THX FOR:**
+- [程序员英语词汇宝典](https://github.com/Wei-Xia/most-frequent-technology-english-words)
+
+**Word**
 - 初中 2000 
 - 高中 3500
 - 四级 4500
 - 六级
+
+## DETAILS
+
+- CV: Curriculum Vitae, 履历, 经历.
+
+
+
+- INF: In computing, an INF file or Setup Information file is a plain-text file used by Microsoft Windows for the installation of software and drivers. INF files are most commonly used for installing device drivers for hardware components.
+
+
+
 
 + **Style sheet (web development)**:  form of [separation of presentation and content](https://en.wikipedia.org/wiki/Separation_of_presentation_and_content) for [web design](https://en.wikipedia.org/wiki/Web_design) in which the [markup](https://en.wikipedia.org/wiki/Markup_(computer_programming)) (i.e., [HTML](https://en.wikipedia.org/wiki/HTML) or [XHTML](https://en.wikipedia.org/wiki/XHTML)) of a [webpage](https://en.wikipedia.org/wiki/Webpage) contains the page's semantic content and structure, but does not define its visual layout (style). Instead, the style is defined in an external style sheet file using a [style sheet language](https://en.wikipedia.org/wiki/Style_sheet_language) such as [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) or [XSLT](https://en.wikipedia.org/wiki/Extensible_Stylesheet_Language)
 

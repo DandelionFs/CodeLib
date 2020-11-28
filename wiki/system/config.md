@@ -58,7 +58,7 @@ THX FOR:
   - 坚果云
   - GoldenDict
   - Mircosoft To Do
-  - FluentRSS
+  - [FluentRSS](https://github.com/yang991178/fluent-reader)
   - Ao
   - Flowchar
   - Bookworn

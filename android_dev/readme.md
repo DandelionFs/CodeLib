@@ -4,6 +4,7 @@
 Android 是一个适用于移动设备的开源操作系统，也是由 Google 主导的对应开源项目。根据Android 开源项目 (AOSP)，手机厂商可以创建定制的Android 操作系统版本，将设备和配件移植到 Android 平台。
 
 THX FOR:
+
 1. [为什么PC配置那么好，跑安卓虚拟机还是卡，是技术原因，还是硬件原因？](https://www.zhihu.com/question/33423859/answer/57133469)
 2. [SMS短信,EMS短信,MMS短信,,都是什么啊](https://zhidao.baidu.com/question/21473984)
 3. [转载：TWRP的使用方法&双清、三清、四清解释，刷机必看](http://www.oneplusbbs.com/thread-942394-1-1.html)
@@ -13,6 +14,12 @@ THX FOR:
 7. [通用线刷教程](http://www.miui.com/shuaji-393.html)
 8. [小米手机刷机教程（高通机型）](https://www.xiaomi.cn/post/5326872)
 9. [太极·Magisk和EdXposed如何选择？](https://www.zhihu.com/question/316497403)
+10. [LearningNotes|Enjoy Learning.](https://github.com/francistao/LearningNotes)
+11. [AndroidInterview-Q-A|The top Internet companies android interview questions and answers](https://github.com/JackyAndroid/AndroidInterview-Q-A)
+12. [android|Smartisan open source code for full build.(repo manifest xml)](https://github.com/SmartisanTech/android)
+13. [Markwon|Android markdown library (no WebView)](https://github.com/noties/Markwon)
+14. [WeiXinMPSDK](https://github.com/JeffreySu/WeiXinMPSDK)
+15. [](https://github.com/coder-pig/Android-Storage-Box)
 
 ## CPU 架构
 + aarch64

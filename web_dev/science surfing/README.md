@@ -1,8 +1,13 @@
-# Surfing
-THX FOR:
-- [Link](https://10101.io/2019/10/27/internet-provider)
+# Science Surfing
 
-## PREFACE
+**THX FOR:**
+- [Link](https://10101.io/2019/10/27/internet-provider)
+- https://teddysun.com
+- https://doub.io
+- https://www.oldking.net
+- https://github.com/tcp-nanqinlang
+- https://v2ray666.com
+
 **机场:**
 + [CCCAT](//cccat.io)
 + [召唤师](//zhs.today/auth/register?code=ILoveMask)
@@ -16,6 +21,7 @@ THX FOR:
 + [YTOO](//ytoo.li/clientarea.php)
 + [魅影](//maying.co)
 
+**策略组、规则:**
 - 在线Subconverter订阅转换(仅供参考，安全自负)
   - https://acl4ssr-sub.github.io/
   - https://subcon.py6.pw/
@@ -26,17 +32,11 @@ THX FOR:
   - https://api.nameless13.com/
   - https://agwa.page/
   - https://acl4ssr.netlify.app/
+  - [神机规则](https://github.com/ConnersHua/Profiles/blob/master/Clash/Pro.yaml)
+  - Fndroid 大佬的[关于策略组的理解](https://github.com/Fndroid/jsbox_script/wiki/关于策略组的理解)
+  - [LINK](https://github.com/tindy2013/subconverter/blob/master/README-cn.md)
 
-
-
-
-**VPS脚本** 
-- **[LINK]**
-  - https://teddysun.com
-  - https://doub.io
-  - https://www.oldking.net
-  - https://github.com/tcp-nanqinlang
-  - https://v2ray666.com
+**VPS脚本:**
 + VPS综合性能测试脚本
   + [Bench.sh](//teddysun.com/444.html)
     ```bash
@@ -44,7 +44,6 @@ THX FOR:
     # https://github.com/oooldking/script/blob/master/superbench.sh
     ```
   + [SuperBench.sh](//www.oldking.net/350.html)
-    
     ```bash
     wget -qO- --no-check-certificate https://raw.githubusercontent.com/oooldking/script/master/superbench.sh | bash
     ```
@@ -109,6 +108,7 @@ THX FOR:
   bash tcp_nanqinlang-test.sh
   ```
 
+
 ## NOUN & PROBLEMS
 ### NOUN
 - IPLC: IPLC是国际线路 ( International Private Leased Circuit )，即国际私有租赁线路.延迟低&速度快 专线延迟可低至25ms, 甚至低于日本CN2线路不用担心IP不可用: 真正意义上的IPLC是完全内网通讯, 流量不像普通VPS经过某些审查; 三大运营商是付费网间结算，暂时没有免费对等互联。要中继的原因一部分是三大国际出口网络质量不一样，一部分是小运营商几乎没啥国际出口，所以要借助其他表现好的。
@@ -122,11 +122,11 @@ THX FOR:
   - https://blog.csdn.net/u012505617/article/details/89205642
   - https://www.zhihu.com/question/63627218
 
-### PROBLEMS
-- **[201020]** CFM 无法使用中转换节点--测速失败. 怀疑是内核的问题, 未找到问题. 
+## PROTOCOLS
+
+代理协议.
 
 ### SS
-
 **[LINK]**
 1. https://233v2.com/
 2. https://vpsland.xyz/
@@ -150,7 +150,7 @@ chmod +x shadowsocks-all.sh
 > I believe you guys will make great stuff with Network Extensions.
 
 
-## PROTOCOLS
+
 ### SSR
 
 + [ShadowsocksR脚本](https://doub.io/ss-jc42/)
@@ -234,126 +234,16 @@ v2ray uninstall#卸载V2Ray
 - MMDB 维护
   - https://github.com/alecthw/mmdb_china_ip_list
 
-### USAGE
-- **策略组、规则**
-  - [神机规则](https://github.com/ConnersHua/Profiles/blob/master/Clash/Pro.yaml)
-  - Fndroid 大佬的[关于策略组的理解](https://github.com/Fndroid/jsbox_script/wiki/关于策略组的理解)
-  - 当 Surge 托管链接的`URL参数`在两个及以上(由`&`连接)的话，请先对托管连接进行 [URL 编码](http://tool.chinaz.com/tools/urlencode.aspx)；
-  - Clash、Quantumult、Surge、Surfboard 等工具
--  便携(必要)模式: 将`config.yml`和`Country.mmdb`放置在软件目录下`resources/static/files`文件夹中。
-- 若不想系统代理，需要自己配置 http 或 socks5 代理，具体端口信息可以在`General`页面找到；
+### PROBLEMS
+- UWP 回环代理.
+  
 
+### CLASH FOR ANDROID/MAGISK/LINUX
 
+- [CFG](https://github.com/Kr328/ClashForMagisk)
+- [CPFG](https://github.com/kalasutra/Clash_Premium_For_Magisk)
 
-### CLASH FOR WINDOW
-+ `v0.4.5`版本后可以自定义系统代理需要绕过的域名或 IP ，用于解决部分应用检测代理后拒绝响应的问题（如 UWP 版网易云音乐）。具体编写方法见[官方文档——绕过系统代理](https://docs.cfw.lbyczf.com/contents/bypass.html)；（建议在`C:\Users\用户名\.config\clash\config.yml`中修改，这样可以在不同的配置文件中都起到作用）
-+ 如果需要 UWP 应用走系统代理的话，可以点击打开`General`页面的`EnableLoopback.exe`，然后勾选需要代理的应用后保存；对于少数不遵守系统代理的 UWP 应用，可以使用 Tap 模式(详见 [TAP 模式](https://docs.cfw.lbyczf.com/contents/tap.html))
-
-
-- 图标状态显示：蓝色——默认；红色——核心启动失败；黄色——系统代理开启；
-- `General（常规）`：
-  - 可点击`General`页面的`Clash for Windows`字样重启客户端，点击旁边的版本号可以检查更新，点击小猫咪可以开启暗黑模式；
-  -  `General`页面的信息只能通过修改`C:\Users\用户名\.config\clash\config.yml`来更改，即`profiles`中的配置文件内包含的 General 信息不会生效；
-  - `Port`、`Socks Port`；分别为 HTTP、SOCKS 代理端口，点击终端图案可以打开一个配置了代理的命令行窗口，点击端口数字可以复制该命令；
-  - `Allow LAN`：启用局域网共享代理功能，此开关仅为短暂开启，如需启用请在修改配置文件中进行修改；‘
-  - `Log Level`：日志等级；
-  - `Home Directory`：点击下方路径直达`C:\Users\用户名\.config\clash`文件夹；
-  - `GeoIP Database`：点击下方日期可更新 GeoIP 数据库；
-  - `UWP Loopback` ：可以用来使 UWP 应用解除回环代理限制；
-  - `Tap Device` ：安装 cfw-tap 网卡，可用于处理不遵循系统代理的软件（实际启动 tap 模式需要更改配置文件）；
-  - `Text Mode Edit`：编辑`config.yml`文件，可用于配置部分 **General** 页面内容；
-  - `Dark Theme`：控制暗色模式；
-  - `System Proxy`：启用系统代理；
-  - `Start with Windows`：设置开机自启；
-- `Proxies（代理）`：选择代理方式（Global-全局、Rule-规则、Direct-直连）及策略组节点选择；
-- `Profiles（配置管理）`：
-  - 用来下载远端配置文件和创建本地副本，且可在多个配置文件间切换；
-  - 对配置进行节点、策略组和规则的管理（添加节点、策略组和规则在各自编辑界面选择`Add`, 调整策略组顺序、节点顺序及策略组节点使用拖拽的方式）；
-- `Logs（日志）`：显示当前请求命中规则类型和策略；
-- `Connections (连接)`: 显示当前的 TCP 连接，可对某个具体连接执行关闭操作；
-- `Feedback（反馈）`：显示软件、作者相关信息，内含捐赠码，欢迎打赏[Fndroid](https://github.com/Fndroid)
-
-#### 添加配置文件
-有托管 / 订阅情况
-- 如果机场直接提供 Clash 托管配置，复制好托管链接，下一步;
-- 如果拥有 Surge 托管，可以使用大佬提供的接口转换 Surge 配置为 Clash 可用配置。  
-  **接口使用方法**：`https://tgbot.lbyczf.com/surge2clash?url=Surge托管地址`；例：托管地址为`http://example.com`, 那么使用接口后的远端配置地址为`https://tgbot.lbyczf.com/surge2clash?url=http://example.com`。
-
-#### 具体步骤
-
-1. 打开`clash for windows`，选择`Profiles`；
-2. 在`Download from a URL`中填写`Clash托管链接`或`使用接口后的Surge托管地址`，然后点击`Download`, 成功更新并启动后左下角应显示为`Connected to Clash core`，见下图①②③； 
-3. 点击`Proxies`，选择`Rule`，为自己的策略组挑选节点；
-4. 点击`General`, 勾选`System Proxy（系统代理）`。（可选，不懂建议勾选）
-
-#### 注意
-
-初次启动时自带了一个简单的配置文件，里面有一个名为`Shadowsocks`的`socks5`类型`1080`端口的本地代理，如果接口或者 Clash 托管链接被墙可以用别的软件开启代理作为 CFW 的前置代理，端口为`1080`。
-
-#### 无托管 / 订阅情况
-
-如果没有 Clash/Surge 托管或者 V2Ray/ss 订阅链接的话，解决方法有以下三种（方法一推荐作为小幅度修改使用，编写大量配置时方法二更为方便）：
-
-+ 方法一：利用 UI 配置
-
-1. 当`Profiles`中为空时，会自动生成一个`config.yml`文件的配置副本，可以直接对它进行编辑；
-2. 点击对应图案分别进入节点（组）或者规则的编辑模式；  
-3. 例如，点击"飞机"图案进入节点和策略组编辑界面（添加规则同理），完成后点击`Save`保存;
-4. 在`Proxies`中为各个策略组选择节点使用；
-5. 点击`General`, 勾选`System Proxy（系统代理）`。（可选，建议勾选）
-
-+ 方法二：直接修改配置文件
-
-有以下两种方式，推荐使用第二种方式，编辑器推荐使用 [Notepad++](https://notepad-plus-plus.org/download/v7.5.9.html)，配置格式请参考 [神机规则](https://github.com/ConnersHua/Profiles/blob/master/Clash/Pro.yaml)
-
-（~~编写策略组时注意**被引用的策略组要放在引用它的策略组之前**~~）：
-
-1. 编辑`C:\Users\用户名\.config\clash`文件夹下的`config.yml`文件，然后删除`profiles`文件夹，重启 CFW，则会在`Profiles`中看到生成的`config.yml`副本；
-2. 由于`Profiles`功能的加入，更推荐对`C:\Users\用户名\.config\clash\profiles`文件夹下的配置文件（若为 Local 文件直接在软件`Profiles`页面点击“铅笔状”图标即可打开）进行修改。
-
-**注意**：
-
-- General 部分信息由`config.yml`中对应部分决定，与`Profiles`中的配置文件无关；
-- 可以直接拖拽`yml`格式的配置文件到`Profiles`面板中快速导入，详见操作示例（来自 Fndroid 大佬的 [GitHub](https://github.com/Fndroid/clash_for_windows_pkg)
-
-+ 方法三：利用 JSBox 脚本
-  [LINK](https://github.com/tindy2013/subconverter/blob/master/README-cn.md)
-  iOS 用户可以利用大佬的 [JSBox](https://itunes.apple.com/us/app/jsbox-learn-to-code/id1312014438?mt=8) 脚本—— [lhie1 规则生成](https://xteko.com/install?id=77&lang=zh-Hans)——添加节点，然后将脚本目录下的`data.js`发送给托管机器人 [rules_lhie1_bot](https://telegram.me/rules_lhie1_bot)即可获取 Surge 托管链接，再按照以上[有托管 / 订阅链接情况](https://10101.io/2018/10/27/how-to-use-clash-for-windows#有托管+%2f+订阅情况)操作。
-
-#### 自定义字段
-
-以下字段均可在 `config.yaml` 中定义
-
-- `cfw-profiles-path`
-    用于自定义 `Profiles` 目录路径
-- `cfw-tray-icon`
-    用于自定义状态栏图标
-  ```yaml
-  cfw-tray-icon: 
-    default: path/to/ico           # 默认图标
-    system-proxy-on: path/to/ico   # 开启系统代理后图标
-  ```
-- `cfw-font-family`
-    用于自定义 CFW 字体
-- `cfw-proxies-order`
-    用于自定义节点排序，可用参数 `default` / `latency` / `alphabet`
-- `cfw-http-headers`
-    用于自定义配置文件下载时的请求头
-
-#### Error
-
-日志（点击左下角核心状态显示可直达 log 文件夹）: `C:\Users\用户名\.config\clash\logs`
-
-- `Can't load mmdb: error opening database: invalid MaxMind DB file`错误。  
-     **解决办法**：自行下载 Country.mmdb
-- 拨号连接用户IE代理正常，其他浏览器系统代理无法使用。
-     **解决办法**：重命名拨号连接，将中文名更改为英文名字，然后重启。
-- 打开 Profiles 界面空白无内容
-     **解决办法**：打开 Home Directory，删除文件夹下所有内容后重启软件。
-
-### CLASH FOR LINK/ANDROID/MAGISK
-
-因为 LINUX 和 CFM 上使用的是`CLASH`核心, 所以遇到的情况都大同小异, 总结一下:
+总结一下 *INX 的问题:
 - 配置文件有问题
   - 变量的大小写问题
   - 变量的端口的有无
@@ -372,7 +262,7 @@ v2ray uninstall#卸载V2Ray
 2. 执行Clash, 发现此页面会刷新. 表示 Clash 的外部映射端口几次场子的配置问题没有问题. 
 3. 选择节点, 开启代理, 进行测试.
 
-之前启示还用的好好的, 可以开机傻瓜的代理. 但是某一天就不可以用了. 可能是自己的Ubuntu又改了什么设置而我没有发现吧......
+## Internet
 
-尝试傻瓜代理, to be continued.
-
+- Telegram
+  - [shuziyimin](https://github.com/bates33/shuziyimin)

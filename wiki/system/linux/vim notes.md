@@ -6,7 +6,7 @@
 4. https://askubuntu.com/questions/1208159/how-do-i-install-vim-gnome-on-ubuntu-19-10
 5. https://developer.aliyun.com/article/309383
 6. https://ubuntuqa.com/zh-tw/article/1230.html
-
+7. [在 VIM 下写 C++ 能有多爽？](https://harttle.land/2015/07/18/vim-cpp.html)
 
 
 ## Config

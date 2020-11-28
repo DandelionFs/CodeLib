@@ -1,6 +1,8 @@
-# 迅雷 · 种子
+# 迅雷/种子
 
-**摘要：**美國的種子下載正面臨抉擇
+THX FOR:
+- [手写下载器](https://cjting.me/2020/10/31/tinytorrent-a-deno-bt-downloader/)
+
 
 ## 概要
 

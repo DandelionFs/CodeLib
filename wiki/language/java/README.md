@@ -1,8 +1,9 @@
----
-title: '[Java] Day_One'
-date: 2020-07-01 11:36:35
-tor: true
----
+# JAVA
+
+THX FOR:
+- [JavaCollection|Java开源项目之「自学编程之路」：学习指南+面试指南+资源分享+技术文章](https://github.com/hansonwang99/JavaCollection)
+- [JavaFamily|【Java面试+Java学习指南】 一份涵盖大部分Java程序员所需要掌握的核心知识](https://github.com/AobingJava/JavaFamily)
+
 
 ## 0x00 Preface
 
