@@ -10,17 +10,35 @@ THX FOR:
 - [非常量引用的初始值必须为左值的问题](http://blog.sina.com.cn/s/blog_78955cec0101lame.html)
 - [C语言中void*详解及应用](https://www.cnblogs.com/wuyudong/p/c-void-point.html)
 - [stackoverflow-top-cpp|stackoverflow 上对 C/C++ 问题的整理、总结和翻译。](https://github.com/ethsonliu/stackoverflow-top-cpp)
+- [如何优雅地使用 Stack Overflow？| 向Stackoverflow提问题](https://www.zhihu.com/question/20824615)
 
-- Tip:
-  - char数组写的时候一定要记住最后的'\0'，因为他的后面可能是随机数，也可能全是0，好点的编译器会给你加\0,但是不要侥幸。
-  - dec的用处就是1在其他编译器里去转换。
-  - 逻辑结构的背后是逻辑电路，正如逻辑语言背后是逻辑内存
-  - 遇到有限制条件的题在进行循环的时候将限制条件放在第一位（如题1128）——逻辑短路
-  - 读取EOF的意思：`while(scanf("%d %d%d",&m,&n,&t)!=EOF&&(n&&m&&t)) `
-  - 在有些语言中，有返回值的函数被称为函数（function）；没有返回值的函数被称为过程（procedure）或子程序（subroutine），但C++与C一样，这两种变体都被称为函数。
-  - 数组初始化的问题，不可以写`int p[N]`但是Devcpp里面却可以，这是因为C语言C99标准里的变长数组VLA,c++标准不支持。gcc编译器支持变长数组,但vc那个编译器不支持。你搜一下变长数组。会有很多这个资料的。
-  - 二维数组初始化不可以用（）因为会识别为逗号表达式，返回最后的值。
-  - static_cast是一个c++运算符，功能是把一个表达式转换为某种类型，但没有运行时类型检查来保证转换的安全性。
+<br>
+
+**Tip**:
+
+- 逻辑结构的背后是逻辑电路，正如逻辑语言背后是逻辑内存
+- OVERFLOW 上溢: `for (i = 1; i <= 32; i++) sum *= 2;` 结果是3. 因为 `OVERFLOW` 为 `math.h` 中的一个宏定义，其值为3。含义为运算过程中出现了上溢，即运算结果超出了运算变量所能存储的范围。 
+- char数组写的时候一定要记住最后的'\0'，因为他的后面可能是随机数，也可能全是0，好点的编译器会给你加\0,但是不要侥幸。
+- 输出ASKII码: **将char转化int即得**。值得注意的是: 两位数字不是没有askii码, 而是他的码是八位。
+- dec的用处就是1在其他编译器里去转换。
+- 遇到有限制条件的题在进行循环的时候将限制条件放在第一位（如题1128）——逻辑短路
+- 读取EOF的意思：`while(scanf("%d %d%d",&m,&n,&t)!=EOF&&(n&&m&&t)) `
+- 在有些语言中，有返回值的函数被称为函数（function）；没有返回值的函数被称为过程（procedure）或子程序（subroutine），但C++与C一样，这两种变体都被称为函数。
+- 数组初始化的问题，不可以写`int p[N]`但是Devcpp里面却可以，这是因为C语言C99标准里的变长数组VLA,c++标准不支持。gcc编译器支持变长数组,但vc那个编译器不支持。你搜一下变长数组。会有很多这个资料的。
+- 二维数组初始化不可以用（）因为会识别为逗号表达式，返回最后的值。
+- static_cast是一个c++运算符，功能是把一个表达式转换为某种类型，但没有运行时类型检查来保证转换的安全性。
+- `<std/c++lib>`万能头文件, 万能头文件在VSCode里面不可以联想检查错误语法, 但是可以编译运行, 它的万能主要是包含了一大推无用的文件
+- 在**不定规模(长)的具体问题**中, 使用string/vector
+- **数组扩容**: 不存在任何扩容操作，所谓扩容就是申请更大的数组拷贝过去，即所谓的伪扩容。类似的还有数组的删除操作，思路如下：
+- **C++如何操作内存**: 计算机是一种精确的、有条理的机器。要将信息项存储在计算机中，必须指出信息的存储位置和所需的内存空间。在C++中，完成这种任务的一种相对简便的方法，是使用声明语句来指出存储类型并提供位置标签。
+- 字符数组的初始化为数字 `0`的时候数组内全补充的`\0`（全局变量也可以达到这个效果）,有的时候用动态申请内存的时候，无法保证最后一位的下一位是`\0`来保证数组停下来（判断条件是`p[i]！=‘\0’ `）,所以应该尽量避免这样的判断条件，如果一定要用这个条件，可以选择初始化的时候就全员`\0`.
+- **主函数的返回类型**
+  - `void`,即无返回值
+  - ` int`,返回int型: `main`的返回值是返回给系统的,0表示成功,其他为失败。有的时候`int `返回值不写也是可以的如果没有值被返回，系统将得到一个表示程序成功完成的值。来自`main()`的非0值表示出错。
+- 
+
+
+<br>
 
 ## Auto 关键词
 
@@ -73,17 +91,6 @@ int main() {
 
 `auto`应该是C++11里面的新特性。
 
-### OVERFLOW 上溢
-
-```cpp
-int main(){
-	int  sum = 1,i;
-	for (i = 1; i <= 32; i++) sum *= 2;
-	cout << sum;
-}
-```
-
-结果是3. 因为 `OVERFLOW` 为 `math.h` 中的一个宏定义，其值为3。含义为运算过程中出现了上溢，即运算结果超出了运算变量所能存储的范围。 
 
 ### Data Transform 自动类型转换
 
@@ -222,20 +229,6 @@ while(scanf("%d%d", &M, &N) != EOF){
 }
 ```
 
-## 如何操作内存
-
-> 计算机是一种精确的、有条理的机器。要将信息项存储在计算机中，必须指出信息的存储位置和所需的内存空间。在C++中，完成这种任务的一种相对简便的方法，是使用声明语句来指出存储类型并提供位置标签。
-
-## 数组扩容
-
-不存在任何扩容操作，所谓扩容就是申请更大的数组拷贝过去，即所谓的伪扩容。类似的还有数组的删除操作，思路如下：
-
-![数组删除](http://i.dfslfh.cn/数组删除.png)
-
-## 输出ASKII码 
-
-将char转化int即得。值得注意的是 两位数字不是没有askii码 而是他的码是八位。值得注意的是，字符数组的初始化为数字 `0`的时候数组内全补充的`\0`（全局变量也可以达到这个效果）,有的时候用动态申请内存的时候，无法保证最后一位的下一位是`\0`来保证数组停下来（判断条件是`p[i]！=‘\0’ `）,所以应该尽量避免这样的判断条件，如果一定要用这个条件，可以选择初始化的时候就全员`\0`.
-
 ## `for`&`while`
 
 做题存在的问题——`for`不超`while`超时.
@@ -294,13 +287,6 @@ Windows系统中一般采用阻塞式检查 `Ctrl+Z`、Unix/Linux系统下一般
 阻塞式检查方式指的是只有在回车键按下之后才对此前是否有  Ctrl+Z  组合键按下进行检查，非阻塞式样指的是按下  Ctrl+D  之后立即响应的方式。例如：
 
 从键盘上输入abcd^z  加  回车之后在Windows系统上是这样处理的：由于回车的作用，前面的  abcd  等字符被送到输入缓冲区（注意：上面说过了，^z不会产生字符，所以更不会存储到输入缓冲区，缓冲区中没有  ^z  的存在）。这时，cin.get()  检测到输入缓冲区中已经有数据存在（因此不再检查是否有  ^z  的输入），于是从缓冲中读取相应的数据。如果都读取完了，则输入缓冲区重新变为空，cin.get()  等待新的输入。可见，尽管有  ^z  按下，但是由于在此之前还有其它输入字符（abcd），所以流也不会结束。
-
-## 主函数的返回类型 
-
-1. `void`,即无返回值
-2. ` int`,返回int型
-
-`main`的返回值是返回给系统的,0表示成功,其他为失败。有的时候`int `返回值不写也是可以的如果没有值被返回，系统将得到一个表示程序成功完成的值。来自`main()`的非0值表示出错。
 
 ## 宏定义
 
@@ -368,100 +354,6 @@ int Length(int p[]) {
 3. exit函数是退出应用程序，并将应用程序的一个状态返回给OS，这个状态标识了应用程序的一些运行信息。
 
 4. 和机器和操作系统有关一般是  0 为正常退出 非0 为非正常退出
-
-
-## `<std/c++lib>`万能头文件
-
-万能头文件在VSCode里面不可以联想检查错误语法, 但是可以编译运行.
-
-```cpp
-#ifndef _GLIBCXX_NO_ASSERT
-#include <cassert>
-#endif
-#include <cctype>
-#include <cerrno>
-#include <cfloat>
-#include <ciso646>
-#include <climits>
-#include <clocale>
-#include <cmath>
-#include <csetjmp>
-#include <csignal>
-#include <cstdarg>
-#include <cstddef>
-#include <cstdio>
-#include <cstdlib>
-#include <cstring>
-#include <ctime>
-
-#if __cplusplus >= 201103L
-#include <ccomplex>
-#include <cfenv>
-#include <cinttypes>
-#include <cstdalign>
-#include <cstdbool>
-#include <cstdint>
-#include <ctgmath>
-#include <cwchar>
-#include <cwctype>
-#endif
-
-// C++
-#include <algorithm>
-#include <bitset>
-#include <complex>
-#include <deque>
-#include <exception>
-#include <fstream>
-#include <functional>
-#include <iomanip>
-#include <ios>
-#include <iosfwd>
-#include <iostream>
-#include <istream>
-#include <iterator>
-#include <limits>
-#include <list>
-#include <locale>
-#include <map>
-#include <memory>
-#include <new>
-#include <numeric>
-#include <ostream>
-#include <queue>
-#include <set>
-#include <sstream>
-#include <stack>
-#include <stdexcept>
-#include <streambuf>
-#include <string>
-#include <typeinfo>
-#include <utility>
-#include <valarray>
-#include <vector>
-
-#if __cplusplus >= 201103L
-#include <array>
-#include <atomic>
-#include <chrono>
-#include <condition_variable>
-#include <forward_list>
-#include <future>
-#include <initializer_list>
-#include <mutex>
-#include <random>
-#include <ratio>
-#include <regex>
-#include <scoped_allocator>
-#include <system_error>
-#include <thread>
-#include <tuple>
-#include <typeindex>
-#include <type_traits>
-#include <unordered_map>
-#include <unordered_set>
-#endif
-```
 
 ## assert()
 
@@ -654,7 +546,49 @@ _Static_assert接受两个参数，第一个参数是整型常量表达式，第
 
 
 
-### Error
+## 比较运行时间
+
+**template**:
+```cpp
+srand(time(NULL));
+clock_t start=clock();
+printf("size is:%d\n", strlen(p));
+printf("strlen() time:%ld\n" ,clock()-start);
+```
+
+### [Bug] [`strlen` & `sizeof`](https://stackoverflow.com/questions/64714810/texting-function-running-time-by-c-c-is-related-with-code-order-why)
+
+[201106] 心得: 第一次尝试在Stackoverflow 上提问题, 因为中文的搜索结果实在是有点捉襟见肘, 尝试询问了墙外的朋友, 有的切中肯綮, 有的则在吐槽我的代码, 22天后的28号我硬着头皮上, 发现比我预期的骂的声音要少很多, 我还是在代码上有点摸不见头脑,  比如使用`std::cout`要好于`namespace std`吗? 为什么? 比较粗糙的 万能头文件, 都让我困惑.
+
+> I want to compare sizeof and strlen by process running time, but the result is related with code order. I couldn't understand it , why? By the way , my pc is using Clion to run c/c++.
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+char p[100000]={"hello,world"};
+int main(){
+    srand(time(NULL));
+    clock_t start=clock();
+    printf("size is:%d\n",sizeof(p)/ sizeof(char));
+    printf("sizeof() time:%ld\n" ,clock()-start);
+
+    start=clock();
+    printf("size is:%d\n", strlen(p));
+    printf("strlen() time:%ld\n" ,clock()-start);
+
+    return 0;
+}
+```
+
+- Since C++ doesn't have variable-length arrays, `sizeof` is a pure compile-time operator. Its result is calculated by the compiler itself, without any run-time overhead. Besides, `sizeof(char)` is defined b y the C++ specification to always be `1`, so `sizeof(p)/ sizeof(char)` is equal to `100000/1`, which of course always will be `100000`. – [Some programmer dude](https://stackoverflow.com/users/440558/some-programmer-dude) 
+- That's much too short to benchmark like this. And *don't* do I/O in the part you're measuring (unless you're measuring I/O performance). – [Mat](https://stackoverflow.com/users/635608/mat) 
+- Also please try to unlearn the bad habits you've have. Like [``](https://stackoverflow.com/questions/31816095/why-should-i-not-include-bits-stdc-h), [`using namespace std;`](https://stackoverflow.com/questions/1452721/why-is-using-namespace-std-considered-bad-practice), global variables, really large arrays, character arrays for strings, and using `printf` instead of `std::cout`. Even in short simple example code like this, you should use good habits, because all habits, good or bad, tend to stick. So better use good habits and have them stick instead. – [Some programmer dude](https://stackoverflow.com/users/440558/some-programmer-dude) 
+
+原因如下:
+1. C++ 的 sizeof 是通过 编译器 算出来的, 没有任何时间代价. 
+2. 不要在I/O的时候进行测试.
+3. 编译器优化.
+
+## Code Error
 
 | Section               | What                                                         |
 | --------------------- | ------------------------------------------------------------ |
