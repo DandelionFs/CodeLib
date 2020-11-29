@@ -1,12 +1,60 @@
+# Ubuntu
+
+Ubuntu 爬坑.
+
+THX FOR:
+- [Ubuntu提示boot分区剩余空间不足或boot分区已满](https://blog.csdn.net/songkai320/article/details/78761391).
+- [Ubuntu /boot空间不足时解决办法](https://www.jianshu.com/p/b8e09fa1a387).
+- [ubuntu开机卡在logo界面修复](https://blog.csdn.net/weixin_40851278/article/details/82701410).
+- [win10没全部关闭导致Ubuntu的WiFi模块不可用](https://blog.csdn.net/github_33678609/article/details/86502916)
+- [安装Ubuntu18.04](https://blog.csdn.net/weixin_45591044/article/details/104157669).
+- [安装SSR](https://github.com/qingshuisiyuan/electron-ssr-backup/releases).
+- [粘贴板](https://blog.csdn.net/lanchunhui/article/details/51670785)
+- https://tieba.baidu.com/p/5732130742
+- https://blog.csdn.net/gatieme/article/details/51883981
+- https://blog.csdn.net/qq_21397217/article/details/52439111
+- https://blog.csdn.net/yc1404/article/details/8559852
+- https://www.jianshu.com/p/c0dc9189e991
+- https://jakting.com/archives/ubuntu-rw-windows-files.html
+- http://blog.csdn.net/tjuyanming/article/details/64929901
+- http://blog.csdn.net/u013427969/article/details/52744688
+- http://blog.itpub.net/10256541/viewspace-591042/
+- https://www.zhihu.com/question/20523036
+- https://blog.csdn.net/kwu_ganymede/article/details/54134104
+- https://doc.appimage.cn/docs/appimage/
+- https://blog.csdn.net/SHE_WithWings/article/details/73511345
+- https://blog.csdn.net/cuiguanjun/article/details/52832165
+- https://blog.csdn.net/liguangxianbin/article/details/86479395
+- https://www.cnblogs.com/yymn/p/4581894.html
+- http://people.ubuntu.com/~happyaron/ubuntu-docs/precise-html/power-suspendfail.html
+- https://www.zhihu.com/question/383262541
+- https://www.zhihu.com/question/19721279/answer/677855112
+- https://www.cnblogs.com/hustskyking/p/hosts-modify.html
+- https://qastack.cn/ubuntu/347152/why-is-the-etc-hosts-file-not-working
+- https://askubuntu.com/questions/710420/why-are-some-systemd-services-in-the-masked-state
+- https://www.php.cn/linux-440040.html
+- https://www.php.cn/linux-440040.html
+- https://forum.ubuntu.org.cn/viewtopic.php?t=482097
+- https://superuser.com/questions/636274/iterm2-terminal-giving-330132muh3300m330136mw3300m
+- https://www.unix.com/shell-programming-and-scripting/196573-how-remove-00m-bash-file.html
+- https://qastack.cn/unix/107371/how-to-turn-off-color-with-ls
+- http://c.biancheng.net/linux/alias.html
+- 配合翻译来看(日语): https://sicklylife.jp/ubuntu/2004/settings.html
+- 没事点一下: http://u.nu/ubuntu
+- https://www.sysgeek.cn/apt-vs-apt-get/
+- https://blog.csdn.net/ysy950803/article/details/78507892 
+- https://www.thefanclub.co.za/how-to/ubuntu-touchpad-gestures-install
+- [ubuntu 释放空间的7种简单方法](https://blog.csdn.net/qq_42427109/article/details/107882574)
+
+
+
 ## Preface
 
-200125从虚拟机折腾, 一直到失联，在200323花了一下午入手双系统，对虚拟机say bye，入手Ubuntu……
-
-某天了解到官网曾经可以申请免费的Ubuntu光盘，很有趣, 应该已经绝版了，指导点[我](https://wiki.ubuntu.org.cn/%E7%94%B3%E8%AF%B7Ubuntu%E5%85%8D%E8%B4%B9%E5%85%89%E7%9B%98%E7%9A%84%E5%85%A8%E7%A8%8B%E6%8C%87%E5%AF%BC)，写在前面留个纪念。（选择版本 -> 填写表格 -> 发出申请 -> 申请接受 -> 收到CD）在安装前请一定看一看Ubuntu官网的[Wiki](https://wiki.ubuntu.org.cn/%E5%AE%89%E8%A3%85_Linux_%E5%BA%94%E7%9F%A5%E7%9A%84%E5%8D%81%E4%BB%B6%E4%BA%8B).大致如下: 
+200125从虚拟机折腾, 一直到失联，在200323花了一下午入手双系统，对虚拟机say bye，入手Ubuntu…… 某天了解到官网曾经可以申请免费的Ubuntu光盘，很有趣, 应该已经绝版了，指导点[我](https://wiki.ubuntu.org.cn/%E7%94%B3%E8%AF%B7Ubuntu%E5%85%8D%E8%B4%B9%E5%85%89%E7%9B%98%E7%9A%84%E5%85%A8%E7%A8%8B%E6%8C%87%E5%AF%BC)，写在前面留个纪念。（选择版本 -> 填写表格 -> 发出申请 -> 申请接受 -> 收到CD）在安装前请一定看一看Ubuntu官网的[Wiki](https://wiki.ubuntu.org.cn/%E5%AE%89%E8%A3%85_Linux_%E5%BA%94%E7%9F%A5%E7%9A%84%E5%8D%81%E4%BB%B6%E4%BA%8B).大致如下: 
 
 ![](./img/Ubuntu.png)
 
-**声明**：这个**教程针对UEFI+GPT的Win10电脑, 或者说本教程用的格式化Ubuntu Ext2 分区就是采用此格式.** **所有命令都有最简模式, 目的是图我自己重装系统的时候方便, 嘻嘻**
+**声明**：**BLOG 只针对 UEFI+GPT 的 Win10 电脑, 或者说本教程用的格式化 Ubuntu Ext2 分区就是采用此格式. 所有命令都有最简模式, 目的是图我自己重装系统的时候方便**
 
 ## Install
 
@@ -49,11 +97,6 @@ sudo gedit /etc/apt/sources.list
 sudo update-manager -c -d
 ```
 
-
-## Links
-1. 配合翻译来看(日语): https://sicklylife.jp/ubuntu/2004/settings.html
-2. 没事点一下: http://u.nu/ubuntu
-
 <center>基于<b>wiki.ubuntu.org.cn</b></center>
 
 在用完 Win 后有感, 在没有深入了解人类设计的技术前，永远不要过分相信他，就像是你的电脑，在你真正摸清楚他的操作原理和操作逻辑之前，不要过分依赖他，在他面前，你可能就是赤裸的，所以人生啊，多学习一点东西，可能看书会吸收的很慢，但是幸好他永远是没有上限的，如果有瓶颈，突破它就好了，我所真正担心的是我没有足够的时间和精力去见证世间的一切，害怕的是自己不能静下心来慢慢的学习起来，对那些Fest Learner肃然起敬，但同时我始终都不了解真正的自己，永远在以伤害自己的方式来逼迫自己努力，而不是全身心的投入到自己的学习生涯中，这又是多么的可悲，而有的人意识不到这点，何等的讽刺……
@@ -78,7 +121,6 @@ wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add - && sudo a
 sudo apt install tree -y
 # deb包安装
 sudo dpkg -i xxx.deb
-sudo gdebi ???
 sudo apt install gdebi
 sudo gdebi netease-cloud-music_1.2.1_amd64_ubuntu_20190428.deb
 #安装依赖（如果提示需要的话）
@@ -121,15 +163,65 @@ sudo apt purge XXX  #一个带core的package，如果没有带core的package，�
 
 ### Clean
 ```bash
-sudo apt autoclean
+sudo apt autoclean # 只删除过时的软件包，例如最近更新所取代的软件包，就完全不需要它们。
 sudo apt autoremove
 
 dpkg -l |grep ^rc|awk '{print $2}' |sudo xargs dpkg -P 
+
+# 清理日志问题.
+sudo echo > /var/log/syslog
+sudo echo > /var/log/kern.log
+
+```
+**清理SNAP**
+
+执行脚本:
+
+```shell
+#!/bin/bash
+# Removes old revisions of snaps
+# CLOSE ALL SNAPS BEFORE RUNNING THIS
+set -eu
+snap list --all | awk '/disabled/{print $1, $3}' |
+    while read snapname revision; do
+        snap remove "$snapname" --revision="$revision"
+    done
 ```
 
-#### Knowledge For APT & APT-GET
+## Run AppImage
 
-**[LINK]** https://www.sysgeek.cn/apt-vs-apt-get/
+> AppImage 是一种把应用打包成单一文件的格式，允许在各种不同的目标系统（基础系统(Debian、RHEL等)，发行版(Ubuntu、Deepin等)）上运行，无需进一步修改。
+
+简而言之就是绿色通用版本.
+
+下载好程序的时候选择[属性]-> 可执行文件. 点击即可, 一般我习惯放在 `/home/usrname/opt/`下, 也可以节省下根目录的空间内存......
+
+```
+cd /usr/share/applications
+```
+
+创建一个`.desktop`文件. 然后编辑以下内容即可创建图标, 值得注意的是程序运行的图标的是包自带的, 这里定义的只能是应用菜单的.[^14][^15]
+
+```shell
+[Desktop Entry]
+Version=1.0	
+Encoding=UTF-8			# 字符编码  
+Name= XXX 
+Comment= XXX			# 鼠标经上提示名称 也可国际化
+Exec=XXX 				# 菜单执行的命令或程序路径
+Terminal=false
+Icon=XXX 				# 图标路径
+Type=Application
+Categories=Development
+StartupNotify=false；	#设置软件启动是不通知
+Hidden=false			#菜单是否隐藏，类似NoDisplay属性
+```
+
+
+
+
+
+#### Knowledge For APT & APT-GET
 
 **APT**的其它命令选项可以实现与使用 apt-get 时相同的操作。虽然 apt 与 apt-get 有一些类似的命令选项，但它并不能完全向下兼容 apt-get 命令。也就是说，可以用 apt 替换部分 apt-get 系列命令，但不是全部。
 
@@ -231,15 +323,6 @@ To Be Continued......
 [More] -> https://zhuanlan.zhihu.com/p/139305626
 
 
-## ORDER
-### AR
-**[LINK]**: https://baike.baidu.com/item/ar/7426017
-
-用于创建、修改备存文件（archive），或从备存文件中提取成员文件。ar命令最常见的用法是将目标文件打包为静态链接库。
-
-压缩的复杂命令可以用SHELL 来简化.
-
-
 ## TRASH SOTWARE
 ### 福昕阅读 & Okular
 地址: https://www.foxitsoftware.cn/pdf-reader/
@@ -317,9 +400,6 @@ acpi_osi=linux nomodeset
 
 ## N卡驱动
 
-**[LINK]** https://blog.csdn.net/ysy950803/article/details/78507892 
-
-
 进去之后要换aliyun的源, 进去发现分辨率是锁死的(反正不是1080P)，~~是Ubuntu自带的显卡驱动背的锅~~(好像Ubuntu20.04LTS 已经自带 N卡 驱动了......)，更新N卡驱动: 
 
 ```bash
@@ -337,7 +417,6 @@ sudo update-initramfs -u &&  reboot # 刷新重启
 
 
 ## Touchpad
-[LINK] : https://www.thefanclub.co.za/how-to/ubuntu-touchpad-gestures-install
 
 ```bash
 #!/bin/bash
@@ -455,13 +534,13 @@ sudo apt install -f
 ```
 
 
-#### ubuntu 18.04无法从fwupd下载固件[^1]
+#### ubuntu 18.04无法从fwupd下载固件
 
 > 通常是更新BIOS、更新网卡之类的需要fwupd。Android手机的bootloader就相当于电脑BIOS，所以Android更容易刷成砖。电脑重装系统是不会碰BIOS的，所以特殊情况才会成砖。
 
 
 
-## 双系统的时间不统一[^2][^3]
+## 双系统的时间不统一
 
 ```shell
 #这个是Bios里面的 Boot Secury 的问题, 但是关闭之后在进入Ubuntu后又会出现一系列问题.
@@ -470,7 +549,7 @@ sudo hwclock -w --localtime
 
 
 
-## initramfs-tools报错[^4]
+## initramfs-tools报错
 
 mdzz，当初分盘的时候太小气，看见别人`/boot`分区给了200M，但是太小了，以后给大点就不会有这问题了。解决方法是删掉多余的内核。dpkg命令是Debian Linux系统用来安装、创建和管理软件包的实用工具。查看自己的linux内核和正使用的内核，然后选择性删除。
 
@@ -509,7 +588,7 @@ apt update
 
 
 
-## ubuntu支持`exfat`方法[^5]
+## ubuntu支持`exfat`方法
 
 > 推荐u盘使用exfat格式，为什么呢？两个原因：
 >  1、三大主流操作系统（Linux、Mac、Windows）都支持exfat格式。
@@ -538,7 +617,7 @@ sudo snap abort 14
 
 
 
-## Ubuntu 永久挂载Win10磁盘[^6]
+## Ubuntu 永久挂载Win10磁盘
 
 实际挂载前，D盘为 `/dev/XX`，E盘为 `/dev/XXX`（**注意！这里 sd 后面的不一定和 Windows 一样，图里 Windows 和 Ubuntu 同处于 SSD 上，而 D 和 E 盘均位于 HDD 上，所以从 `a` 变成了 `b`**）
 
@@ -569,7 +648,7 @@ sudo mount -a#再检查一下，发现全是OK，哈哈
 
 
 
-## Uninstall Ubuntu[^7][^8]
+## Uninstall Ubuntu
 
 用的不习惯当然先卸载了，Emmmmm，哈哈哈哈，卸载比较简单，大家都知道如果你按照下面的链接安装无误的话，启动引导用的是Ubuntu自带的的 `GUN GRUB`，如果你分盘的时候没有选择下面的启动引导设置，那么你第一次启动的时候一定不会进入Ubuntu的系统。
 
@@ -592,7 +671,7 @@ sudo mount -a#再检查一下，发现全是OK，哈哈
 
 
 
-## 没有批量操作的压缩命令[^9]
+## 没有批量操作的压缩命令
 
 + 写 Shell/Python 脚本
 
@@ -609,7 +688,7 @@ done
 
 
 
-## Ubuntu Utf-8 和 Win GBK 的转化[^10]
+## Ubuntu Utf-8 和 Win GBK 的转化
 
 + 使用`unar`命令: 
 
@@ -622,7 +701,7 @@ unar (-o (GBK)) xx.zip
 
 
 
-## /bin/bash^M: bad interpreter: No such file or directory[^11]
+## /bin/bash^M: bad interpreter: No such file or directory
 
 [Cause] : 脚本文件是DOS格式的, 即每一行的行尾以\r\n来标识
 
@@ -635,39 +714,6 @@ set ff=unix
 
 
 
-## Run AppImage
-
-> AppImage 是一种把应用打包成单一文件的格式，允许在各种不同的目标系统（基础系统(Debian、RHEL等)，发行版(Ubuntu、Deepin等)）上运行，无需进一步修改。[^12]
-
-简而言之就是绿色通用版本.
-
-下载好程序的时候选择[属性]-> 可执行文件. 点击即可[^13], 一般我习惯放在 `/home/usrname/opt/`下, 也可以节省下根目录的空间内存......
-
-```
-cd /usr/share/applications
-```
-
-创建一个`.desktop`文件. 然后编辑以下内容即可创建图标, 值得注意的是程序运行的图标的是包自带的, 这里定义的只能是应用菜单的.[^14][^15]
-
-```shell
-[Desktop Entry]
-Version=1.0	
-Encoding=UTF-8			# 字符编码  
-Name= XXX 
-Comment= XXX			# 鼠标经上提示名称 也可国际化
-Exec=XXX 				# 菜单执行的命令或程序路径
-Terminal=false
-Icon=XXX 				# 图标路径
-Type=Application
-Categories=Development
-StartupNotify=false；	#设置软件启动是不通知
-Hidden=false			#菜单是否隐藏，类似NoDisplay属性
-```
-
-## Proxy
-
-见科学上网一章.
-
 
 ## Hang Up Bug
 
@@ -677,15 +723,15 @@ Hidden=false			#菜单是否隐藏，类似NoDisplay属性
 
 挂起时间和导致的问题相关, 短时间内挂机不会产生什么作用, 但是长时间就会导致 Preface 里面的问题.
 
-挂起:Suspend To RAM(STR)[^16]
+挂起:Suspend To RAM(STR)
 
 休眠: Suspend To Disk(STD)
 
-一种可能是设备的驱动问题不支持挂起[^17], 但是短时间却可以这是什么鬼??? 
+一种可能是设备的驱动问题不支持挂起, 但是短时间却可以这是什么鬼??? 
 
 #### 伪输出[Undo]
 
-+ 把你当前的用户加入audio组[^18]
++ 把你当前的用户加入audio组
 
 ```bash
 sudo usermod -a -G audio $USER
@@ -693,111 +739,27 @@ sudo usermod -a -G audio $USER
 
 更加详细的可以参考[这个](https://zhuanlan.zhihu.com/p/122887848)
 
-+ 可能是内核的问题[^19]
++ 可能是内核的问题
 
 暂无解决方法, TO BE CONTINUED...
 
-## DNS
-
-吐了吐了, 每天都在修 Ubuntu 的 Bugs , 还好 Ubuntu 在维护方面的教程较多, 即使是搞崩了系统还是可能在安全模式里面修复(大部分时候), 所以也是我选择 Ubuntu 的一个原因吧, 有意思的是我感到 GUI 真的是一个大势所趋, 用了就会不去的那种, 如果在这方面比的话, 选择 Ubuntu 即是再一次的对 Window 示好. 嘿嘿.
-
-### DNS-Hosts
-
-主要的误点是 Hosts 写成了 Host, 然后没有发现, 然后就是漫长的 Google 过程, 过程不再赘述, 这里写下我收集到的资料.
-
-+ Firefox, Chrome 浏览器是可以设置 浏览器代理的, 并且自身是拥有 DNS缓存服务的, Chrome在 `chrome://net-internals/` 里, 虽然在71版本后就看不到具体的Cache了, 但是清除还是有效的[^20].
-+ 在浏览器设置代理之后的优先级回大于本地, 以及部分网站会采用长连接的形式, 故表现为 开了代理 或 短时间快速(长连接时间之内)修改Hosts 就出现 Hosts 失效的问题; 然后因为隐私模式下不会复用 TCP 连接，新开连接的时候，会重新解析 DNS 域名，重启浏览器, 所有的连接（包括长连接）都会断开, 自然可以生效了; [^21]
-+ 重启网络服务
-  ```bash
-    service network restart
-  ```
-
-+ 在Ubuntu中，如果要刷新DNS缓存，则需要重新启动nscd守护程序。nscd使用以下命令进行安装. 使用以下命令在Ubuntu中刷新DNS缓存：[^22]
-   ```bash
-   sudo service nscd restart
-   sudo service dns-clean start
-   ```
-+ 关于清理缓存报错 `Failed to start dns-clean.service: Unit dns-clean.service is masked.`
-
-  > mask is a stronger version of disable. Using disable all symlinks of the specified unit file are removed. If using mask the units will be linked to /dev/null. This will be displayed if you check e.g. by systemctl status halt.service. The advantage of mask is to prevent any kind of activation, even manual.
-  >
-  > Caution: systemctl list-unit-files is listing the state of the unit files (static, enabled, disabled, masked, indirect) and has nothing to do with the state of the service. To have a look at the services use systemctl list-units.[^23]
-
-+ NSCD(name service cache daemon).
-
-> nscd缓存三种服务passwd group hosts，所以它会记录三个库，分别对应源/etc/passwd, /etc/hosts 和 /etc/resolv.conf每个库保存两份缓存，一份是找到记录的，一份是没有找到记录的。每一种缓存都保存有生存时间（TTL）[^24]
->
-> |:--:|:--:|
-> |logfile debug-file-name|指定调试信息写入的文件名|
-> |debug-level value|设置希望的调试级别|
-> |threads number|这是启动的等待请求的线程数。最少将创建5个线程|
-> | server-user user|如果设置了该选项，nscd将作为该用户运行，而不是作为root。如果每个用户都使用一个单独的缓存（-S参数），将忽略该选项|
-> |enable-cache service <yes/no>|启用或禁用制定的 服务 缓存|
-> |positive-time-to-live service value|设置 service 在指定缓存中正的项目（成功的请求）的TTL（存活时间）.Value 以秒为单位。较大的值将增加缓存命中率从而减低平均响应时间，但是将增加缓存的一致性问题|
-> | negative-time-to-live service value|设置 service 在指定缓存中负的项目（失败的请求）的TTL（存活时间）。 Value 以秒为单位。如果存在由不在系统数据库中的uid（用户ID）（例如在以root身份解包linux 内核源代码时）所拥有的文件将明显改善性能；应该维持较小的值以降低缓存一致性问题|
-> | suggested-size service value|这是内部散列表的大小， value 应该保持一个素数以达到优化效果。 |
-> |check-files service <yes/no>|启用或禁用检查属于指定 服务 的文件的改变。这些文件是 /etc/passwd， /etc/group， 以及/etc/hosts|
-
-命令[^25]
-```bash
-nscd -g # 查看统计信息
-
-nscd -i passwd # 清除 nscd缓存：
-nscd -i group
-nscd -i hosts
-
-rm -f /var/db/nscd/hosts # 删除缓存库或者停掉nscd服务：
-service nscd restart
-
-service nscd stop。# 停止nscd 服务
-```
-
-### 输出文件中带有` [34;42m` `[00m` 等乱码字符[^26][^27][^28][^29]
+### 输出文件中带有` [34;42m` `[00m` 等乱码字符
 
 这个是因为输入的文件带有颜色转义符号引起的, 所以想办法临时禁用颜色即可.
 
 
+## 指定运行级别
+
+`/etc/inittab`
+
+0：关机
+1：单用户【找回丢失密码】
+2：多用户状态没有网络服务
+**3**：多用户状态有网络服务
+4：系统未使用保留给用户
+**5**：图形界面
+6：系统重启
 
 
-
-#### More
-
-1. [Ubuntu提示boot分区剩余空间不足或boot分区已满](https://blog.csdn.net/songkai320/article/details/78761391).
-2. [Ubuntu /boot空间不足时解决办法](https://www.jianshu.com/p/b8e09fa1a387).
-3. [ubuntu开机卡在logo界面修复](https://blog.csdn.net/weixin_40851278/article/details/82701410).
-4. [win10没全部关闭导致Ubuntu的WiFi模块不可用](https://blog.csdn.net/github_33678609/article/details/86502916)
-1. [安装Ubuntu18.04](https://blog.csdn.net/weixin_45591044/article/details/104157669).
-2. [安装SSR](https://github.com/qingshuisiyuan/electron-ssr-backup/releases).
-7. [粘贴板](https://blog.csdn.net/lanchunhui/article/details/51670785)
-
-
-
-[^1]:https://tieba.baidu.com/p/5732130742
-[^2]:https://blog.csdn.net/gatieme/article/details/51883981
-[^3]:https://blog.csdn.net/qq_21397217/article/details/52439111
-[^4]:https://blog.csdn.net/yc1404/article/details/8559852
-[^5]:https://www.jianshu.com/p/c0dc9189e991
-[^6]:https://jakting.com/archives/ubuntu-rw-windows-files.html
-[^7]:http://blog.csdn.net/tjuyanming/article/details/64929901
-[^8]:http://blog.csdn.net/u013427969/article/details/52744688
-[^9]:http://blog.itpub.net/10256541/viewspace-591042/
-[^10]:https://www.zhihu.com/question/20523036
-[^11]:https://blog.csdn.net/kwu_ganymede/article/details/54134104
-[^12]:https://doc.appimage.cn/docs/appimage/
-[^13]:https://blog.csdn.net/SHE_WithWings/article/details/73511345
-[^14]:https://blog.csdn.net/cuiguanjun/article/details/52832165
-[^15]:https://blog.csdn.net/liguangxianbin/article/details/86479395
-[^16]:https://www.cnblogs.com/yymn/p/4581894.html
-[^17]:http://people.ubuntu.com/~happyaron/ubuntu-docs/precise-html/power-suspendfail.html
-[^18]:https://www.zhihu.com/question/383262541
-[^19]:https://forum.ubuntu.org.cn/viewtopic.php?t=482097
-[^20]:https://www.zhihu.com/question/19721279/answer/677855112
-[^21]:https://www.cnblogs.com/hustskyking/p/hosts-modify.html
-[^22]:https://qastack.cn/ubuntu/347152/why-is-the-etc-hosts-file-not-working
-[^23]:https://askubuntu.com/questions/710420/why-are-some-systemd-services-in-the-masked-state
-[^24]:https://www.php.cn/linux-440040.html
-[^25]:https://www.php.cn/linux-440040.html
-[^26]:https://superuser.com/questions/636274/iterm2-terminal-giving-330132muh3300m330136mw3300m
-[^27]:https://www.unix.com/shell-programming-and-scripting/196573-how-remove-00m-bash-file.html
-[^28]:https://qastack.cn/unix/107371/how-to-turn-off-color-with-ls
-[^29]:http://c.biancheng.net/linux/alias.html
+如何找回 root 密码，如果我们不小心，忘记 root  密码，怎么找回。
+- 思路： 进入到 单用户模式，然后修改 root 密码。因为进入单用户模式，root 不需要密码就可以登录。

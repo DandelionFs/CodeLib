@@ -43,5 +43,3 @@ nvidia-installer --uninstall
 
 1. [如何安装显卡的闭源驱动](https://www.deepin.org/docs/deepintoeveryone/%E7%A1%AC%E4%BB%B6%E4%B8%8E%E9%A9%B1%E5%8A%A8/%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85%E6%98%BE%E5%8D%A1%E7%9A%84%E9%97%AD%E6%BA%90%E9%A9%B1%E5%8A%A8/)
 2. [tty不断出现iwlwifi 0000:00:14.3: Unhandled alg: 0x707](https://bbs.deepin.org/forum.php?mod=viewthread&tid=180531)        
-
-
