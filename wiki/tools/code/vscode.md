@@ -13,6 +13,7 @@
    1. https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
    2. https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf 
 2. https://juejin.im/post/5cb87c6e6fb9a068a03af93a
+3. [设置 VSCode 缩进的空格数](https://www.jianshu.com/p/2ab1ffe53b31)
 
 
 ## Plugin
@@ -63,6 +64,7 @@
   - [在终端编译](https://blog.csdn.net/weixin_41594045/article/details/86568571)
   - [修改 JavaScript](https://blog.csdn.net/qq_38774121/article/details/100123956)  
 - [上下拆分窗口](https://jingyan.baidu.com/article/a948d6511f93c70a2ccd2e49.html): View->Editor Layout
+-  设置默认空格缩进`editor.detectIndention`: false
 
 ### [自动换行](https://www.zhihu.com/question/35042902)
 

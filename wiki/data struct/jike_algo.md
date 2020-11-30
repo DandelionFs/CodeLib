@@ -2,93 +2,96 @@
 
 极客大学网课.
 
+**THX FOR:**
+- [algorithm004-05|作业仓库](https://github.com/algorithm004-05/algorithm004-05)
+- [黄明《从简单的线性数据结构开始：栈与队列》](https://shimo.im/docs/jTKWyPTYkQwDPYkr/)
+- [王记超《Java中HashMap数据结构分析（语言无关）》](https://shimo.im/docs/wXpyygqVqYhHW6px)
+- [张宇腾《Dijkstra算法分享》](https://shimo.im/docs/kkTgptvpQxj633Dk)
+- [阎文元《聊聊散列表》](https://shimo.im/docs/K9vKxdr69RtpKJtJ)
+- [张鹏《深入浅出数组》](https://shimo.im/docs/jpDKpgDTXTjtDkhj/) 
+
+
 ## 数组、链表、跳表
 
-**Array**
+- **Array**
+    ```cpp
+    int a[100];    //Java/C++
+    list = []      //Python
+    let x=[1,2,3]  //JavaScript
+    ```
+    - 泛化语言，任何一个单元类型都可以放进去
+    - 内存管理器(Memory Controller)——删除/插入
+    - o(1)+o(n)=o(n+1/2);
+    - java 自动内存回收机制。
+    ```cpp
+    prepend		o(1)
+    append 		o(1)
+    lookup		o(1)
+    insert 		o(n)
+    delete		o(n)
+    ```
+- **Linked List**
+    Head Tail 
 
-```cpp
-int a[100];    //Java/C++
-list = []      //Python
-let x=[1,2,3]  //JavaScript
-```
+    java的next指针是引用
 
-- 泛化语言，任何一个单元类型都可以放进去
-- 内存管理器(Memory Controller)——删除/插入
-- o(1)+o(n)=o(n+1/2);
+    双向链表
 
-java 自动内存回收机制。
+    循环链表
 
-```cpp
-prepend		o(1)
-append 		o(1)
-lookup		o(1)
-insert 		o(n)
-delete		o(n)
-```
+    ```java
+    Entry<T>
+    ```
 
-**Linked List**
+    java的链表是双向链表
 
-Head Tail 
+    slide
 
-java的next指针是引用
+    ```cpp
+    prepend 	o(1)//增加
+    append 		o(1)
+    lookup		o(n)
+    insert 		o(1)
+    delete		o(1)
+    ```
+- **Skip LIst**
 
-双向链表
+    Redis
 
-循环链表
+    升维思想——空间换时间
 
-```java
-Entry<T>
-```
+    添加第一级索引
 
-java的链表是双向链表
+    添加二级索引
 
-slide
+    增加log2n个级索引
 
-```cpp
-prepend 	o(1)//增加
-append 		o(1)
-lookup		o(n)
-insert 		o(1)
-delete		o(1)
-```
-**Skip LIst**
+    64（2^6）个元素(log2n-1)
 
-Redis
+    ```
+    n/2、n/4、n/8、第k级索引结点的个数就是n/（2k）
+    假设索引有h级，最高级的索引有2个结点。n/（2h）=2，从而求得h=log2（n）-1
+    ```
 
-升维思想——空间换时间
+    维护成本高
 
-添加第一级索引
-
-添加二级索引
-
-增加log2n个级索引
-
-64（2^6）个元素(log2n-1)
-
-```
-n/2、n/4、n/8、第k级索引结点的个数就是n/（2k）
-假设索引有h级，最高级的索引有2个结点。n/（2h）=2，从而求得h=log2（n）-1
-```
-
-维护成本高
-
-n*(1-1/2^n)<n
+    n*(1-1/2^n)<n
 
 
 
-LRU Cache - Linked list
+    LRU Cache - Linked list
 
-https://www.jianshu.com/p/b1ab4a170c3c 
+    https://www.jianshu.com/p/b1ab4a170c3c 
 
-https://leetcode-cn.com/problems/Iru-cache
+    https://leetcode-cn.com/problems/Iru-cache
 
 
 
-Redis - Skip - List 
+    Redis - Skip - List 
 
-https://redisbook.readthedocs.io/en/latest/internal-datastruct/skiplist.html 
+    https://redisbook.readthedocs.io/en/latest/internal-datastruct/skiplist.html 
 
-https://www.zhihu.com/question/20202931
+    https://www.zhihu.com/question/20202931
 
 
 
@@ -96,16 +99,22 @@ https://www.zhihu.com/question/20202931
 
 
 
-### 练习
+- 断点继传法
+- 对照阅读法
+- 教学视频法
+- 书看不懂时，不硬看，扫清障碍，咱再来……
+- 多找几本书，对照着看……
+- 先看教学视频入门，再看书
 
+
+## 栈、队列、优先队列、双端队列
+练习
 1. https://leetcode-cn.com/problems/container-with-most-water/
 2. https://leetcode-cn.com/problems/move-zeroes/
 3. https://leetcode-cn.com/problems/climbing-stairs/
 4. https://leetcode-cn.com/problems/3sum/（高频老题）
 
 
-
-### Stack&Queue 
 
 Stack：先入后出；添加、删除皆为o（1）
 
@@ -126,28 +135,36 @@ Queue：先入先出；添加、删除皆为o（1）
 - [高性能的 container 库](https://docs.python.org/2/library/collections.html)
 
 
+## 哈希表、映射、集合
+
+- Hash table
+  - 散列表，是根据关键码值（Key value）而直接进行访问的数据结构。它通过把关键码值映射到表中一个位置来访问记录，以加快查找的速度。这个映射函数叫作散列函数（Hash Function），存放记录的数组叫作哈希表（或散列表）
+  - 电话号码簿
+  - 用户信息表
+  - 缓存（LRU Cache）
+  - 键值对存储（Redis）
+- Hash FunctionDF
+- Hash Collisions
+  - 增加维度->拉链式解决冲突法
+- 好的情况下O(1),坏的情况下O(n)
+
+- Map：key-value对，key不重复
+  - new HashMap() / new TreeMap()
+  - map.set(key, value)
+  - map.get(key)
+  - map.has(key)
+  - map.size()
+  - map.clear()
+- Set：不重复元素的集合
+  - new HashSet() / new TreeSet()
+  - set.add(value)
+  - set.delete(value)
+  - set.hash(value) 
 
 
 
+## 树、二叉树、二叉搜索树
 
-
-
-
-
-
-
-
-
-
-
-
-
-- 断点继传法
-- 对照阅读法
-- 教学视频法
-- 书看不懂时，不硬看，扫清障碍，咱再来……
-- 多找几本书，对照着看……
-- 先看教学视频入门，再看书
 
 
 
@@ -169,8 +186,8 @@ Queue：先入先出；添加、删除皆为o（1）
 def recursion(level, param1, param2, ...): 
     # recursion terminator 
     if level > MAX_LEVEL: 
-	   process_result 
-	   return 
+     process_result 
+     return 
 
     # process logic in current level 
     process(level, data...) 
@@ -329,5 +346,206 @@ const recursion = (level, params) =>{
   - https://leetcode-cn.com/problems/combinations/
   - https://leetcode-cn.com/problems/permutations/
   - https://leetcode-cn.com/problems/permutations-ii/
+
+## 分治&回溯 Divide & COnquer
+
+- 递归的另外一种表现形式.
+- 最近重复性
+- 最优重复性: 动态规划
+-  recursion
+- Template:
+   ```python
+   # Python
+   def divide_conquer(problem, param1, param2, ...): 
+     # recursion terminator 
+     if problem is None: 
+     print_result 
+     return 
+     # prepare data 
+     data = prepare_data(problem) 
+     subproblems = split_problem(problem, data) 
+     # conquer subproblems 
+     subresult1 = self.divide_conquer(subproblems[0], p1, ...) 
+     subresult2 = self.divide_conquer(subproblems[1], p1, ...) 
+     subresult3 = self.divide_conquer(subproblems[2], p1, ...) 
+     …
+     # process and generate the final result 
+     result = process_result(subresult1, subresult2, subresult3, …)
+     
+     # revert the current level states
+   ```
+    ```cpp
+    //C/C++
+    int divide_conquer(Problem *problem, int params) {
+      // recursion terminator
+      if (problem == nullptr) {
+        process_result
+        return return_result;
+      } 
+
+      // process current problem
+      subproblems = split_problem(problem, data)
+      subresult1 = divide_conquer(subproblem[0], p1)
+      subresult2 = divide_conquer(subproblem[1], p1)
+      subresult3 = divide_conquer(subproblem[2], p1)
+      ...
+
+      // merge
+      result = process_result(subresult1, subresult2, subresult3)
+      // revert the current level status
+    
+      return 0;
+    }
+    ```
+    ```java
+    //Java
+    private static int divide_conquer(Problem problem, ) {
+    
+    if (problem == NULL) {
+        int res = process_last_result();
+        return res;     
+    }
+    subProblems = split_problem(problem)
+    
+    res0 = divide_conquer(subProblems[0])
+    res1 = divide_conquer(subProblems[1])
+    
+    result = process_result(res0, res1);
+    
+    return result;
+    }
+    ```
+    ```javascript
+    //Javascript
+    const divide_conquer = (problem, params) => {
+    // recursion terminator
+    if (problem == null) {
+        process_result
+        return
+    } 
+
+    // process current problem
+
+    subproblems = split_problem(problem, data)
+    subresult1 = divide_conquer(subproblem[0], p1)
+    subresult2 = divide_conquer(subproblem[1], p1)
+    subresult3 = divide_conquer(subproblem[2], p1)
+    ...
+    // merge
+
+    result = process_result(subresult1, subresult2, subresult3)
+    // revert the current level status
+    }
+    ```
+
+ ## 回溯 Backtracking
+
+ - 八皇后
+ - 数独
+ - 归去来兮. 
+
+回溯法采用试错的思想，它尝试分步的去解决一个问题。在分步解决问题的过程中，当它通过尝试发现现有的分步答案不能得到有效的正确的解答的时候，它将取消上一步甚至是上几步的计算，再通过其它的可能的分步解答再次尝试寻找问题的答案。
+
+回溯法通常用最简单的递归方法来实现，在反复重复上述的步骤后可能出现两种情况：
+
+找到一个可能存在的正确的答案；
+
+在尝试了所有可能的分步方法后宣告该问题没有答案。
+
+在最坏的情况下，回溯法会导致一次复杂度为指数时间的计算。
+
+
+- https://leetcode-cn.com/problems/powx-n/
+
+
+- [牛顿迭代法原理](http://www.matrix67.com/blog/archives/361)
+- [牛顿迭代法代码](http://www.voidcn.com/article/p-eudisdmk-zm.html)
+
+
+
+- [子集](https://leetcode-cn.com/problems/subsets/)
+    ```cpp
+    // template: 1. terminator 2.process (split your big problem) 3. drill down (subproblmes) , merge(subsult) 4. reverse states
+
+    x\^n ——\>2\^10： 2\^5—\>（2\^2）\*2
+
+    pow(x, n):
+        subproblem: subresult = pow(x, n/2)
+    merge:
+
+        if n%2 == 1 {//obb
+            result = subresult * subresult *x;
+        }else{//even
+            result = subresult * subresult;
+        }
+
+    //3. 牛顿迭代法
+    ```
+
+    ```java
+    public class Solution {
+
+    public List<Integer>subsets(int []nums){
+        List<List<Integer>> ans = new ArrayList<>();
+        dfs(ans, nums, new ArrayList<Integer>(), 0);
+        return ans;
+    }
+
+    private void dfs(list<list<Integer>> ans, int []nums, list<Integer> list, int index) {
+        //terminator
+        if(index == nums.length ) {
+            ans.add(new Arraylist<Integer>(list));
+            return ;
+        }
+        dfs(ans, nums, list, index+1);// not pick the number at this index
+
+        list.add(nums[index]);
+        dfs(ans, nums, list, index+1);// pick the number at this index
+
+        // reverse the current state 
+        list.remove(list.size()-1);
+    }
+    ```
+    迭代
+    ```python
+    class Solution(object): 
+        def subsets(self, nums):
+            subsets = [[]]
+            
+            for num in nums:
+                for subset in subsets:
+                    new_subset = sulset + [num] 
+                    newsets.append(new_subset) 
+                subsets. extend(newsets).
+        return subsets
+
+    ```
+
+## 深度优先搜索和广度优先搜索
+
+## 贪心算法
+
+## 二分查找
+
+## 动态规划 
+
+## 字典树和并查集
+
+## 第14课丨高级搜索
+
+## 第15课丨红黑树和AVL树
+
+## 第16课丨位运算
+
+## 第17课丨布隆过滤器和LRU缓存
+
+
+## 第18课丨排序算法
+
+## 第19课丨高级动态规划
+
+## 第20课丨字符串算法
+
+## 第21课丨期末串讲
 
 

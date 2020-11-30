@@ -3,6 +3,7 @@
 爬坑ZSH.
 
 THX FOR:
+- [linux-command|Linux命令大全搜索工具](https://github.com/jaywcjlove/linux-command)
 - https://www.sysgeek.cn/install-zsh-shell-ubuntu-18-04/
 - https://my.oschina.net/u/2266513/blog/3103451
 - https://zhuanlan.zhihu.com/p/37195261

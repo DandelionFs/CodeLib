@@ -42,19 +42,19 @@ THX FOR:
 
 ## HOST
 
-一个没有扩展名的系统文件，作用就是将一些常用的网址域名与其对应的IP地址建立一个关联“数据库”，当用户在浏览器中输入一个需要登录的网址时，系统会首先自动从Hosts文件中寻找对应的IP地址，一旦找到，系统会立即打开对应网页，如果没有找到，则系统会再将网址提交[DNS](https://laod.cn/tag/dns/)域名解析服务器进行IP地址的解析。
+一个没有扩展名的系统文件，作用就是将一些常用的网址域名与其对应的IP地址建立一个关联“数据库”，当用户在浏览器中输入一个需要登录的网址时，系统会首先自动从Hosts文件中寻找对应的IP地址，一旦找到，系统会立即打开对应网页，如果没有找到，则系统会再将网址提交DNS域名解析服务器进行IP地址的解析。
 
 ### 修改
 
-接下来关键问题就是如何修改[hosts文件](https://laod.cn/tag/hosts文件/)，[hosts文件](https://laod.cn/tag/hosts文件/)存放目录：
+接下来关键问题就是如何修改hosts文件，hosts文件存放目录：
 
 - Window目录 C:\Windows\System32\drivers\etc\[hosts](https://laod.cn/tag/hosts/)
 - Linux及其他类Unix操作系统：/etc
 - Android目录/system/etc/
-- 更多系统[hosts](https://laod.cn/tag/hosts/)文件目录可参考：[常用的各平台 hosts 文件位置](https://laod.cn/hosts/hosts-position.html)
 
-编辑修改以上目录下的hosts文件。目前实现方式有许多形式，最直接的就是使用文件管理器将获取的hosts文件覆盖系统的hosts文件。
-
+修改方向:
+- [ADhosts](https://github.com/otobtc/ADhosts)
+- [yhosts](https://github.com/VeleSila/yhosts)
 
 ### 作用
 
@@ -66,10 +66,7 @@ THX FOR:
 6. **强制域名解析指定IP**: 比如一些网站有很多的服务器ip，有些ip可能被和谐了，那么我们可以在hosts文件里添加我们想要的ip跟域名。
 
 
-
-
 ## 进程
-
 
 ### 守护进程 & 僵尸进程 & 孤儿进程
 
