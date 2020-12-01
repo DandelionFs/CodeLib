@@ -4,7 +4,7 @@
 
 THX FOR:
 - [Deepin-Apps-Installation](https://github.com/Jactor-Sue/Deepin-Apps-Installation)
-
+- [](http://www.keyxl.com/aaa4cff/235/VLC-keyboard-shortcuts.htm)
 
 ## DECORATION 
 - **Window:** 
@@ -80,6 +80,7 @@ THX FOR:
   - Steam
     - Proxychains
   - Uplay
+  - VLC
 - Code
   - [GitKaken](https://www.gitkraken.com/)
   - **JetBrains**
@@ -329,6 +330,25 @@ gnome-session-properties
 ```bash
 ao --proxy-pac-url= XXXXX
 ```
+
+### VLC
+| F                            | Fullscreen               |
+| ---------------------------- | ------------------------ |
+| Space                        | Play/Pause               |
+| T                            | Show position (time)     |
+| S                            | Stop                     |
+| Ctrl+Q                       | Quit                     |
+| +/-                          | Faster/Slower            |
+| N/P                          | Next/Previous            |
+| Shft+Left/Shft+Right         | Jump very short          |
+| Alt+Left/Alt+Right           | Jump short               |
+| Ctrl+Left/Ctrl+Right         | Jump medium              |
+| Ctrl+Alt+Left/Ctrl+Alt+Right | Jump long                |
+| Ctrl+Up/Ctrl+Down            | Volume up/down           |
+| M                            | Mute                     |
+| Ctrl+M                       | Show DVD-menu            |
+| Left/Right Up/Down Enter     | DVD-menu navigation keys |
+
 
 ### VMware
 #### 触控板滑动
