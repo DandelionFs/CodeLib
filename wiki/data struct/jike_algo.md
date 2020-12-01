@@ -11,6 +11,79 @@
 - [张鹏《深入浅出数组》](https://shimo.im/docs/jpDKpgDTXTjtDkhj/) 
 
 
+## PREFACE
+
+- Chunk it up 切碎知识点
+  - 庖丁解牛
+  - 脉络连接
+- Deliberate Practicing 刻意练习
+  - 职业化运动
+  - 基本功是区别业余和职业选手的根本
+  - 基础动作的分解训练和反复练习 —> 最大的误区
+  - 刻意练习 — 过遍数（五毒神掌）
+    - 5分钟：读题 + 思考 + 直接看解法：注意！多解法，比较解法优劣 + 背诵、默写好的解法
+    - 马上自己写 —> LeetCode 提交 + 多种解法比较、体会 —> 优化
+    - 过了一天后，再重复做题 + 不同解法的熟练程度 —> 专项练习
+    - 过了一周：反复回来练习相同题目
+    -  面试前一周恢复性训练
+  - 练习缺陷、弱点地方
+  - 不舒服、不爽、枯燥
+- Feedback 反馈
+  - 即时反馈
+  - 主动型反馈（自己去找）
+  - 高手代码 (GitHub, LeetCode, etc.)
+  - 第一视角直播
+  - 被动式反馈（高手给你指点）
+  - code review
+  - 教练看你打，给你反馈
+- 切题四件套
+  - Clarification
+  - Possible solutions
+    - compare (time/space)
+    - optimal（加强）
+  - Coding（多写）
+  - Test cases
+
+
+## 复杂度分析
+
+- Google
+- Mac: iTerm2 + zsh (oh my zsh)
+- Windows: Microsoft new terminal: (https://github.com/microsoft/terminal)
+- VSCode; Java: IntelliJ; Python: Pycharm
+- LeetCode plugin (VSCode & IntelliJ)
+- https://vscodethemes.com/
+- 骚操作： 
+  - https://juejin.im/entry/587e0f2f570c352201113e14
+  - https://juejin.im/post/5ce1365151882525ff28ed47
+
+
+- Code Style
+  - Google code style
+  - Facebook
+  - Airbnb
+- LeetCode
+  - leetcode-cn.com 和 题解
+  - leetcode.com 和 Discuss board
+
+- ⾃顶向下的编程⽅式
+  - https://markhneedham.com/blog/2008/09/15/clean-codebook-review/
+  - https://leetcode-cn.com/problems/valid-palindrome
+
+- Big O notation
+  - O(1): Constant Complexity 常数复杂度
+  - O(log n): Logarithmic Complexity 对数复杂度
+  - O(n): Linear Complexity 线性时间复杂度
+  - O(n^2): N square Complexity 平⽅
+  - O(n^3): N square Complexity ⽴⽅
+  - O(2^n): Exponential Growth 指数
+  - O(n!): Factorial 阶乘
+注意：只看最⾼复杂度的运算
+
+
+- Master Theorem
+
+
 ## 数组、链表、跳表
 
 - **Array**
