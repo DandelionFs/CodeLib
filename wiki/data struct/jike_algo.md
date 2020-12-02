@@ -236,7 +236,181 @@ Queue：先入先出；添加、删除皆为o（1）
 
 
 
+```python
+ist_x = [1, 2, 3, 4]
+map_x = {
+‘jack’: 100,
+‘张三’: 80,
+‘selina’: 90,
+# …
+}
+set_x = {‘jack’, ‘selina’, ‘Andy’}
+set_y = set([‘jack’, ‘selina’, ‘jack’])
+```
+
+Map, Set : interfaces
+- Java set classes:
+  - [TreeSet, HashSet,ConcurrentSkipListSet, CopyOnWriteArraySet, EnumSet, JobState Reasons, LinkedHashSet](https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/util/Set.html)
+- Java map classes: 
+  - [HashMap, Hashtable, ConcurrentHashMap](https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/util/Map.html)
+
+实战题目
+1. https://leetcode-cn.com/problems/valid-anagram/description/
+2. https://leetcode-cn.com/problems/group-anagrams/
+3. https://leetcode-cn.com/problems/two-sum/description/
+
+小技巧
+- 养成收藏精选代码的习惯：https://shimo.im/docs/R6g9WJV89QkHrDhr
+    - Anagram, group-anagrams, two sum
+    ```python
+    # 思路：手动模拟hashtable，将字符串”a-z“的ASCII码作key，计数求差异    
+    def  isAnagram(self, s: str, t: str) -> bool:
+            arr1, arr2 = [0]*26, [0]*26
+            for i in s:
+                arr1[ord(i) - ord('a')] += 1
+            for i in t:
+                arr2[ord(i) - ord('a')] += 1
+            return arr1 == arr2
+
+    ```
+    ```python
+    # 思路：map计数，对比计数差异
+        def isAnagram(self, s: str, t: str) -> bool:
+            dict1, dict2 = {}, {}
+            for item in s:
+                dict1[item] = dict1.get(item,0) + 1
+            for item in t:
+                dict2[item] = dict2.get(item,0) + 1
+            return dict1 == dict2
+    ```
+    ```python
+    # 思路：数组排序后比较差异
+        def isAnagram(self, s: str, t: str) -> bool:
+            return sorted(s) == sorted(t)
+    ```+
+    ```java
+    public class Solution {
+        public boolean isAnagram(String s, String t) {
+            if(s.length() != t.length()) return false;
+            int [] a = new int [26];
+            for(Character c : s.toCharArray()) a[c - 'a']++;
+            for(Character c : t.toCharArray()) {
+                if(a[c -'a'] == 0) return false;
+                a[c - 'a']--;
+            }
+            return true;
+        }
+    }
+    ```
+
+    ```java
+    public boolean isAnagram(String s1, String s2) {
+            int[] freq = new int[256];
+            for(int i = 0; i < s1.length(); i++) freq[s1.charAt(i)]++;
+            for(int i = 0; i < s2.length(); i++) if(--freq[s2.charAt(i)] < 0) return false;
+            return s1.length() == s2.length();
+        }
+    ```
+
+    ```java
+    public boolean isAnagram(String s, String t) 
+    {
+        char[] sChar = s.toCharArray();
+        char[] tChar = t.toCharArray();
+        Arrays.sort(sChar);
+        Arrays.sort(tChar);
+        return Arrays.equals(sChar, tChar);   
+    }
+    ```
+
+    Group Anagrams:
+
+    ```python
+    def groupAnagrams(self, strs):
+        d = {}
+        for w in sorted(strs):
+            key = tuple(sorted(w))
+            d[key] = d.get(key, []) + [w]
+        return d.values()
+    ```
+
+    ```python
+    def groupAnagrams(self, strs):
+        dic = {}
+        for item in sorted(strs):
+            sortedItem = ''.join(sorted(item))
+            dic[sortedItem] = dic.get(sortedItem, []) + [item]
+        return dic.values()
+    ```
+
+    ```java
+    public List<List<String>> groupAnagrams(String[] strs) {
+        List<List<String>> res = new ArrayList<>();
+        HashMap<String, List<String>> map = new HashMap<>();
+        
+        Arrays.sort(strs);
+        for (int i = 0; i < strs.length; i++) {
+            String temp = strs[i];
+            char[] ch = temp.toCharArray();
+            Arrays.sort(ch);
+            if (map.containsKey(String.valueOf(ch))) {
+                map.get(String.valueOf(ch)).add(strs[i]);
+            } else {
+                List<String> each = new ArrayList<>();
+                each.add(strs[i]);
+                map.put(String.valueOf(ch), each);
+            }
+        }
+        for (List<String> item: map.values()) {
+            res.add(item);
+        }
+        return res;
+    }
+    ```
+
+    Two sum
+
+    ```python
+    def twoSum(self, nums, target):
+            d = dict()
+            for index,num in enumerate(nums):
+                if d.get(num) == None:
+                    d[target - num] = index
+                else:
+                    return [d.get(num), index]
+
+    ```
+
+    ```java
+    public int[] twoSum(int[] nums, int target) {
+            HashMap<Integer, Integer> tracker = 
+                new HashMap<Integer, Integer>();
+            int len = nums.length;
+            for (int i = 0; i < len; i++){
+                if (tracker.containsKey(nums[i])){
+                    int left = tracker.get(nums[i]);
+                    return new int[]{left+1, i+1};
+                } else {
+                    tracker.put(target - nums[i], i);
+                }
+            }
+            return new int[2];
+        }
+
+    ```
+
+
+
+
+
 ## 树、二叉树、二叉搜索树
+
+
+
+
+
+
+
 
 
 
