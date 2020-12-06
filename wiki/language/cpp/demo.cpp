@@ -3181,3 +3181,21 @@ int main() {
 //   cout << ans << endl;
 //   return 0;
 // }
+
+
+
+#include<iostream>
+#include<cstring>
+using namespace std;
+using std::cout;
+using std::cin;
+
+int main(){
+    int a[10][10];
+    memset(&a,20,sizeof(a));
+    for(int i=0;i<10;i++) {  
+        for(int j=0;i<10;j++)
+            cout<<a[i][j]<<" "; 
+        cout<<"\n";
+    }
+}

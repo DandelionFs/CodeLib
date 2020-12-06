@@ -257,10 +257,10 @@ Map, Set : interfaces
 实战题目
 1. https://leetcode-cn.com/problems/valid-anagram/description/
 2. https://leetcode-cn.com/problems/group-anagrams/
-3. https://leetcode-cn.com/problems/two-sum/description/
 
+3. https://leetcode-cn.com/problems/two-sum/description/
 小技巧
-- 养成收藏精选代码的习惯：https://shimo.im/docs/R6g9WJV89QkHrDhr
+- 养成收藏精选代码的习惯
     - Anagram, group-anagrams, two sum
     ```python
     # 思路：手动模拟hashtable，将字符串”a-z“的ASCII码作key，计数求差异    
@@ -400,6 +400,9 @@ Map, Set : interfaces
     ```
 
 
+- [有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/description/)
+- https://leetcode-cn.com/problems/group-anagrams/
+- https://leetcode-cn.com/problems/two-sum/description/
 
 
 

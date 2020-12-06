@@ -5,6 +5,7 @@
 THX FOR:
 - [Deepin-Apps-Installation](https://github.com/Jactor-Sue/Deepin-Apps-Installation)
 - [](http://www.keyxl.com/aaa4cff/235/VLC-keyboard-shortcuts.htm)
+- [App Store for Deepin (legacy codebase) | 深度应用商店](https://github.com/linuxdeepin/deepin-appstore)
 
 ## DECORATION 
 - **Window:** 

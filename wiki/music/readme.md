@@ -1,5 +1,31 @@
 # MUSIC
-收录值得记住的歌曲背景(现实), 歌词以及, 刹那的感想.
+
+Knowledge for music & China Native Lyrics.
+
+**THX FOR**
+- [MP3, AAC, WAV, FLAC: all the audio file formats explained](https://www.whathifi.com/advice/mp3-aac-wav-flac-all-the-audio-file-formats-explained)
+
+## Format
+- `MP3 (not hi-res)`: Popular, lossy compressed format ensures **small file size**, but **far from the best sound quality**. Convenient for storing music on smartphones and iPods. 
+- `AAC(not hi-res)`: **Apple's alternative to MP3**. Lossy and compressed, but **sounds better**. Used for iTunes downloads and Apple Music streaming.
+- `OGG (not hi-res)`: **Ogg Vorbis**. A lossy, **open-source alternative to MP3 and AAC**, unrestricted by patents. The file format used (at 320kbps) in Spotify streaming. 
+- `MQA (hi-res)`: A lossless compression format that packages hi-res files for more efficient streaming. Used for Tidal Masters hi-res streaming.
+- `AIFF (hi-res)`: Apple's alternative to WAV, with better metadata support. It is lossless and uncompressed (so big file sizes), but not hugely popular.
+- `DSD (hi-res)`: The single-bit format used for Super Audio CDs. It comes in 2.8mHz, 5.6mHz and 11.2mHz varieties, but due to its high-quality codec, it’s (currently) impractical for streaming. Uncompressed.
+- `FLAC (hi-res)`: This lossless compression format supports hi-res sample rates, takes up about half the space of WAV, and stores metadata. It's royalty-free and is considered the preferred format for downloading and storing hi-res albums. The downside is, it’s not supported by Apple (so not compatible with iTunes). 
+- `WAV (hi-res)`: The standard format in which all CDs are encoded. Great sound quality but it's uncompressed, meaning huge file sizes (especially for hi-res files). It has poor metadata support (that is, album artwork, artist and song title information).
+- `WMA Lossless (hi-res)`: A lossless incarnation of Windows Media Audio, but no longer well-supported by smartphones or tablets. 
+
+
+
+## SOFTWARE
+- [解锁NCM音乐](https://ix64.github.io/unlock-music/)
+
+## BAN LIST
+
+- 李志全系
+- 差不多先生
+
 
 ## 民谣
 - 杀死那个石家庄人

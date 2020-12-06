@@ -1,17 +1,21 @@
 # WEB DEV
- 
+
+优化网页一些箴言:
+
+> 如果一个网页的打开时间超过10秒，那么很多用户会放弃这个页面。
+
 THX FOR:
 - [少侠，请收下这份前端开发自学资料（书籍+教程）~](https://segmentfault.com/a/1190000037730709)
 - [jstraining|全栈工程师培训材料](https://github.com/ruanyf/jstraining)
 - [html|HTML Standard](https://github.com/whatwg/html)
-s
-## Preface
+-  https://blog.csdn.net/flying_man_/article/details/79392923
+- https://www.guru99.com/url-vs-uri-difference.html
 
-> 查了三个小时的英文 Wikipedia 无果，科学上网 倒腾了4个小时无果，Github CLone 奇慢,  我只想说在国内查资料的门槛太高了...... In 2020-01-15 00:00:00
->
-> 这个时代的主流技术, 下个时代的预备技术.
 
-## Internet Theory
+
+## Web开发概貌
+
+### 了解Internet的工作原理
 
 > 弄清楚计算机是怎样连成网的
 >
@@ -19,9 +23,9 @@ s
 >
 > 理论是贯穿学习始终的,  所以不一定一开始就一定要搞懂和全通
 
-### 1.1 计算机网络
+#### 计算机网络
 
-计算机网络（computer network），通常也简称网络，是指**容许节点分享资源的数字电信网络**。在电脑网络，电脑设备会透过节点之间的连接（数据链路）互相交换数据。传输介质可分为有线及无线两类——有线的可用到双绞线、光纤电缆等介质；无线则可用到Wi-Fi、NFC。
+计算机网络（computer network），简称网络: **容许节点分享资源的数字电信网络**。在电脑网络，电脑设备会透过节点之间的连接（数据链路）互相交换数据。传输介质可分为有线及无线两类——有线的可用到双绞线、光纤电缆等介质；无线则可用到Wi-Fi、NFC。
 当一个设备能够与另一设备交换信息时，便可视它们俩已连接成网络，不论它们是否直连
 电脑网络可依照传输介质、传输协议、 网络大小、拓扑、流量控制机制、创建目的等因素区分。**世界上最大的电脑网络为互联网**
 
@@ -36,29 +40,17 @@ s
 - 树状网络：所有节点一层一层地以分支形式连接。
 - 混合式拓扑：将上述拓扑混合使用。在布置网络时，一般会混合多种拓扑。
 
-
-
 **网络连接**：以太网是局域网的主流传输介质技术。以太网的标准行业规格为IEEE 802.3。以太网可以铜线或光纤电缆传输数据。无线局域网则一般会以无线电作传输介质，不过也有以红外线作传输介质的。电力线网络以既有电力线来传输数据。
-
 
 - 有线网络：同轴线缆以标准10Base2及10Base5来计，其最高速度为10Mbps。光纤是一种玻璃纤维或塑胶。其以光为传递的介质。它的好处为速度快、信号难以衰减。其传输速度可超过2Gbps
 - 无线网络：陆上微波通信会以地上发送站来把微波发送至类似卫星的天线接收器。陆上微波的频谱在千兆赫以内——因此所有通信限制在无阻碍的情况下才能顺利进行。基站最高可分开约40公里。通信卫星通信亦会透过微波来实现通信。该些卫星位于太空，一般距离地球地面约36000公里。其可发送语音、GPS、视频等信息。无线电与扩频技术——利用了功率较低的无线电技术的无线局域网。使用了扩频技术的无线局域网可使之间距离不远的设备互相沟通。IEEE 802.11定义了一种十分盛行的无线电技术的开放式标准——Wi-Fi。
 
-
-
 创建一个网络还需要一些相关设备，比如**网卡**（ 电脑能够访问传输介质上的数据 ）、**中继器**（ 增强信号的网络设备 ）**集线器**、**桥接器**（ 连接两个独立的网段及过滤之间的流量 ）、**网络交换器**、**路由器**、**调制解调器**、**防火墙**（ 一种控制网络安全和访问规则的网络系统 ， 按特定规则来充许或阻止数据通过 ）
-
-<br>
-
-<br>
 
 #### 互联网
 
 互联网( Internet)是指20世纪末期兴起电脑网络与电脑网络之间所串连成的庞大网络系统。这些网络以一些标准的网络协议相连。它是由从地方到全球范围内几百万个私人、学术界、企业和政府的网络所构成，通过电子，无线和光纤网络技术等等一系列广泛的技术联系在一起。互联网承载范围广泛的信息资源和服务，例如相互关系的超文本文件，还有万维网（WWW）的应用，电子邮件，通话，以及文件共享服务。
 
-<br>
-
-<br>
 
 #### Web
 
@@ -78,23 +70,13 @@ s
 HTML元素是构建网站的基石。HTML允许嵌入图像与对象，并且可以用于创建交互式表单，它被用来结构化信息——例如标题、段落和列表等等，也可用来在一定程度上描述文档的外观和语义。HTML的语言形式为尖括号包围的HTML元素（如），浏览器使用HTML标签和脚本来诠释网页内容，但不会将它们显示在页面上。
 HTML可以嵌入如JavaScript的脚本语言，它们会影响HTML网页的行为。网页浏览器也可以引用层叠样式表（CSS）来定义文本和其它元素的外观与布局。维护HTML和CSS标准的组织万维网联盟（W3C）鼓励人们使用CSS替代一些用于表现的HTML元素。
 
-<br>
-
-<br>
-
 #### IP
 
 **網際協議** （ **I**nternet **P**rotocol ） 也称**互联网协议**  是用于封包交換数据网络的一种协议。
 
 IP是在TCP/IP协议族中网络层的主要协议，任务仅仅是根据源主机和目的主机的地址来传送数据。为此目的，IP定义了寻址方法和数据报的封装结构。第一个架构的主要版本为IPv4，目前仍然是广泛使用的互联网协议，尽管世界各地正在积极部署IPv6。
 
-<br>
-
-<br>
-
 #### 端口
-
-[参考] : https://blog.csdn.net/flying_man_/article/details/79392923
 
 可以理解 成为黑箱的窗户 吧 : )
 
@@ -108,9 +90,6 @@ IP是在TCP/IP协议族中网络层的主要协议，任务仅仅是根据源主
 
 1024-65535是并没有公共定义的端口号，用户可以自己定义这些端口的作用。
 
-<br>
-
-<br>
 
 #### DNS
 
@@ -127,8 +106,6 @@ TLD(N)(Top-level domain (number))
 > A **top-level domain** (**TLD**) is one of the [domains](https://en.wikipedia.org/wiki/Domain_name) at the highest level in the hierarchical [Domain Name System](https://en.wikipedia.org/wiki/Domain_Name_System) of the [Internet](https://en.wikipedia.org/wiki/Internet). The top-level domain names are installed in the [root zone](https://en.wikipedia.org/wiki/DNS_root_zone) of the name space. For all domains in lower levels, it is the last part of the [domain name](https://en.wikipedia.org/wiki/Domain_name), that is, the last label of a [fully qualified domain name](https://en.wikipedia.org/wiki/Fully_qualified_domain_name). For example, in the domain name [www.example.com](https://en.wikipedia.org/wiki/Example.com), the top-level domain is [com](https://en.wikipedia.org/wiki/.com). Responsibility for management of most top-level domains is delegated to specific organizations by the Internet Corporation for Assigned Names and Numbers (ICANN), which operates the [Internet Assigned Numbers Authority](https://en.wikipedia.org/wiki/Internet_Assigned_Numbers_Authority) (IANA), and is in charge of maintaining the [DNS root zone](https://en.wikipedia.org/wiki/DNS_root_zone).
 >
 > -- Wikipedia
-
-<br><br>
 
 #### URI&URL
 
@@ -172,10 +149,6 @@ https://www.guru99.com/what-is-sap.html# This example URL has no folder
 https://career.guru99.com/top-33-investment-banking-interview-questions-answers/# This example URL has no extension
 ```
 
-[Continuation] : https://www.guru99.com/url-vs-uri-difference.html
-
-<br><br>
-
 ### 1.2 Web Server
 
 **Web Server**
@@ -185,37 +158,7 @@ Web Server handles (解析) HTTP协议, return 一个 HTTP Response (响应) 来
 Web服务器可以响应(response)一个静态页面或图片，进行页面跳转(redirect)，或者把动态响应(dynamic response)的产生委托(delegate)给一些其它的程序例如CGI脚本，JSP(JavaServer Pages)脚本，servlets，ASP(Active Server Pages)脚本，服务器端(server-side)JavaScript，或者一些其它的服务器端(server-side)技术
 
 
-## 0x02 相关配置和软件
 
-
-### 2.1 IIS
-
-
-## INTERNET STRUCT
-
-![](./img/Internet结构.png)
-![](./img/传输速率单位.png)
-# 如何零基础自学Web前端开发
-
-## 入门阶段
-
-### 第一学期：Web开发那些事儿
-
-#### 了解Web开发概貌
-
-##### 了解Internet的工作原理
-
-
-fixed 
-
-###### 学习一些计算机网络的基础知识
-
-弄清楚计算机是怎样连成网的 弄清楚一些核心概念和术语的含义，弄清楚它们之间的联系与区别
-
-- 计算机网络、互联网、Web
-- IP地址与端口
-- DNS
-- URI、URL
 
 ###### 了解Web Server的职责与基本使用方法
 
@@ -267,271 +210,134 @@ fixed
 
 #### 安装与配置相关软件
 
-##### 1 IIS
 
-###### 安装
 
-###### 创建网站
 
-###### 启动和停止网站
+## IIS
 
-###### 在局域网环境下访问IIS网站
+- 安装
+- 创建网站
+- 启动和停止网站
+- 在局域网环境下访问IIS网站
 
-##### 2 chrome
+### INTERNET STRUCT
 
-###### 开发者工具的使用
+![](./img/Internet结构.png)
+![](./img/传输速率单位.png)
 
-##### 3 node.js
+### chrome
+
+- 开发者工具的使用
+
+### node.js
 
 安装Node非常容易， npm是学习的重点，一定要掌握它的几条基本命令
 
-###### 安装Node.js本身
-
-####### 学习用新版本，开发用老版本
-
-####### 可以安装nvm来在同一台计算机上安装多个node.js版本，并进行方便地切换
-
-###### 安装一些非常重要的Node.js模块
-
-####### nodemon
-
-##### 4 git for windows
-
-###### Clone源码
-
-###### Commit源码
-
-##### 5 Visual Studio Code
-
-###### 如何设置字体
-
-###### 文件管理
-
-####### 如何创建文件与文件夹？
-
-####### 如何打开资源管理器？
-
-####### 如何导入己有的文件？
-
-在资源管理器中直接Copy & Paste即可。
-
-####### Ctrl+S保存文件。
-
-###### 使用集成终端
-
-####### 在终端窗口中直接调用node运行.js文件
-
-####### 提前结束程序：ctrl+c
-
-####### 创建多个终端
-
-###### 如何调试程序？
-
-在调试模式设断点，单步执行。
-
-####### Debug Console
-
-#### 掌握HTML 5与CSS3
-
-##### HTML基础
-
-###### HTML的基础知识
-
-###### 了解常用的HTML元素与属性
-
-###### 如何引用外部资源？
-
-注意区分一下绝对路径与相对路径
-
-###### 网页的结构与DOM树
-
-###### 表单与输入控件
-
-这个东西很重要，在Web开发中非常常见！ 主要就是弄清楚action和method两个属性，以及了解清楚表单数据是如何发送到Server上的。
-
-了解HTML表单的数据是怎样发送的？
-
-##### CSS3精要
-
-###### 了解CSS的基础知识
-
-####### 版本
-
-####### CSS的编程语言化
-
-使用 LESS/ SASS编译工具进行预编译语法转译
-
-####### 浏览器的兼容性问题
-
-####### CSS命名规范-BEM
-
-BEM是由Yandex公司推出的一套CSS命名规范， BEM是一种命名方法，能够帮助你在前端开发中实现可复用的组件和代码共享。
-
-####### 主流的CSS方案
-
-主流的 CSS 方案
-
--   跟 JS 完全解耦，靠预处理器和比如 BEM 这样的规范来保持可维护性，偏传统
-
--   CSS Modules，依然是 CSS，但是通过编译来避免 CSS 类名的全局冲突
-
--   各类 CSS-in-JS 方案，React 社区为代表，比较激进
-
--   Vue 的单文件组件 CSS，或是 Angular 的组件 CSS（写在装饰器里面），一种比较折中的方案
-
-###### 学会编写CSS样式规则
-
-###### 选择器与优先级
-
-###### CSS样式的继承与层叠原则
-
-CSS的顺序很重要，文件中出现位置靠后的 样式会覆盖之前的样式
-
-##### 网页设计基础
-
-###### 盒子模型
-
-####### 内联元素与块元素
-
-####### 定位与浮动
-
-####### BFC、IFC、GFC和FFC
-
-FC的全称是：Formatting Contexts，是W3C CSS2.1规范中的一个概念。它是页面中的一块渲染区域，并且有一套渲染规则，它决定了其子元素将如何定位，以及和其他元素的关系和相互作用。
-
-BFC(Block Formatting Contexts)直译为"块级格式化上下文"。Block Formatting Contexts就是页面上的一个隔离的渲染区域，容器里面的子元素不会在布局上影响到外面的元素，反之也是如此。
-
-IFC(Inline Formatting Contexts)直译为"内联格式化上下文"，IFC的line box（线框）高度由其包含行内元素中最高的实际高度计算而来（不受到竖直方向的padding/margin影响)
-
-GFC(GridLayout Formatting Contexts)直译为"网格布局格式化上下文"，当为一个元素设置display值为grid的时候，此元素将会获得一个独立的渲染区域，我们可以通过在网格容器（grid container）上定义网格定义行（grid definition rows）和网格定义列（grid definition columns）属性各在网格项目（grid item）上定义网格行（grid row）和网格列（grid columns）为每一个网格项目（grid item）定义位置和空间。
-
-FFC(Flex Formatting Contexts)直译为"自适应格式化上下文"，display值为flex或者inline-flex的元素将会生成自适应容器（flex container），可惜这个牛逼的属性只有谷歌和火狐支持，不过在移动端也足够了，至少safari和chrome还是OK的，毕竟这俩在移动端才是王道。
-
-###### 响应式设计
-
-####### flexbox响应式布局
-
-####### 媒体查询
-
-###### material Design
-
-由Google提出，最初主要是针对Android手机应用开发的，后来很快地扩展到Web领域，诸如Vue和Angular等都有应用了Material Design设计原则的UI库
-
-###### 掌握Web网页的常见布局实现方法
+- 安装Node.js本身
+  - 学习用新版本，开发用老版本
+  -  可以安装nvm来在同一台计算机上安装多个node.js版本，并进行方便地切换
+- 安装一些非常重要的Node.js模块
+  -  nodemon
+
+### git for windows
+
+- Clone源码
+- Commit源码
+
+### Visual Studio Code
+
+
+- 如何调试程序？在调试模式设断点，单步执行。
+  - Debug Console
+
+## 掌握HTML 5与CSS3
+
+- 网页的结构与DOM树
+-  表单与输入控件
+   -  这个东西很重要，在Web开发中非常常见！ 主要就是弄清楚action和method两个属性，以及了解清楚表单数据是如何发送到Server上的。
+- 了解HTML表单的数据是怎样发送的？
+
+## CSS3精要
+- CSS的编程语言化
+  - 使用 LESS/ SASS编译工具进行预编译语法转译
+  - 浏览器的兼容性问题
+  - CSS命名规范-BEM
+    - BEM是由Yandex公司推出的一套CSS命名规范， BEM是一种命名方法，能够帮助你在前端开发中实现可复用的组件和代码共享。
+  - 主流的CSS方案
+  - 主流的 CSS 方案
+    - 跟 JS 完全解耦，靠预处理器和比如 BEM 这样的规范来保持可维护性，偏传统
+    - CSS Modules，依然是 CSS，但是通过编译来避免 CSS 类名的全局冲突
+    -   各类 CSS-in-JS 方案，React 社区为代表，比较激进
+    -   Vue 的单文件组件 CSS，或是 Angular 的组件 CSS（写在装饰器里面），一种比较折中的方案
+-  学会编写CSS样式规则
+   - 选择器与优先级
+   - CSS样式的继承与层叠原则: CSS的顺序很重要，文件中出现位置靠后的 样式会覆盖之前的样式
+   - 网页设计基础
+   -  盒子模型
+      - 内联元素与块元素
+      - 定位与浮动
+
+   - BFC、IFC、GFC和FFC
+     - FC的全称是：Formatting Contexts，是W3C CSS2.1规范中的一个概念。它是页面中的一块渲染区域，并且有一套渲染规则，它决定了其子元素将如何定位，以及和其他元素的关系和相互作用。
+     - BFC(Block Formatting Contexts)直译为"块级格式化上下文"。Block Formatting Contexts就是页面上的一个隔离的渲染区域，容器里面的子元素不会在布局上影响到外面的元素，反之也是如此。
+     - IFC(Inline Formatting Contexts)直译为"内联格式化上下文"，IFC的line box（线框）高度由其包含行内元素中最高的实际高度计算而来（不受到竖直方向的padding/margin影响)
+     - GFC(GridLayout Formatting Contexts)直译为"网格布局格式化上下文"，当为一个元素设置display值为grid的时候，此元素将会获得一个独立的渲染区域，我们可以通过在网格容器（grid container）上定义网格定义行（grid definition rows）和网格定义列（grid definition columns）属性各在网格项目（grid item）上定义网格行（grid row）和网格列（grid columns）为每一个网格项目（grid item）定义位置和空间。
+     - FFC(Flex Formatting Contexts)直译为"自适应格式化上下文"，display值为flex或者inline-flex的元素将会生成自适应容器（flex container），可惜这个牛逼的属性只有谷歌和火狐支持，不过在移动端也足够了，至少safari和chrome还是OK的，毕竟这俩在移动端才是王道。
+
+- 响应式设计
+- flexbox响应式布局
+  - 媒体查询
+- material Design: 由Google提出，最初主要是针对Android手机应用开发的，后来很快地扩展到Web领域，诸如Vue和Angular等都有应用了Material Design设计原则的UI库
+-  掌握Web网页的常见布局实现方法
 
 比如分栏、菜单、选项卡等
 
-#### 训练JavaScript编程技能
+## 训练JavaScript编程技能
+- Babel: 可以使用Babel这个工具将采用了ES6以上版本特性的JS代码转换为ES5，以保证代码的兼容性
+-  TypeScript
+   -  Typescript 也是 JavaScript ，是 JS 的超集
+   -  Typescript 能让我们写出「强类型」的 JS，从而减少运行时的错误。
+- JavaScript的开发与运行环境
+  - 学习JavaScript编程，早期主要使用普通文本编辑器+浏览器，现在推荐使用VS code编写代码，在Node.js环境中运行。
+  - 浏览器
+  - Node.js
+  - 掌握JavaScript的基础语法与常用对象
 
-##### 了解JavaScript的基础知识
-
-###### 历史、版本、发展方向、应用领域......
-
-####### Babel
-
-可以使用Babel这个工具将采用了ES6以上版本特性的JS代码转换为ES5，以保证代码的兼容性
-
-####### TypeScript
-
-Typescript 也是 JavaScript ，是 JS 的超集
-
-Typescript 能让我们写出「强类型」的 JS，从而减少运行时的错误。
-
-###### JavaScript的开发与运行环境
-
-学习JavaScript编程，早期主要使用普通文本编辑器+浏览器，现在推荐使用VS code编写代码，在Node.js环境中运行。
-
-####### 浏览器
-
-####### Node.js
-
-##### 掌握JavaScript的基础语法与常用对象
-
-###### 变量、常量与数据类型
-
-####### let、const和var
-
-####### 基础类型与引用类型
-
-####### 类型转换
-
-####### null和undefined
-
-####### 变量的作用域
-
-###### 输入与输出
-
-####### 浏览器中使用document.write，console实现
-
-###### 运算符与表达式
-
-####### ES6新增：展开运算符
-
-####### 优先级
-
-###### 流程控制
-
-####### 条件语句
-
-####### 循环语句
-
-######## ES6新增：for-of循环
-
-###### 字符串操作
-
-####### templateString
-
-####### 正则表达式
-
-###### 数组操作
-
-####### 定义
-
-####### 访问
-
-####### 插入与删除
-
-####### 排序
-
-####### 查找
-
-###### 解构赋值
-
-###### settime，setinterval
-
-（1）使用settimeout延时输出信息 （2）使用setinterval定时输出信息，之后中止 （3）timer.js，一个模拟后台工作进程的示例
-
-##### 函数
-
-###### 函数的定义与调用方法
-
-####### 命名函数与匿名函数
-
-####### 函数的返回值
-
-返回函数的函数
-
-####### 函数的参数
-
-形参与实参的区别 参数个数可变 默认函数参数 保存参数的arguments对象 作为另一个函数参数的函数对象
-
-####### 函数作用域
-
-####### 嵌套定义的函数
-
-在一个函数内部又定义一个函数
-
-###### 递归调用
-
-###### 箭头函数
-
-###### this关键字与call和apply方法
-
-##### 对象
-
-###### 对象的定义与使用方法
-
-####### 定义空对象之后再添加成员
+  - 变量、常量与数据类型
+    - let、const和var
+      - 基础类型与引用类型
+      - 类型转换
+      - null和undefined
+      -  变量的作用域
+  - 输入与输出
+    - 浏览器中使用document.write，console实现
+  - 运算符与表达式
+    - ES6新增：展开运算符
+    -  优先级
+- 流程控制
+  - ES6新增：for-of循环
+- 字符串操作
+  - templateString
+  - 正则表达式
+- 数组操作
+- 解构赋值
+- settime，setinterval
+  - 使用settimeout延时输出信息 （2）使用setinterval定时输出信息，之后中止 （3）timer.js，一个模拟后台工作进程的示例
+- 函数
+  - 函数的定义与调用方法
+    - 命名函数与匿名函数
+    - 函数的返回值
+  - 返回函数的函数
+  - 函数的参数
+    - 形参与实参的区别 参数个数可变 默认函数参数 保存参数的arguments对象 作为另一个函数参数的函数对象
+  -  函数作用域
+     - 嵌套定义的函数: 在一个函数内部又定义一个函数
+- 递归调用
+  - 箭头函数
+  - this关键字与call和apply方法
+- 对象
+  - 对象的定义与使用方法
+  -  定义空对象之后再添加成员
 
 ####### 对象字面量
 
@@ -557,191 +363,87 @@ Typescript 能让我们写出「强类型」的 JS，从而减少运行时的错
 
 ####### ES6 对象方法简化定义
 
-##### JSON
-
-###### Json字符串与JavaScript对象之间的相互转换
-
-JSON.parse()
-
-###### Json的基本语法
-
-##### JavaScript模块化规范
-
-前端的模块管理器一般指管理 AMD 或者 CommonJS 模块的东西。
-
-我们有很多方式来描述 JS 中多个库或类的交互方式，比如 exports 和 requires。你可以按照 AMD 或者 CommonJS 的 API 来书写 JS，然后用 Browserify 将它们打包。
-
-非常重要，Vue和React的各种组件，都是使用ES6的模块语法。 Node.js的模块，暂时还不能直接使用。
-
-主要有两种模块： 一种是ES6中的模块，这是未来的方向，主要使用export和import 另一种是Node.js主流版本所使用的模块，主要使用export和require 当前，这两种都是需要掌握的。
-
-新的浏览器支持ES6的模块，但Node 8不支持。 类似于组件化开发（CBD）概念
-
-方法是： 使用
-
-```{=html}
-<script type="module">
-```
-
-实现
-
-注意： 与Node.js模块相区分。
-
-###### CommonJS
-
-Node.js支持这种规范
-
-###### AMD
-
-AMD ( https://en.wikipedia.org/wiki/ Asynchronous\_ module\_ definition ）也是一种JavaScript 模块化规范，与CommonJS 最大的不同在于，它采用了异步的方式去加载依赖的模块。AMD 规范主要用于解决针对浏览器环境的模块化问题，最具代表性的实现是requirejs (http:// requirejs. org ） 。
-
-其编码方式类似于AngularJS
-
-###### ES6模块化
-
-代表未来的发展方向，将一统天下
-
-##### 闭包
-
-###### 函数执行上下文与this关键字
-
-####### 函数对象的call方法
-
-####### 函数对象的apply()方法
-
-###### 闭包与返回函数的函数
-
-##### 原型
-
-###### 原型（prototype）是什么？
-
-###### 通过原型构建对象
-
-##### 迭代器与生成器
-
-迭代器用于以一致的方式访问数组和集合。 它提供了一个next()方法用于获取集合中的"下一个"元素，又有一个done属性来告诉外界，集合中还有没有元素可以读取。 ES6中的for-of循环，就用到了这个特性。
-
-生成器则是一种特殊的函数，它返回一个迭代器。 定义生成器需要使用"\*"和yield关键字。 当程序执行完一个yield代码时，会暂停，直到next()被调用，才会继续执行。
-
-生成器多用于异步代码，一些第三方的库，比如Koa，就用到了这个特性。
-
-##### JavaScript异步编程语法特性
-
-###### 同步与异步的概念
-
-###### 回调
-
-####### 什么是回调？怎样编写一个支持回调的函数？
-
-####### 回调地狱：多重嵌套的回调
-
-###### Promise
-
-###### async/await
-
-#### 使用JavaScript操控网页
-
-##### 了解浏览器的工作原理
-
-##### BOM：与浏览器交互
-
-##### DOM：与HTML文档交互
-
-###### 访问和操控DOM元素
-
-###### 响应事件
-
-有两种事件类型：冒泡、捕获 另外要注意一下，如何取消表单提交按钮的默认事件
-
-##### AJAX：与服务端交互
-
-###### XMLHttpRequest
-
-###### jQuery
-
-###### Fetch API
-
-Fetch API是一种由浏览器直接支持的新的编程接口，可用于取代远古时代的XMLHttpRequest，后面要介绍的PWA技术中的核心对象，ServiceWorker，也使用它。Fetch API用到了Promise对象，所以在学习它之前，要先学习JavaScript异步编程模型。 由于Fetch技术很新，还没有成熟，所以虽然从长远来看它很重要，但当前却是选学的内容。
-
-#### 经典前端开发框架
-
-##### Bootstrap
-
-注意它引入的jQuery是slim的 注意一些样式变化：display-4
-
-###### 安装与版本对比
-
-###### 样式库
-
-###### 网格系统
-
-###### 组件
-
-##### jQuery
-
-###### jQuery简介
-
-###### 操控DOM
-
-###### 发出AJAX请求
-
-学习顺序： （1）HTTP请求与响应的基础知识 （2）JavaScript如何使用XMLHttpRequest发出AJAX请求并且接收响应 （3）jQuery发出AJAX请求、接收响应的基本方法
-
-###### 使用jQuery插件
-
-#### 期末考试：使用Bootstrap/jQuery开发一个小网站，部署到IIS上
-
-### 第二学期：掌握Node.js开发技术
-
-#### Node.js基础开发技术
-
-##### Node开发基础
-
-###### node概述
-
-Node是什么 它有哪些组成部分
-
-####### V8引擎，C++与JS混合开发而成
-
-####### 了解Node编程的主要特性
-
-######## 异步执行
-
-######## 事件驱动
-
-######## 单线程
-
-####### 什么叫同构JavaScript？
-
-前后端使用同一种语言，会带来许多方便。比如一些库可以重用，一些数据结构也可以不用在不同的语言之间进行翻译。
-
-###### 学会使用Node
-
-####### 安装Node
-
-node -v 进行验证
-
-####### node命令，学会使用Node交互式编程环境
-
-####### 知道怎样使用Node运行独立的js文件
-
-####### 学会使用NPM
-
-######## 怎样安装新软件包？
-
-######## 如何创建package.json？
-
-使用npm init创建package.json
-
-######## 怎样运行脚本？
-
-用npm run script-name 可以运行任何脚本
-
-####### Node.js项目
-
-######## 熟练掌握使用Visual Studio Code创建一个Node项目的方法
-
-######## 学会使用nodemon
+- JSON
+  -  Json字符串与JavaScript对象之间的相互转换
+     -  JSON.parse()
+  - Json的基本语法
+  - JavaScript模块化规范
+    - 前端的模块管理器一般指管理 AMD 或者 CommonJS 模块的东西。我们有很多方式来描述 JS 中多个库或类的交互方式，比如 exports 和 requires。你可以按照 AMD 或者 CommonJS 的 API 来书写 JS，然后用 Browserify 将它们打包。非常重要，Vue和React的各种组件，都是使用ES6的模块语法。 Node.js的模块，暂时还不能直接使用。主要有两种模块： 一种是ES6中的模块，这是未来的方向，主要使用export和import 另一种是Node.js主流版本所使用的模块，主要使用export和require 当前，这两种都是需要掌握的。新的浏览器支持ES6的模块，但Node 8不支持。 类似于组件化开发（CBD）概念方法是： 使用`<script type="module">`实现, 注意： 与Node.js模块相区分。
+- CommonJS
+  - Node.js支持这种规范
+- AMD: AMD ( https://en.wikipedia.org/wiki/ Asynchronous\_ module\_ definition ）也是一种JavaScript 模块化规范，与CommonJS 最大的不同在于，它采用了异步的方式去加载依赖的模块。AMD 规范主要用于解决针对浏览器环境的模块化问题，最具代表性的实现是requirejs (http:// requirejs. org ） 。其编码方式类似于AngularJS
+- ES6模块化: 代表未来的发展方向，将一统天下
+
+- 闭包
+  - 函数执行上下文与this关键字
+  -  函数对象的call方法
+  - 函数对象的apply()方法
+  - 闭包与返回函数的函数
+- 原型
+  - 原型（prototype）是什么？
+  - 通过原型构建对象
+  - 迭代器与生成器: 
+    - 迭代器用于以一致的方式访问数组和集合。 它提供了一个next()方法用于获取集合中的"下一个"元素，又有一个done属性来告诉外界，集合中还有没有元素可以读取。 ES6中的for-of循环，就用到了这个特性。
+    - 生成器则是一种特殊的函数，它返回一个迭代器。 定义生成器需要使用"\*"和yield关键字。 当程序执行完一个yield代码时，会暂停，直到next()被调用，才会继续执行。
+    - 生成器多用于异步代码，一些第三方的库，比如Koa，就用到了这个特性。
+
+- JavaScript异步编程语法特性
+  - 同步与异步的概念
+  - 回调
+  - 什么是回调？怎样编写一个支持回调的函数？
+  - 回调地狱：多重嵌套的回调
+- Promise
+  - async/await
+- 使用JavaScript操控网页
+  - 了解浏览器的工作原理
+  - BOM：与浏览器交互
+  - DOM：与HTML文档交互
+  - 访问和操控DOM元素
+  - 响应事件: 有两种事件类型：冒泡、捕获 另外要注意一下，如何取消表单提交按钮的默认事件
+- AJAX：与服务端交互
+  - XMLHttpRequest
+  - jQuery
+  - Fetch API: Fetch API是一种由浏览器直接支持的新的编程接口，可用于取代远古时代的XMLHttpRequest，后面要介绍的PWA技术中的核心对象，ServiceWorker，也使用它。Fetch API用到了Promise对象，所以在学习它之前，要先学习JavaScript异步编程模型。 由于Fetch技术很新，还没有成熟，所以虽然从长远来看它很重要，但当前却是选学的内容。
+- 经典前端开发框架
+
+- Bootstrap: 注意它引入的jQuery是slim的 注意一些样式变化：display-4
+  - 安装与版本对比
+    - 样式库
+    - 网格系统
+    - 组件
+- jQuery
+  - jQuery简介
+  - 操控DOM
+- 发出AJAX请求
+  - 学习顺序： 
+    - HTTP请求与响应的基础知识 
+    - JavaScript如何使用XMLHttpRequest发出AJAX请求并且接收响应 
+    - jQuery发出AJAX请求、接收响应的基本方法
+  - 使用jQuery插件
+
+- 期末考试：使用Bootstrap/jQuery开发一个小网站，部署到IIS上
+
+## 掌握Node.js开发技术
+
+- Node.js基础开发技术
+  - Node开发基础
+  - node概述: Node是什么 它有哪些组成部分
+  - V8引擎，C++与JS混合开发而成
+  - 了解Node编程的主要特性
+  - 异步执行
+  - 事件驱动
+  - 单线程
+- 什么叫同构JavaScript？
+  - 前后端使用同一种语言，会带来许多方便。比如一些库可以重用，一些数据结构也可以不用在不同的语言之间进行翻译。
+- 学会使用Node
+  - 知道怎样使用Node运行独立的js文件
+- 学会使用NPM
+- 怎样安装新软件包？
+  - 如何创建package.json？使用npm init创建package.json
+  - 怎样运行脚本？用npm run script-name 可以运行任何脚本
+  - Node.js项目
+  -  熟练掌握使用Visual Studio Code创建一个Node项目的方法
+  -  学会使用nodemon
 
 安装nodemon，监控文件变化，自动重启node应用
 

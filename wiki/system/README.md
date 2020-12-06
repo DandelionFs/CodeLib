@@ -10,7 +10,9 @@ THX FOR:
 4. https://www.jb51.net/article/176264.htm
 5. https://mp.weixin.qq.com/s/enFpkGGeoNw9v_pGzhe2uw
 6. [美丽新世界：linux 下的惬意生活](https://github.com/yangyangwithgnu/the_new_world_linux)
-7. 
+7. [怎样安装 Windows 7 与 Linux 的双系统？ - 地球的外星人君的回答 - 知乎](https://www.zhihu.com/question/19867618/answer/173561405)
+
+
 
 ## Environment Var
 ### Linux
