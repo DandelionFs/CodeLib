@@ -338,31 +338,18 @@ Web服务器可以响应(response)一个静态页面或图片，进行页面跳�
 - 对象
   - 对象的定义与使用方法
   -  定义空对象之后再添加成员
-
-####### 对象字面量
-
-####### 嵌套的对象定义
-
-####### 定义对象方法
-
-####### 对象的属性的遍历、添加与删除
-
-####### 对象作为函数参数
-
-####### 对象的复制：浅拷贝与深拷贝
-
-###### 对象工厂函数与构造函数、new关键字
-
-###### 类与继承
-
-####### class关键字
-
-####### extends关键字
-
-####### 属性的概念
-
-####### ES6 对象方法简化定义
-
+  - 对象字面量
+  - 嵌套的对象定义
+  - 定义对象方法
+  - 对象的属性的遍历、添加与删除
+  - 对象作为函数参数
+  - 对象的复制：浅拷贝与深拷贝
+- 对象工厂函数与构造函数、new关键字
+- 类与继承
+  - class关键字
+  - extends关键字
+  - 属性的概念
+  - ES6 对象方法简化定义
 - JSON
   -  Json字符串与JavaScript对象之间的相互转换
      -  JSON.parse()
@@ -444,216 +431,119 @@ Web服务器可以响应(response)一个静态页面或图片，进行页面跳�
   - Node.js项目
   -  熟练掌握使用Visual Studio Code创建一个Node项目的方法
   -  学会使用nodemon
+  - 安装nodemon，监控文件变化，自动重启node应用
+  - 了解Node.js项目构成
 
-安装nodemon，监控文件变化，自动重启node应用
+- 补充知识
+  - cnpm 镜像站点问题
+  - 有一个可选的yarn，功能与npm等价，可以选学
+  - 可以使用国内镜像来提升安装模块的速度：cnpm
 
-######## 了解Node.js项目构成
+## 学习JavaScript的模块化部分
 
-###### 补充知识
+- Node组件化开发: Node.js模块基本使用方法：使用require导入外部模块
+- 掌握node.js核心模块的基本用法
+  - 不需要单独安装的模块，称为core modules
+  - Node.js官方提供了一些常用的模块，这些模块包括：fs,path,assert,os,net,dns,http等等
+  - 不需要全部都学，用到的时候再选学
+- 依据自己需要，选学选用第三方模块
+  - 使用npm install安装 注意以下参数的功能： -g -save -save-dev
+  - 安装完的模块放在node-modules文件夹中，其信息记载于package.json中
+  - 使用npm rm删除己安装的第三方模块
+  - underscore: 一个用于操作集合和字符串的JavaScript库
+  - node-dev: 与nodemon很类似，不同之处在于： In contrast to tools like supervisor or nodemon it doesn't scan the filesystem for files to be watched. Instead it hooks into Node's require() function to watch only the files that have been actually required.
+    - https://www.npmjs.com/package/node-dev
+  - jshint: jshint app.js 检查代码中是否有写得不规范的地方 /\* jshint esnext:true \*/
+  - httpster: 用于构建一个提供静态文件服务的功能 https://www.npmjs.com/package/httpster
+  - httpster -p 8080 -d /home/somedir/public_html
+  - commander.js: commander. js是一个实现命令行交互的 Node. js模块，由著名的工程师 TJ Holowaychuk编写。
+- 搭积木的游戏：学会基于模块构建Node.js应用
 
-cnpm 镜像站点问题
+- 学JavaScript部分的异步编程部分
+  - Node.js事件驱动编程模型：
+    - 事件监听器与事件发射器: 使用events模块中的EventEmitter对象。 也可以自定义一个类，派生自EventEmitter，这样它就具备了事件驱动特性
+    - 这是一个极为重要的编程模式，主要通过回调来实现的。
 
-####### 有一个可选的yarn，功能与npm等价，可以选学
+- Node.js的文件操作: 通过读写文件，掌握异步编程模式
+  - 从callback起步，有一个deepCallback.js示例，展示一个很深的嵌套，每完成一步，beep beep两声。这个可作为学生作业。
+    - 大体上可分为同步和异步两大类
+      - 文件的同步与异步存取模式
+        - 流与管道
+        - 使用fs.Stats读取文件信息
+    - 文件夹操作
+      - 创建、删除文件夹
+        -  改名
+    - 查找文件
+      - 使用File System Watcher监控文件系统的变化
 
-####### 可以使用国内镜像来提升安装模块的速度：cnpm
-
-##### 学习JavaScript的模块化部分
-
-##### Node组件化开发
-
-Node.js模块基本使用方法：使用require导入外部模块
-
-###### 掌握node.js核心模块的基本用法
-
-不需要单独安装的模块，称为core modules
-
-Node.js官方提供了一些常用的模块，这些模块包括：fs,path,assert,os,net,dns,http等等
-
-不需要全部都学，用到的时候再选学
-
-###### 依据自己需要，选学选用第三方模块
-
-使用npm install安装 注意以下参数的功能： -g -save -save-dev
-
-安装完的模块放在node-modules文件夹中，其信息记载于package.json中
-
-使用npm rm删除己安装的第三方模块
-
-####### underscore
-
-一个用于操作集合和字符串的JavaScript库
-
-####### node-dev
-
-与nodemon很类似，不同之处在于： In contrast to tools like supervisor or nodemon it doesn't scan the filesystem for files to be watched. Instead it hooks into Node's require() function to watch only the files that have been actually required.
-
-https://www.npmjs.com/package/node-dev
-
-####### jshint
-
-jshint app.js 检查代码中是否有写得不规范的地方 /\* jshint esnext:true \*/
-
-####### httpster
-
-用于构建一个提供静态文件服务的功能 https://www.npmjs.com/package/httpster
-
-httpster -p 8080 -d /home/somedir/public_html
-
-####### commander.js
-
-commander. js是一个实现命令行交互的 Node. js模块，由著名的工程师 TJ Holowaychuk编写。
-
-###### 搭积木的游戏：学会基于模块构建Node.js应用
-
-##### 学JavaScript部分的异步编程部分
-
-##### Node.js事件驱动编程模型：事件监听器与事件发射器
-
-使用events模块中的EventEmitter对象。 也可以自定义一个类，派生自EventEmitter，这样它就具备了事件驱动特性
-
-这是一个极为重要的编程模式，主要通过回调来实现的。
-
-##### Node.js的文件操作
-
-通过读写文件，掌握异步编程模式
-
-从callback起步，有一个deepCallback.js示例，展示一个很深的嵌套，每完成一步，beep beep两声。这个可作为学生作业。
-
-大体上可分为同步和异步两大类
-
-###### 文件的同步与异步存取模式
-
-###### 流与管道
-
-###### 使用fs.Stats读取文件信息
-
-###### 文件夹操作
-
-####### 创建、删除文件夹
-
-####### 改名
-
-####### 查找文件
-
-####### 使用File System Watcher监控文件系统的变化
-
-##### 期中考试
+## 期中考试
 
 使用Node.js核心模块开发网络应用程序
 
-###### 找本《计算机网络》教程，学学TCP/IP协议相关的知识
+- 找本《计算机网络》教程，学学TCP/IP协议相关的知识
+  - 试题一：Socket编程------实现TCP Server
+    - 导入net模块，掌握Socket编程的基本技巧
+    - 了解一下Socket的概念与编程模型
+    - 搜集相关资源，学习Node.js所提供的net核心模块的用法
+    - 自己总结Node.js的Socket基本编程套路
+      - 基本编程模式： res.writeHead() res.write() res.end();
+      - 学以致用：编写一个网络计算器
+        - 开两个终端窗口，一个跑网络计算器Server端应用，另一个跑客户端应用。 客户端输入：1+1 服务端计算后将结果回传给客户端： 1+1=2
 
-###### 试题一：Socket编程------实现TCP Server
+- 看《HTTP权威指南》，了解HTTP协议的具体细节
+  - 开发HTTP Server
+    - 导入http模块，创建简单Server，相关组件触发的相应事件，回调的编程技巧
+      - http.createServer() （1）响应"/"，发回"index.html" （2）找不到文件，发回404响应 （3）响应\*.jpg，发回图片 （4）响应CSS （5）响应favorite.ico
+        - 不理解Server的工作原理，HTTP协议，文件操作，是不可能掌握这个技术的。
 
-导入net模块，掌握Socket编程的基本技巧
+- 搜索相关资源，学习Node.js所提供的相关核心模块的用法
+  - fs
+  - http
+  - 编写HTTP Server，使用浏览器发出请求，检测其工作是否正常
 
-####### 了解一下Socket的概念与编程模型
+- Web开发极简框架：Express
+  - 它的下一代框架是Koa，能更自然地编写异步代码。学习它需要先学会ES6中的async函数、迭代器与生成器特性。
+  - 什么是Express?
+  - Express与Node.js之间是什么关系？
+  - Express的应用场景是什么？
+  - Express生态系统简介
+  - 下一代Express------Koa
+  - 安装Express
+  - 使用Express中间件
+  - 中间件是什么东西？
+  - 数据如何在中间件之间传送？
+    - 上下文数据一般保存在请求对象上，比如用户被存储为req.user，后续的中间件和路由可以用这个属性访问它。
+    - 怎样定义中间件？
+    - 如何组合多个中间件构建一个HTTP请求处理管线
+      - 与ASP.NET core几乎完全一致。
 
-####### 搜集相关资源，学习Node.js所提供的net核心模块的用法
+- 单元测试一：使用express重构HTTP Server
+  - 用它来重写原先使用http模块编写的Web Server
+- 学会构建Node.js Web应用路由系统
+  - 怎样响应get/post等HTTP请求？
+  - 路径参数怎样用？
+  - 如何从URL中提取查询字符串？
+  - 学会使用正则表达式匹配路由
+  - 学会使用静态资源中间件提供静态文件访问
+  - 怎样实现重定向？
+  - 不同的URL，转发给不同的中间件处理
+  - 构建RESTful Service
+    - 了解RESTful Service的基础知识
+    - 什么是REST？
+    - 怎样设计REST API？
+    - 掌握REST开发辅助工具的用法：Postman，Fiddler等，任选其一
+ -  学会使用Express实现RESTful Service
+    - 使用视图引擎
+    - EJS
+    - Pug
+    - Handlebars
+    - Mustache
 
-####### 自己总结Node.js的Socket基本编程套路
+- 单元测试二：分析express-generator创建的"样板"项目
 
-基本编程模式： res.writeHead() res.write() res.end();
+## 期末考试 
 
-####### 学以致用：编写一个网络计算器
-
-开两个终端窗口，一个跑网络计算器Server端应用，另一个跑客户端应用。 客户端输入：1+1 服务端计算后将结果回传给客户端： 1+1=2
-
-###### 看《HTTP权威指南》，了解HTTP协议的具体细节
-
-###### 试题二：开发HTTP Server
-
-导入http模块，创建简单Server，相关组件触发的相应事件，回调的编程技巧
-
-http.createServer() （1）响应"/"，发回"index.html" （2）找不到文件，发回404响应 （3）响应\*.jpg，发回图片 （4）响应CSS （5）响应favorite.ico
-
-不理解Server的工作原理，HTTP协议，文件操作，是不可能掌握这个技术的。
-
-####### 搜索相关资源，学习Node.js所提供的相关核心模块的用法
-
-######## fs
-
-######## http
-
-####### 编写HTTP Server，使用浏览器发出请求，检测其工作是否正常
-
-#### Web开发极简框架：Express
-
-它的下一代框架是Koa，能更自然地编写异步代码。学习它需要先学会ES6中的async函数、迭代器与生成器特性。
-
-##### 什么是Express?
-
-###### Express与Node.js之间是什么关系？
-
-###### Express的应用场景是什么？
-
-###### Express生态系统简介
-
-###### 下一代Express------Koa
-
-##### 安装Express
-
-##### 使用Express中间件
-
-###### 中间件是什么东西？
-
-###### 数据如何在中间件之间传送？
-
-上下文数据一般保存在请求对象上，比如用户被存储为req.user，后续的中间件和路由可以用这个属性访问它。
-
-###### 怎样定义中间件？
-
-###### 如何组合多个中间件构建一个HTTP请求处理管线
-
-与ASP.NET core几乎完全一致。
-
-##### 单元测试一：使用express重构HTTP Server
-
-用它来重写原先使用http模块编写的Web Server
-
-##### 学会构建Node.js Web应用路由系统
-
-###### 怎样响应get/post等HTTP请求？
-
-###### 路径参数怎样用？
-
-###### 如何从URL中提取查询字符串？
-
-###### 学会使用正则表达式匹配路由
-
-###### 学会使用静态资源中间件提供静态文件访问
-
-###### 怎样实现重定向？
-
-###### 不同的URL，转发给不同的中间件处理
-
-##### 构建RESTful Service
-
-###### 了解RESTful Service的基础知识
-
-####### 什么是REST？
-
-####### 怎样设计REST API？
-
-###### 掌握REST开发辅助工具的用法：Postman，Fiddler等，任选其一
-
-###### 学会使用Express实现RESTful Service
-
-##### 使用视图引擎
-
-###### EJS
-
-###### Pug
-
-###### Handlebars
-
-###### Mustache
-
-###### ......
-
-##### 单元测试二：分析express-generator创建的"样板"项目
-
-#### 期末考试 构建实时Web应用------在线聊天室
+构建实时Web应用------在线聊天室
 
 ##### 急用现学
 
@@ -696,6 +586,13 @@ npm install ws npm install wscat -g
 ####### 将网站部署到Linux服务器上（直接运行Node.js，监听80端口）
 
 ###### 测试程序是否工作正常
+
+
+
+
+
+
+
 
 ### 第三学期：数据存取技术学习要点
 
@@ -771,7 +668,7 @@ npm install ws npm install wscat -g
 
 ##### 使用Redis存储数据
 
-#### 期末考试
+## 期末考试
 
 ##### 重构------在线聊天室的数据存储功能实现
 
@@ -1091,7 +988,12 @@ https://www.zhihu.com/question/20790576 《大公司里怎样开发和部署前�
 
 ##### 用Vue写一个ToDoList应用
 
-## 二、实战阶段
+
+
+
+
+
+## 实战阶段
 
 学习技术的目的，就是为了"实战"，不能实战的技术，学之无用。
 

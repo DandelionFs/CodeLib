@@ -45,6 +45,9 @@ THX FOR:
 - https://blog.csdn.net/ysy950803/article/details/78507892 
 - https://www.thefanclub.co.za/how-to/ubuntu-touchpad-gestures-install
 - [ubuntu 释放空间的7种简单方法](https://blog.csdn.net/qq_42427109/article/details/107882574)
+- [Ubuntu输入su提示认证失败的解决方法](https://blog.51cto.com/studiogang/385223)
+- [Ubuntu扩展触摸屏触控错位修复](https://blog.csdn.net/wf19930209/article/details/79749152)
+- [Ubuntu14.04下使用触摸屏以及笔记本扩展触摸屏设置方法](https://blog.csdn.net/weixin_30375427/article/details/96988717)
 
 
 
@@ -763,3 +766,104 @@ sudo usermod -a -G audio $USER
 
 如何找回 root 密码，如果我们不小心，忘记 root  密码，怎么找回。
 - 思路： 进入到 单用户模式，然后修改 root 密码。因为进入单用户模式，root 不需要密码就可以登录。
+
+
+## su提示认证失败
+
+Ubuntu安装后，root用户默认是被锁定了的，不允许登录，也不允许 su 到 root ，对于桌面用户来说这个可能是为了增强安全性
+
+```shell
+sudo passwd # 输入安装时那个用户的密码 , 新的Root用户密码
+```
+
+## 扩展触摸屏触控错位
+
+造成的原因是 触控的驱动进程的端口是自己的主显示器, 所以需要用命令让进程的端口开放给显示器 `HDMI接口` 上. 具体如下:
+
+```bash
+xrandr # primitive command line interface to RandR extension
+xinput # utility to configure and test X input devices
+xinput map-to-output XXX(ID) HDMI-0
+# Restricts the movements of the absolute device to  the  RandR  crtc.  The output  name  must match a currently connected output (see xrandr(1)). If the NVIDIA binary driver is detected or RandR 1.2 or later is not  avail‐able,  a  Xinerama  output may be specified as "HEAD-N", with N being the Xinerama screen number. This option has no effect on relative devices.
+```
+
+
+
+
+
+```bash
+#! /bin/bash
+# ------------------------------------------------------------------------------
+# Filename:    repairTouchscreen.sh
+# Usage:       ./repairTouchscreen.sh
+# Version:     1.0
+# Date:        2018-03-29
+# Author:      vincent
+# Email:       N/A
+# Description: 此脚本用于修复Ubuntu下，扩展触摸显示器，触摸扩展屏操作主屏的错误
+# Notes:       N/A
+# -------------------------------------------------------------------------------
+
+outputErrorMsg()
+{
+    if [ $1 -ne 0 ]
+    then
+        echo $2
+        exit
+    fi
+}
+
+declare SCREEN_COUNTS          # 当前显示器的总数
+declare ACTIVE_SCREEN_COUNTS   # 当前活跃的显示器数量
+declare SCREEN_NAME            # 显示器的输出名称
+declare TOUCH_DEVICE_ID        # 触摸设备ID号
+
+SCREEN_COUNTS=$(xrandr --listmonitors | wc -l)
+outputErrorMsg $? "Get screen counts failed!"
+SCREEN_COUNTS=`expr $SCREEN_COUNTS - 1`
+
+
+ACTIVE_SCREEN_COUNTS=$(xrandr --listactivemonitors | wc -l)
+outputErrorMsg $? "Get active screen counts failed!"
+ACTIVE_SCREEN_COUNTS=`expr $ACTIVE_SCREEN_COUNTS - 1`
+
+if [ $ACTIVE_SCREEN_COUNTS -ge 3 ] # 如果当前活跃的显示器数量多于2个，退出
+then
+    outputErrorMsg 1 "There are currently three monitors, please reduce to two monitors！"
+fi
+
+if [ $ACTIVE_SCREEN_COUNTS -eq 1 ] # 如果只有一个活跃的显示器，退出
+then
+    outputErrorMsg 1 "There are only one monitor!"
+fi
+# 如果是两个屏幕，那么第一个是主屏幕，第二个是辅助屏幕
+SCREEN_NAME=($(xrandr --listactivemonitors | awk '{if(NR > 1) {print $4}}'))
+outputErrorMsg $? "Get screen name failed!"
+
+TOUCH_DEVICE_ID=$(xinput | grep -iw touch) # 获取可触摸设备
+
+if [ -z "$TOUCH_DEVICE_ID" ]
+then
+    outputErrorMsg 1 "There is no touch device!"
+fi
+
+TOUCH_DEVICE_ID=$(echo ${TOUCH_DEVICE_ID#*id=})
+TOUCH_DEVICE_ID=$(echo ${TOUCH_DEVICE_ID%% *})   # 最终获取id号
+
+if [ -z "$TOUCH_DEVICE_ID" ]
+then
+    outputErrorMsg 1 "Device id is empty!"
+fi
+
+xinput map-to-output $TOUCH_DEVICE_ID ${SCREEN_NAME[1]}
+xrandr --listactivemonitors
+echo "Setting successful!"
+
+```
+
+## 开机自启
+
+
+
+
+

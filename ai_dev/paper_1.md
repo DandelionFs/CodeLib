@@ -6,10 +6,11 @@
 - [MME](https://baike.baidu.com/item/MME%E5%8A%9F%E8%83%BD/16597292)
 - [边缘计算：通过cloudlet案例看如何实现“边缘智能化”](https://searchcio.techtarget.com.cn/8-23497/)
 - [贝尔曼方程](https://www.jiqizhixin.com/graph/technologies/9a91aa59-8dc1-4eff-833b-6180ba53cb68)
-- 
+
 
 
 ## 云计算(Cloud Computing, CC)
+
 云中可用的大量资源可以被用来为支持资源受限的终端设备提供弹性计算能力和存储能力。
 
 SaaS
