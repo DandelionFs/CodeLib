@@ -22,11 +22,16 @@ THX FOR:
 15. [](https://github.com/coder-pig/Android-Storage-Box)
 
 ## CPU 架构
-+ aarch64
-+ arm
-+ ×86_64
-+ ×86
-+ Sig
+- ARMv5：(armeabi)(废弃),使用软件浮点运算，兼容所有ARM设备，通用性强，速度慢（只支持armeabi）
+- ARMv7(2010+)：第7代 ARM v7，使用硬件浮点运算，具有高级扩展功能(支持 armeabi 和 armeabi-v7a)
+- x86（2011+）：一般用于平板,支持armeabi(性能有所损耗), 多见于 intel atom 处理器
+- MIPS（2012年）:可能有些国产厂商在用(废弃)
+- ARMv8：第8代，高端机型,64位
+  - AArch32: 32bit
+  - AArch64: 64bit(支持 armeabi-v7a、armeabi 和 arm64-v8a)
+- MIPS64(64位)
+- x86_64(2014+)：64位平板
+
 
 ## [Screen](//bilibili.com/BVITE411v7Mo)
 
@@ -36,7 +41,10 @@ THX FOR:
 | incell贴合技术屏幕——玻璃盖板 | （IPhone 6Plus）LCD ：背光，比较贵                          |
 | G+F贴合技术屏幕触摸屏（TP）  | （华为畅享）外挂触摸，液晶，屏幕厚，触摸功能片              |
 | OGS贴合技术                  | （小米4）屏幕薄、特别脆，外屏损伤一点就不可用，触摸（涂层） |
-**注意：**后两者容易出现的问题：IC过大，电流乱跳不准、纯元触摸、跳触。
+
+**注意**: 后两者容易出现的问题：IC过大，电流乱跳不准、纯元触摸、跳触
+
+
 **Wiki**：光学胶
 
 ## 魔改|刷机
