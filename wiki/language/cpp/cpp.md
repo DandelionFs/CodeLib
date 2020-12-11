@@ -232,6 +232,12 @@ void在英文中作为名词的解释为“空虚；空间；空隙”；而在C
    ```shell
    gcc main.cpp -lstdc++
    ```
+- [gnu c和标准c都有哪些区别？](https://www.zhihu.com/question/24151438/answer/26841871)
+    > 然后说正题，具体的区别可以到下面的文档里找，英语文档，感觉不太难，没有太生僻的单词：GCC在线文档总索引：[https://gcc.gnu.org/onlinedocs/gcc/index.html](https://link.zhihu.com/?target=https%3A//gcc.gnu.org/onlinedocs/gcc/index.html)GCC支持的标准C的一些设置（比如默认GCC使用C90），这个页面里还包括C++等：[https://gcc.gnu.org/onlinedocs/gcc/Standards.html#Standards](https://link.zhihu.com/?target=https%3A//gcc.gnu.org/onlinedocs/gcc/Standards.html%23Standards)GCC/C的新特性，主要是语法描述（没有太多区别性的描述）：[https://gcc.gnu.org/onlinedocs/gcc/C-Implementation.html#C-Implementation](https://link.zhihu.com/?target=https%3A//gcc.gnu.org/onlinedocs/gcc/C-Implementation.html%23C-Implementation)GCC对标准C的扩展（大部分都是GCC新增的）：[https://gcc.gnu.org/onlinedocs/gcc/C-Extensions.html#C-Extensions](https://link.zhihu.com/?target=https%3A//gcc.gnu.org/onlinedocs/gcc/C-Extensions.html%23C-Extensions)因为数量太多，还是看文档吧
+    >
+
+
+
 ### USAGE 
 ```shell
 gcc-o hello hello.c
@@ -949,6 +955,102 @@ void main(){
 - 共同体每次只能存放哪个的一种！！共同体变量中起作用的成员是尊后一次存放的成员，在存入新的成员后原有的成员失去了作用！Structure 与 Union主要有以下区别:
 1. struct和union都是由多个不同的数据类型成员组成, 但在任何同一时刻, union中只存放了一个被选中的成员, 而struct的所有成员都存在。在struct中，各成员都占有自己的内存空间，它们是同时存在的。一个struct变量的总长度等于所有成员长度之和。在Union中，所有成员不能同时占用它的内存空间，它们不能同时存在。Union变量的长度等于最长的成员的长度。
 2. 对于union的不同成员赋值, 将会对其它成员重写, 原来成员的值就不存在了, 而对于struct的不同成员赋值是互不影响的。
+
+
+
+## [什么时候应该使用宏定义？](https://www.zhihu.com/question/22608939/answer/21986257)
+
+> 从宏的几种用法来说说宏的具体应用范围：
+>
+> **1、编译器参数和条件编译
+>
+> 2、定义常数
+>
+> 3、宏函数**
+>
+> 一个一个说：
+>
+> **1、编译器参数和条件编译**
+>
+> 这个没别的选择，绝大多数C编译器都是通过define某些宏（或者宏的值）来告知代码编译平台/硬件平台的。
+>
+> 同时，Makefile或者其它编译脚本希望传递某些编译参数给代码的几乎唯一方式就是宏，所以这是宏最重主要的用途。头文件里大量使用的#ifdef _XXXX_H_ 也是类似用途。
+>
+> 如果说普通宏函数什么的可以被替代的话，条件编译这些是很难被别的方法取代的。
+>
+> **2、定义常数**
+>
+> 肯定有人会说，用const更好，但const是强类型的，单独占用一个内存的，在某些场景下const的效果不如用宏好。
+>
+> 例子1：
+>
+> \#define MIN_VALUE -1
+> const unsigned int x = -1;
+> unsigned long long y;
+>
+> y = MIN_VALUE;
+> y = x;
+>
+> 可能有人说我耍赖，数据类型不一致，但实际工程中，如果大量用到const，那么使用者很难一一确认const的类型是什么。
+>
+> 例子2：
+>
+> \#define STRING "Hello"
+> const char * p = "Hello";
+> char * n;
+> n = p;
+> n = STRING;
+>
+> 这个例子中，const赋值给非const变量，会有风险，编译器有警告，而用宏定义是没有问题的。如果const赋值给多个变量，各个变量共享同一段内存空间，如果是宏常数，通过修改编译器开关，可以保证各个变量使用不同的。
+>
+> **3、宏函数**
+>
+> 宏函数可以分为两类，一类是“普通”的宏函数，就是一小段跟普通函数差不多的代码，这种宏函数是完全可以被普通函数或者inline替代的。
+>
+> 一般来说，如果是“普通”但又复杂（代码较长）的宏函数，**多数商业代码里是不推荐使用的**，因为宏函数有展开风险。（比较著名的max宏传++参数的代码，可以自己在网上找到）
+>
+> 对于“普通”且较小的宏函数，在嵌入式行业特别常见，因为早期的时候编译器优化做的还不够好，嵌入式代码有些对性能有要求，所以有大量使用宏函数的地方，但现在正在被慢慢取代。
+>
+> 宏的另一类函数就是带“#”和“##”的宏，就比如这个东西：
+>
+> \#define ERRMSG(type,fmt,arg) \
+>     do { \
+>         if ((type##Debug) & DEBUG_LEVEL) \
+>            printf("ERROR: "#type" - " fmt, arg) \
+>     } while (FALSE)
+>
+> **C语言里没有模板**，可以大概理解为#和##类似于C++里的模板。这也是宏函数不可替代的部分。
+>
+> ---------总结---------
+>
+> 宏是有很多问题，但大多数宏的问题都表现在宏函数展开风险上，在我列举的其它应用中，宏的意义很重要，**并且不可取代**。如果是普通宏函数，**根据自己的需要，尽量使用普通函数替代。**
+
+
+
+## [诸如 __u32 __u16 __u8 这类定义主要适用于什么情况？](https://www.zhihu.com/question/23223900/answer/23969589)'
+
+> 驱动开发的原则：
+>
+> 能用__u32就最好用它，或者用u_int32_t之类的也可以，但不要直接用unsigned int等默认的数据类型。**目的是让别人明白，你这个变量占多大内存**。
+>
+> 原因：
+>
+> 你不能确定你的代码未来只在一个平台上运行，它可能会被移植到非Linux平台（确实有很多人这么做），它可能运行在不同的CPU平台，比如64位环境，非x86环境。
+>
+> 因为C语言中并**未明确规定int一定要占多少字节**，只是规定了long >= int >= short，所以__u32就是告诉别人，这变量占4字节。
+>
+> 同样的：__iomem也是能加就加，这样当你的驱动被别人维护的时候，别人会明白，这块内存是用于IO的，可DMA的，而不是paged-memory。
+>
+> 说到底，**这是一种良好的编码风格**，确实，不加这些东西，对于编译和运行来说，可能是无任何影响的，但是，不写注释的代码一样也对编译和运行无影响，**你敢一句注释都不写吗？
+>
+> **--------------------------------------
+>
+> 驱动中使用哪种类型最标准，这个没有正确答案，但建议是不使用C语言原始的数据类型（char/short/int/long），而是使用有明确字节大小的数据类型（u_int32_t/__u32/uint32_t/DWORD/UINT32均可）。保持代码风格的一致性即可。
+>
+> Linux社区提倡开放，并不严格限制开发者必须用哪种类型，一切都只是**建议使用**。
+>
+> 但有一种情况是例外的：开发标准库函数，比如自己实现strlen，那么返回值就必须是size_t，因为标准库是标准的。
+
 
 
 

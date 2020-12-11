@@ -377,20 +377,16 @@ gsettings set org.gnome.desktop.peripherals.touchpad send-events enabled
 
 
 ### ~~QQ delete Qzone~~
-> QQ一个高明的方法是该文件采用了不同形式编码集合的方式保存的文件，如果对源文件编辑会破坏部分代码，会导致部分报错，仍然可以使用
-- **[Loc]：**Tencent -> QQ -> Plugin -> Com.Tencent.Qzone
-- **[Way]：**编辑 Bundle 的标签。
+> ~~QQ一个高明的方法是该文件采用了不同形式编码集合的方式保存的文件，如果对源文件编辑会破坏部分代码，会导致部分报错，仍然可以使用~~
+- ~~**[Loc]：**Tencent -> QQ -> Plugin -> Com.Tencent.Qzone~~
+- ~~**[Way]：**编辑 Bundle 的标签。~~
 
-### Youdao Note
-> 因为对功能的阉割以及非全平台而弃用
+### ~~ Youdao Note~~
+~~> 因为对功能的阉割以及非全平台而弃用~~
 ~~打开自己有道云的安装路径下的这个文件：`\Youdao\YoudaoNote\theme\default\skin.xml`开始编辑。后`Ctrl+F`搜索`PanelAd`把`PanelAd Bounds`的值`0.0.0.0`(修改之前记得提前做好备份……) `<PanelAd Bounds="0,0,0,161" DockStyle="bottom"></PanelAd>`~~
 ~~<font size =1>[吐槽]:从小米便签的编辑功能到它的待办功能，只做差不多的小米生态彻底失望了。便签反馈了三年，开卡了三年无果，真的只剩下骂街了，可能是受众小的缘故吧。待办换Microsoft的TODO，笔记换来换去还是有道云的吧，**排版的方式多、直接暴力保存网页，想要的内容点点手指就可以、关键是公司相比较靠谱……**说起来生态，又有一个经济学原理验证了——“科斯定律“，也可能我没必要要求一个手机公司在应用生态方面做的和高三个层次的Apple相比。</font>~~
 
-
-
-
-
-## Boot[^1]
+## Boot
 
 由于 Ubuntu(Linux) 并不是内置N卡驱动，所以如果有 N卡独显 笔记本会发生在 Ufi模式 下启动U盘进入系统的时候卡死。应该先用 `e` 进去 Boot 设置，在末尾 quiet splash 的后面先空一格再加上下面的字符串，F10保存退出：
 

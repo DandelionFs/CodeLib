@@ -1,10 +1,13 @@
 # Tools For Me
 
-终于有一个介绍自己使用工具的频道了.
+一个介绍自己使用工具的频道了.
+
+THX FOR:
+- https://www.wacom.com/zh-cn/
+- https://www.jianshu.com/p/3901fc831a97
+- https://zhuanlan.zhihu.com/p/30568782
 
 ## Drow
-
-**[LINK]** https://www.wacom.com/zh-cn/
 
 喜欢画画, 但是只会画火柴人, 又因为买不起 Ipad , 入了一个 Wocam 的板子. 但纠结于国区和外区的账号的选择,  我惯性地选择了外区 - 台湾的账号,  但是显然部分功能是失去维护的.  最后因为体验不如国内转了回来,  总结以后硬件的使用还是以国内为主吧,  比如 Apple 这类当然选择外区是相对来说好些的,  但是数位板确实选择外区没有必要.
 
@@ -82,7 +85,7 @@ To be continued...
 
 
 ## Photos(Wallpaper)
-**[LINK]**: https://www.jianshu.com/p/3901fc831a97
+
 - Wallhaven：https://wallhaven.cc/
 - P站（18年关被墙/同人、插画）：https://www.pixiv.net/
 - 彼岸桌面（已备）：http://www.netbian.com/
@@ -97,7 +100,7 @@ To be continued...
 ## 摄影
 
 ## Font 
-**[LINK]**: https://zhuanlan.zhihu.com/p/30568782
+
 
 > 使用**微软雅黑**(**方正兰亭黑**)需**购买授权**!**当年微软公司斥巨资委托方正字体公司专门为Vista系统设计制作了这套字体**（平均一个字100美金），**微软公司只拥有微软雅黑的使用权，而真正的版权在方正手中。** 我们仅可以在Windows系统中使用微软雅黑！脱离Windows平台的一切商业行为，都属于侵权行为，同时在Windows系统下，商业行为也不被允许，包括网页设计中，主动调用微软雅黑字体（用户显示中将默认字体转换为微软雅黑属于用户行为，不归类为侵权），更不可以以图片的形式在网页中用到微软雅黑！方正重金聘请了庞大的维权小组
 
@@ -216,4 +219,9 @@ Word 中对字体的大小同时采用了两种不同的度量单位, 在Autocad
 
 ### Other
 + RssHub Rss: https://rsshub.app/rsshub/rss
+
+
+## SCREEN 显示器
+
+
 
