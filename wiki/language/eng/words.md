@@ -4,33 +4,46 @@
 
 [200726]
 
+- ***give yuourself credit***: you essentially become your own cheerleader. You focus on praising **yourself** instead of putting **yourself** down
+- ***good-for-nothing***: 一无是处
 
-give yuourself credit
-panic 				n. 伤痛
 
--undercut v. 减少
+
+
+
+* ***hardly***  adv.几乎不
+
+* ***scarcely*** adv.几乎不
+
+* ***rarely***  adv.难得、极少
+
+* ***never***  adv.从不
+
+* ***seldom***  adv.很少
+
+
+
+
+
+- panic: n. 伤痛
+- -undercut v. 减少
+- despair n.圆满与失望
+
+counterproductive 		adj.事与愿违；产生相反效果；适得其反
 
 perfectionist n. 完美主义者
 
--impulses v. 热情
+impulses v. 热情
 
-pioneer n. 先锋
-
--clinical adj. 临床的
+clinical adj. 临床的
 
 met with 碰见；经验
 
 crucial 				adj. 至关重要的；关键性的
 
--agony 				n (精神或肉体的）极度痛苦
+agony 				n (精神或肉体的）极度痛苦
 
 excessing 				adj. 过量；过剩；(饮食等)无节制；超越
-
-cruel 				adj. 残酷的；冷酷的；残忍的；残暴的
-
--dispair 				n.圆满与失望
-
--counterproductive 		adj.事与愿违；产生相反效果；适得其反
 
 perfectionism 			n. 至善论；完全论；过度追求尽善尽美
 
@@ -923,7 +936,97 @@ execute
 
 
 
+### 常用英语谑语
 
+1.  
+
+作文必备亮点词汇
+形容词
+1明显的: obvious / apparent/ evident/ manifest
+2优秀的: excellent/ eminent/top / out- standing
+3惊人的: surprising/ amazing / extraordi- nary/ miraculous
+4消极的,不良的: bad/ detrimental/ banefull undesirable
+5美丽的: beautifull attractivel gorgeous/ eye-catching
+6积极的,好的: good/ conducive/ beneficial advantageous
+7贫穷的: poor/ needy/ impoverished / poverty-stricken
+8有活力的: energetic/ dynamic/ animated 9健康的: healthy/ robust/ sound/whole- some
+10富裕的: rich/ wealhy affuent/ well-to-do/ well-off
+11流行的: popular/ prevailing/ pervasive
+作文必备亮点词汇
+名词
+
+1.  人类: human beings/ mankind / human race
+2.  影响: influence/ impact 
+3.  危险: danger / perill hazard 4,污染: pollution /contamination
+4.  老人: old people/the old /the elderly /the aged /senior citizens
+    6·幸福: happiness /well-being
+    7·老师: teachers instructors/educators 8. 教育: education /schooling /upbringing 9·青少年: young people lyoungsters youths /adolescents
+    10. 优点: advantage /merits / superiority Nirtue
+        11责任: responsibilitylobligation/ duty hia- billity
+
+5.  能力: abilitylcapacity/power/skill
+6.  职业: job/ careerlemployment /profes- sion
+7.  娱乐: enjoyment /pastimes /recrea- tion/entertainment
+8.  孩子: children /offspring/descendantkic
+    作文必备亮点词汇
+    动词
+    1,提高,加强: improve/enhance/pro- mote/strengthen/optimize
+    2 解决: solve/resolvel cope with/deal with 3,拆除: destroy/knock downleradicate 4·引起: cause /trigger
+    5·培养: develop/cultivate/foster/nurture 6·激发,鼓励: encourage/motivate/stimu- late
+    7,认为: think/asserthold/claim /argue 8·完成: complete/fulfil/accompishachieve 9,保留: keep/preserve/retain/hold
+    10. 有害于: destroy/impair/undermine/ jeop- ardize
+        11,减轻: easelalleviate/relieve/lighten
+        作文必备加分句型
+        表证明
+9.  No one can deny the fact that . .  2. The idea is hardly supported by facts.  3. Unfortunately, none of the available data shows. . . 
+10.  Recent studies inicate that. .  5.  There is sufficient evidence to show that. . 
+11.  According to statistics proved by . . .  it can be seen that…. . 
+      作文必备加分句型
+      表反驳
+       1. t is true that. .  buo ne vial lont si seing left out. 
+       2. There is a grain of truth in these state- ments, but they ignore a more important fact. 
+       3. Some people say. . , but it does not hol water. 
+       4. Many of us have been under the illusion that. . . 
+       5. A close examination would reveal how ri- diculous the statement is
+       6. It makes no sense to argue for . . . 
+12.  Too much stress placed on . . .  may lead to . . . 
+13.  Such a statement mainly rests on the assumption that. . . 
+14.  Contrary to what is widely accepted,l maintain that . . . . 
+      作文必备加分句型
+      结尾
+       1. From what has been discussed / men- tioned above, we may conclude that . .  
+         2.  Therefore, it is not difficult to draw / come to the conclusion that . . . 
+15.  As far as I am concerned, l agree with the latter opinion to some extent
+16.  From all the reasons / consideration above, it is clear / obvious that. . 
+17.  Taking into account all these factors, we may reach the conclusion that. . . 
+18.  Given the reasons / consideration I have just outtined / discussed / presented, I strongly recommend that. . 
+19.  All in all, what really matters is . . . 
+20.  It is essential that effective measures be taken to. . . 
+21.  From what has been discussed above we may reasonably draw the conclusion that . . . 
+22.  As a result, we should take some effec- tive steps to . 
+23.  Judging by the figures / statistics, it is not difficult to see that. . 
+     作文必备加分句型
+
+
+开头
+
+1. Recently the phenomenon has become a heated topic
+2. Recently the problem has been ***brought into focus***. 
+3. Nowadays there is a growing concern over. . 
+4. What calls for special attention is that. . .  5. It is common knowledge that. . . . 
+5. It is well-known that . 
+6. Many nations have been faced with the problem of. . . 
+7. According to a recent survey. . .  9. With the rapid development of. . . 
+    作文必备加分句型
+    @RB报 PEOPLE S ALY
+    表原因
+8. A number of factors are accountable for this situation/contribute to (lead to)(account for ) the phenomenon(problem)
+9. The answer to this problem involves many factors
+10. The phenomenon mainly stems from the fact that. . . 
+11. The factors that contribute to this situa- tion include. . . 
+12. The change in . . . largely results from the fact that. . 
+13. Part of the explanations for it is that. . .  7.  One of the most common factors (caus- es) is that. . . 
+14. Another contributing factor (cause) is. . .  9.  Perhaps the primary factor is that. . .  10.  But the fundamental cause is that. . 
 
 
 
