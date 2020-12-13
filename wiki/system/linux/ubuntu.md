@@ -48,7 +48,7 @@ THX FOR:
 - [Ubuntu输入su提示认证失败的解决方法](https://blog.51cto.com/studiogang/385223)
 - [Ubuntu扩展触摸屏触控错位修复](https://blog.csdn.net/wf19930209/article/details/79749152)
 - [Ubuntu14.04下使用触摸屏以及笔记本扩展触摸屏设置方法](https://blog.csdn.net/weixin_30375427/article/details/96988717)
-
+- [树莓派旋转电容触摸方向](https://fangzf.me/2020/04/10/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%97%8B%E8%BD%AC%E7%94%B5%E5%AE%B9%E8%A7%A6%E6%91%B8%E6%96%B9%E5%90%91/)
 
 
 ## Preface
@@ -174,8 +174,9 @@ dpkg -l |grep ^rc|awk '{print $2}' |sudo xargs dpkg -P
 # 清理日志问题.
 sudo echo > /var/log/syslog
 sudo echo > /var/log/kern.log
-
 ```
+如果出现zsh/bash权限不足的情况, 使用`sudo -i`临时切换到`Root`用户的模式下进行操作. 操作完`exit`退出即可.
+
 **清理SNAP**
 
 执行脚本:
@@ -774,7 +775,7 @@ sudo passwd # 输入安装时那个用户的密码 , 新的Root用户密码
 
 ## 扩展触摸屏触控错位
 
-造成的原因是 触控的驱动进程的端口是自己的主显示器, 所以需要用命令让进程的端口开放给显示器 `HDMI接口` 上. 具体如下:
+造成的原因是 触控的驱动进程的端口是自己的主显示器/旋转自己的显示器但是触控没有跟着旋转, 所以需要用命令让进程的端口开放给显示器 `HDMI接口` 上. 具体如下:
 
 ```bash
 xrandr # primitive command line interface to RandR extension
@@ -783,8 +784,12 @@ xinput map-to-output XXX(ID) HDMI-0
 # Restricts the movements of the absolute device to  the  RandR  crtc.  The output  name  must match a currently connected output (see xrandr(1)). If the NVIDIA binary driver is detected or RandR 1.2 or later is not  avail‐able,  a  Xinerama  output may be specified as "HEAD-N", with N being the Xinerama screen number. This option has no effect on relative devices.
 ```
 
+但是关于显示器用来画画那种需要频繁切换的用户, 建议走:
+- [Ubuntu下触摸屏校准及自动旋转屏幕](https://all2h.com/post/2011/01/08/%E8%BF%99%E5%A4%A9%E6%9D%80%E7%9A%84web-qq-2-0-6)
+- [树莓派(Linux 系统)触摸屏翻转显示以及触摸翻转](https://blog.csdn.net/u013491946/article/details/79895853)
 
 
+同样的网上还有脚本
 
 
 ```bash
@@ -856,6 +861,12 @@ xrandr --listactivemonitors
 echo "Setting successful!"
 
 ```
+
+### libinput
+
+一个触控屏驱动, 更多参考:
+- [What is libinput](https://wayland.freedesktop.org/libinput/doc/latest/what-is-libinput.html)
+
 
 ## 开机自启
 
