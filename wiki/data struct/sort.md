@@ -1,94 +1,27 @@
-# Sort Summary(排序总结)
-THX FOR:
-- https://www.cnblogs.com/laizhenghong2012/p/8442270.html
+# SORT
+**THX FOR:**
+- [qsort()函数详解](https://www.cnblogs.com/laizhenghong2012/p/8442270.html)
+- [十大经典排序算法（动图演示）](https://www.cnblogs.com/onepixel/p/7674659.html)
 
-| 排序法     | 最差时间分析 | 平均时间复杂度 | 稳定度 | 空间复杂度    |
-| ---------- | ------------ | -------------- | ------ | ------------- |
-| 冒泡排序   | O(n2)        | O(n2)          | 稳定   | O(1)          |
-| 插入排序   | O(n2)        | O(n2)          | 稳定   | O(1)          |
-| 选择排序   | O(n2)        | O(n2)          | 稳定   | O(1)          |
-| 二叉树排序 | O(n2)        | O(n*log2n)     | 不一顶 | O(n)          |
-| 快速排序   | O(n2)        | O(n*log2n)     | 不稳定 | O(log2n)~O(n) |
-| 堆排序     | O(n*log2n)   | O(n*log2n)     | 不稳定 | O(1)          |
-| 希尔排序   | O            | O              | 不稳定 | O(1)          |
-| 归并排序   | ...          | O（n*log2n）   | ...    | ...           |
+## STRUCT
 
-## 冒泡
+![](./img/sort_struct.png)
+
+## SWAP | 交换排序
+
+### 冒泡
 ```c++
 void bubbles(int p[], int m) {
 	int i, j;
 	for (i = 0; i < m; i++) {
 		for (j = i + 1; j < m - 1; j++) {
-			if (p[i] < p[j])swap(p[i], p[j]);
+			if (p[i] < p[j]) swap(p[i], p[j]);
 		}
 	}
 }
 ```
 
-## 选择
-```c++
-void selections(int p[], int m) {
-	int k, i, j;
-	for (i = 0; i < m; i++) {
-		k = i;
-		for (j = i + 1; j < m - 1; j++) {
-			if (p[k] > p[j]) k = j;//是p[k]而不是p[q]的原因是因为一找到比他大的就赋值，会导致最后交换的不是最大的数的后果。这样才会记录最大值。最后用于交换！！
-		}
-		if (k != i)swap(p[i], p[k]);
-	}
-}
-```
-
-## 插入
-
-从第二个元素开始，依次比较大小，小的去前面，大的去后面，采用的方式是最低效的平移数组，针对于基本有序的数列很高效。
-
-```c++
-void InsertSort(int p[], int start, int end) {
-	for (int i = start + 1; i < end; i++) {
-		int temp = p[i];//相当于一个容器，将无序数列的第一个元素取出
-		int j = i - 1;//作为有序数列的最后一个元素
-		while (j > 0 && temp < p[j]) {
-			p[j + 1] = p[j];
-			j--;
-		}
-		p[j + 1] = temp;
-	}
-}
-```
-
-## 希尔（缩小增量）
-
-作为插入排序的改进版,，先分组进行排序使得数列基本有序，再用插入排序进行排序。
-
-```c++
-void Shellsort(int p[], int len) {
-	for (int i = len / 2; i < len; i /= 2) {
-		for (int j = i; j < len; j++) {
-			int temp = i;
-			while (temp - j >= 0 && p[temp] < p[temp - j]) {
-				swap(p[temp], p[temp - j]);
-				temp -= i;
-			}
-		}
-	}
-}
-```
-
-## Set && 桶排
-
-| 方法 | 效果 |
-| :----: | :----: |
-|   begin()    |  返回set容器的第一个元素的 地址    |
-|   end()    |   返回set容器的最后一个元素 地址   |
-|   clear()   |   删除set容器中的所有的元素   |
-|   empty()   |   判断set容器是否为空   |
-|   max_size()   |   返回set容器可能包含的元素最大个数   |
-|   size()    |   返回当前set容器中的元素个数   |
-|  erase(it)    |  删除迭代器指针it处元素    |
-|   insert(a)    |    插入某个元素  |
-
-## 快排
+### 快排
 
 ```c++
 int* p;
@@ -137,6 +70,74 @@ int main() {
 }
 ```
 
+
+
+## Elect | 选择
+
+
+
+```c++
+void selections(int p[], int m) {
+	int k, i, j;
+	for (i = 0; i < m; i++) {
+		k = i;
+		for (j = i + 1; j < m - 1; j++) {
+			if (p[k] > p[j]) k = j;//是p[k]而不是p[q]的原因是因为一找到比他大的就赋值，会导致最后交换的不是最大的数的后果。这样才会记录最大值。最后用于交换！！
+		}
+		if (k != i)swap(p[i], p[k]);
+	}
+}
+```
+
+## 插入
+
+从第二个元素开始，依次比较大小，小的去前面，大的去后面，采用的方式是最低效的平移数组，针对于基本有序的数列很高效。
+
+```c++
+void InsertSort(int p[], int start, int end) {
+	for (int i = start + 1; i < end; i++) {
+		int temp = p[i];//相当于一个容器，将无序数列的第一个元素取出
+		int j = i - 1;//作为有序数列的最后一个元素
+		while (j > 0 && temp < p[j]) {
+			p[j + 1] = p[j];
+			j--;
+		}
+		p[j + 1] = temp;
+	}
+}
+```
+
+### 希尔（缩小增量）
+
+作为插入排序的改进版,，先分组进行排序使得数列基本有序，再用插入排序进行排序。
+
+```c++
+void Shellsort(int p[], int len) {
+	for (int i = len / 2; i < len; i /= 2) {
+		for (int j = i; j < len; j++) {
+			int temp = i;
+			while (temp - j >= 0 && p[temp] < p[temp - j]) {
+				swap(p[temp], p[temp - j]);
+				temp -= i;
+			}
+		}
+	}
+}
+```
+
+## Set && 桶排
+
+| 方法 | 效果 |
+| :----: | :----: |
+|   begin()    |  返回set容器的第一个元素的 地址    |
+|   end()    |   返回set容器的最后一个元素 地址   |
+|   clear()   |   删除set容器中的所有的元素   |
+|   empty()   |   判断set容器是否为空   |
+|   max_size()   |   返回set容器可能包含的元素最大个数   |
+|   size()    |   返回当前set容器中的元素个数   |
+|  erase(it)    |  删除迭代器指针it处元素    |
+|   insert(a)    |    插入某个元素  |
+
 ## Sort
 
 ```c++
@@ -149,7 +150,17 @@ sorts(p,m);//此处只做参考，具体使用的时候再做打算
 //cmp用于规定排序的方法，可不填，默认升序。
 ```
 
-## 优先队列——堆排
+## 优先队列——堆排（Heap Sort）
+
+> 利用堆这种数据结构所设计的一种排序算法. 堆积是一个近似完全二叉树的结构，并同时满足堆积的性质：即子结点的键值或索引总是小于（或者大于）它的父节点. 
+
+
+
+
+
+
+
+
 
 ```c++
 #include<iostream>
@@ -199,3 +210,11 @@ int main() {
 	return 0;
 }
 ```
+
+
+
+
+
+## SUMMARY
+
+![](./img/sort_comp.png)

@@ -114,12 +114,19 @@ To be continued...
 7. **王漢宗自由字型48款**
 8. **文泉驿字体**
 9. **站酷字体**
+
+
+
 ### 好看字体
 1. [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P#standard-styles): 一个像素风格的字体.
 2. Lato Regular
 3. 华文黑体
 4. Lato light
 5. 思源黑体旧字形Extralight
+6. mono...
+7. Yu Gothic UI
+8. Verdana
+9. Roboto Slab
 
 
 ### SIZE
@@ -221,9 +228,4 @@ Word 中对字体的大小同时采用了两种不同的度量单位, 在Autocad
 
 ### Other
 + RssHub Rss: https://rsshub.app/rsshub/rss
-
-
-## SCREEN 显示器
-
-
 
