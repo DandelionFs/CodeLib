@@ -2,10 +2,12 @@
 
 一个介绍自己使用工具的频道了.
 
-THX FOR:
-- https://www.wacom.com/zh-cn/
-- https://www.jianshu.com/p/3901fc831a97
-- https://zhuanlan.zhihu.com/p/30568782
+**THX FOR:**
+- [壁纸](https://www.jianshu.com/p/3901fc831a97)
+- [对不起，微软雅黑不是免费字体](https://zhuanlan.zhihu.com/p/30568782)
+- **[awesome-things](https://github.com/ctimbai/awesome-things)**
+- [WebDav-AGZXJK](https://www.coolapk.com/feed/22408357?shareKey=ZjMyOWU2MzUxMmI4NWZlMzEzMjg~)
+
 
 ## Drow
 
@@ -226,6 +228,16 @@ Word 中对字体的大小同时采用了两种不同的度量单位, 在Autocad
 + Stackoverflow: https://stackexchange.com/feeds/questions
 
 
+## 坚果云
+
+
+
+
 ### Other
-+ RssHub Rss: https://rsshub.app/rsshub/rss
+- RssHub Rss: https://rsshub.app/rsshub/rss
+- [Top 500 Computer](https://www.top500.org/) 
+
+
+
+
 
