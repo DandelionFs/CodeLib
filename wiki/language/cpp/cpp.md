@@ -19,7 +19,9 @@ THX FOR:
 - [为什么 C 语言源程序最后一行要是一个空行](https://www.zhihu.com/question/20018991/answer/15239139)
 - [降低耦合](http://blog.csdn.net/tianyaxingge/article/details/6696114)
 - [如何降低耦合度](https://www.cnblogs.com/candyzhmm/p/7119690.html)
-
+- [Compiling Cpp](https://wiki.ubuntu.org.cn/Compiling_Cpp)
+- [Linux 下C++开发入门指南,简易入门版](https://blog.csdn.net/luoduoduojiayou/article/details/54585114)
+- [.c vs .cc vs. .cpp vs .hpp vs .h vs .cxx [duplicate]](https://stackoverflow.com/questions/5171502/c-vs-cc-vs-cpp-vs-hpp-vs-h-vs-cxx)
 
 
 ## Birth
@@ -204,16 +206,35 @@ void在英文中作为名词的解释为“空虚；空间；空隙”；而在C
 
 
 
-## 后缀名(区别c和c++)
+## C++ 编程中相关文件后缀
 
-| C/C++ |  头文件后缀名  |       源文件后缀名       |
-| :---: | :------------: | :----------------------: |
-|   c   |       .h       |            .c            |
-|  C++  | .h, .hpp, .hxx | .cpp  .cc .cxx  .C  .c++ |
+| **.a**                                                   | 静态库 (archive)            |
+| -------------------------------------------------------- | --------------------------- |
+| **.C** **.c** **.cc** **.cp** **.cpp** **.cxx** **.c++** | C++源代码（需要编译预处理） |
+| **.h**                                                   | C或者C++源代码头文件        |
+| **.ii**                                                  | C++源代码（不需编译预处理） |
+| **.o**                                                   | 对象文件                    |
+| **.s**                                                   | 汇编语言代码                |
+| **.so**                                                  | 动态库                      |
+| **\<none\>**                                               | 标准C++系统头文件           |
+
+> Historically, the first extensions used for C++ were `.c` and `.h`, exactly like for C. This caused practical problems, especially the `.c` which didn't allow build systems to easily differentiate C++ and C files.
+> 
+> Unix, on which C++ has been developed, has case sensitive file systems. So some used `.C` for C++ files. Other used `.c++`, `.cc` and `.cxx`. `.C` and `.c++` have the problem that they aren't available on other file systems and their use quickly dropped. DOS and Windows C++ compilers tended to use `.cpp`, and some of them make the choice difficult, if not impossible, to configure. Portability consideration made that choice the most common, even outside MS-Windows.
+> 
+> Headers have used the corresponding `.H`, `.h++`, `.hh`, `.hxx` and `.hpp`. But unlike the main files, `.h` remains to this day a popular choice for C++ even with the disadvantage that it doesn't allow to know if the header can be included in C context or not. Standard headers now have no extension at all.
+> 
+> Additionally, some are using `.ii`, `.ixx`, `.ipp`, `.inl` for headers providing inline definitions and `.txx`, `.tpp` and `.tpl` for template definitions. Those are either included in the headers providing the definition, or manually in the contexts where they are needed.
+> 
+> Compilers and tools usually don't care about what extensions are used, but using an extension that they associate with C++ prevents the need to track out how to configure them so they correctly recognize the language used.
+> 
+> 2017 edit: the experimental module support of Visual Studio recognize `.ixx` as a default extension for module interfaces, clang++ is recognizing `.c++m`, `.cppm` and `.cxxm` for the same purpose.
+
 
 不同编译器和不同的操作系统对不同的版本有所区别.
 1. `.h`和`.hpp`的区别是：*.h里面只有声明，没有实现，而*`.hpp`里声明实现都有，后者可以减少`.cpp`的数量，适合用来编写公用的开源库。
 2. `inl 文件`是内联函数的源文件。内联函数通常在c++头文件中实现，但有的时候内联函数较多或者出于一些别的考虑（使头文件看起来更简洁等），往往会将这部分具体定义的代码添加到`INL文件`中，然后在该头文件的末尾将其用`#include`引入。由此也可以看到`inl文件`的例外一个用法的影子——模板函数、模板类的定义代码的存放。
+
 
 ## C? C++?
 > C++ 编写的程序，都能用等效的 C 程序代替，但 C++ 在语言层面上提供了 OOP/GP 语法、更严格的类型检查系统、大量额外的语言特性（如异常、RTTI等），并且 C++ 标准库也较丰富。有时候 C++ 的语法可使程序更简洁，如运算符重载、隐式转换。但另一方面，C 语言的 API 通常比 C++ 简洁，能较容易供其他语言程序调用。因此，一些 C++ 库会提供 C 的 API 封装，同时也可供 C 程序调用。相反，有时候也会把 C 的 API 封装成 C++ 形式，以支持 RAII 和其他 C++ 库整合等。
