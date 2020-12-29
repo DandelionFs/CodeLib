@@ -109,7 +109,7 @@ int main(void){// 圆括号（）表明main是一个函数，void表明main 函�
     > `auto`、`break`、`case`、`char `、`const`、`continue`、`default`、`do` 、`double`、`else`、`enum`、`extern` 、`float`、`for`、`goto`、`if `、`int`、`long`、`register`、`return` 、`short`、`signed`、`sizeof`、`static`、`struct`、`witch`、`typedef`、`union` 、`unsigned`、`void`、`volatile`、`while`.
 
    当你作死想要用关键字作为变量名的时候也不是不可以，不要全局`using namespace std;`，你可以只是用`std::`达到相同的效果，然后用其他关键字做表，变量名……
-12. **语句**(6种)：
+12. **语句**(6种)：一般分号的添加是以内容语句为单位的, 块语句是不用加的{}.
     > + 声明语句：定义函数中使用的变量的名称和类型。
     > + 赋值语句：使用赋值运算符（=）给变量赋值。
     > + 消息语句：将消息发送给对象，激发某种行动。
@@ -127,6 +127,12 @@ void在英文中作为名词的解释为“空虚；空间；空隙”；而在C
 作用：
 1. 对函数返回的限定，这种情况我们比较常见。
 2. 对函数参数的限定，这种情况也是比较常见的。
+踪服务”数据库所使用的信息。
+
+IndexerVolumeGuid文件为该驱动器分配一个唯一的标识符。在Windows索引服务将检查驱动器和索引他们的文件。将来将驱动器连接到计算机时，Windows会检查标识符并知道要与驱动器关联的搜索数据库。然后，您可以使用Windows搜索功能（例如“开始”菜单中的搜索框，Windows 10上的Cortana或“文件资源管理器”或Windows资源管理器中的搜索框）来快速搜索驱动器上的文件。
+
+WPSettings.dat是Windows服务创建的另一个文件，但我们不确定其用途。此文件上没有官方文档。
+
 
 一般我们常见的就是这两种情况：
 

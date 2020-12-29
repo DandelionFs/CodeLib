@@ -28,14 +28,21 @@ So, Here we go !!!
 
 **THX FOR:**
 
-- [Programming-Alpha-To-Omega|「从零开始」系列](https://github.com/justjavac/Programming-Alpha-To-Omega)
-- [How-to-Be-A-Programmer-CN|[译]如何做好一枚程序员](https://github.com/ahangchen/How-to-Be-A-Programmer-CN)
-- [fucking-algorithm|刷算法全靠套路，认准 labuladong 就够了！](https://github.com/labuladong/fucking-algorithm)
-- [cskaoyan|提供计算机考研和软件工程考研专业的各个学校 考研真题](https://github.com/csseky/cskaoyan)
-- [LeetCode-Go|题解](https://github.com/halfrost/LeetCode-Go)
-- [hello-algorithm](https://github.com/geekxh/hello-algorithm)
-- [HelloGitHub](https://github.com/521xueweihan/HelloGitHub)
-- [中文技术文档写作风格指南](https://github.com/yikeke/zh-style-guide)
+- **Coder**
+  - [Programming-Alpha-To-Omega|「从零开始」系列](https://github.com/justjavac/Programming-Alpha-To-Omega)
+  - [How-to-Be-A-Programmer-CN|[译]如何做好一枚程序员](https://github.com/ahangchen/How-to-Be-A-Programmer-CN)
+  - [Google Style Guides](https://google.github.io/styleguide/)
+- **Front-End**
+  - [Front-End-Interview-Notebook | 蚂蚁前端面试复习笔记](https://github.com/CavsZhouyou/Front-End-Interview-Notebook)
+- **Algo Guide**
+  - [fucking-algorithm|刷算法全靠套路，认准 labuladong 就够了！](https://github.com/labuladong/fucking-algorithm)
+  - [LeetCode-Go|题解](https://github.com/halfrost/LeetCode-Go)
+  - [hello-algorithm](https://github.com/geekxh/hello-algorithm)
+- **Github Guide:**
+  - [HelloGitHub](https://github.com/521xueweihan/HelloGitHub)
+- **Write Guide:**
+  - [中文文案排版指北（简体中文版）](https://mzlogin.github.io/wiki/chinese-copywriting-guidelines/)
+  - [中文技术文档写作风格指南](https://github.com/yikeke/zh-style-guide)
   - [谷歌开发者文档风格指南](https://developers.google.cn/style) 
   - [苹果风格指南](https://help.apple.com/asg/)
   - [微软写作风格指南](https://docs.microsoft.com/en-us/style-guide/welcome/)
@@ -44,3 +51,5 @@ So, Here we go !!!
   - [Kubernetes 文档风格指南](https://kubernetes.io/docs/contribute/style/style-guide/)
   - [提問的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)
   - [typo.css|中文网页重设与排版：一致化浏览器排版效果，构建最适合中文阅读的网页排版](https://github.com/sofish/typo.css)
+- **Exam:**
+  - [cskaoyan|提供计算机考研和软件工程考研专业的各个学校 考研真题](https://github.com/csseky/cskaoyan)
