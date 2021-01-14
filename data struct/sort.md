@@ -211,10 +211,8 @@ int main() {
 }
 ```
 
-
-
-
-
 ## SUMMARY
 
 ![](./img/sort_comp.png)
+
+

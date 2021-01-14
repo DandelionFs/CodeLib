@@ -24,7 +24,7 @@ So, Here we go !!!
   - [Google Style Guides](https://google.github.io/styleguide/)
 - **Front-End Guides:**
   - [Front-End-Interview-Notebook | 蚂蚁前端面试复习笔记](https://github.com/CavsZhouyou/Front-End-Interview-Notebook)
-- **Algo Guides:**
+- **Algorithm Guides:**
   - [fucking-algorithm|刷算法全靠套路，认准 labuladong 就够了！](https://github.com/labuladong/fucking-algorithm)
   - [LeetCode-Go|题解](https://github.com/halfrost/LeetCode-Go)
   - [hello-algorithm](https://github.com/geekxh/hello-algorithm)
