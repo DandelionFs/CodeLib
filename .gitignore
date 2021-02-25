@@ -1,5 +1,6 @@
 # use vscode 2020
 .vscode/*
+.obsidian/*
 web_dev/html&css&js/ex_html/.idea/
 web_dev/html&css&js/ex_html/res/
 web_dev/html&css&js/ex_imudge/.idea/

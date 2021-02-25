@@ -47,6 +47,7 @@
 
 ## 复杂度分析
 
+- [数学分析](https://www.zhihu.com/question/21387264/answer/417321105)
 - Google
 - Mac: iTerm2 + zsh (oh my zsh)
 - Windows: Microsoft new terminal: (https://github.com/microsoft/terminal)
@@ -153,17 +154,17 @@
 
 
     LRU Cache - Linked list
-
+    
     https://www.jianshu.com/p/b1ab4a170c3c 
-
+    
     https://leetcode-cn.com/problems/Iru-cache
 
 
 
     Redis - Skip - List 
-
+    
     https://redisbook.readthedocs.io/en/latest/internal-datastruct/skiplist.html 
-
+    
     https://www.zhihu.com/question/20202931
 
 
@@ -287,8 +288,8 @@ Map, Set : interfaces
     # 思路：数组排序后比较差异
         def isAnagram(self, s: str, t: str) -> bool:
             return sorted(s) == sorted(t)
-    ```+
-    ```java
+    ​```+
+    ​```java
     public class Solution {
         public boolean isAnagram(String s, String t) {
             if(s.length() != t.length()) return false;
@@ -573,11 +574,12 @@ const recursion = (level, params) =>{
             _generate(right,left+0, n, s+"(");
         if(right < left)
             _generate(right+0,left, n, s+")");
+    ```
 
 
         //reverse state
     }
-
+    
     int main(){
         generateParenthesis(2);
         for(it=result.begin();it!=result.end();++it)

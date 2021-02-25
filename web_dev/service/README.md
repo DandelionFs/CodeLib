@@ -338,20 +338,6 @@ A：参考链接：https://www.zhihu.com/question/321378304 ， https://www.zhih
 **MediaWiki**: MediaWiki是一个特殊的wiki引擎。它由维基百科和其他维基媒体计划开发，并用于维基媒体自身。 MediaWiki可供其他人免费使用（和改进），并且现已被全世界各种项目和组织使用。网站mediawiki.org，提供与MediaWiki和相关软件的信息。
 
 
-### Wiki Site
-
-起初是自己想搭建一个可以查阅的Wiki平台,  但是我还是太天真了, 已经搭建好了, 地址是: Wiki.dfslfh.cn,  开源项目地址是: https://github.com/zthxxx/hexo-theme-Wikitten
-
-我之后还是针对不同领域做出不同的书比较妥当吧,  我总在找一老永益的方法, 有点难以回头.
-
-另外还有技术:
-1. vimwiki https://github.com/vimwiki/vimwiki/blob/master/README-cn.md
-2. Gitbook https://github.com/GitbookIO/gitbook
-3. Gitlab
-4. AsciiDoc : https://asciidoc.org/index.html
-5. 语雀
-
-
 
 ## Reference
 

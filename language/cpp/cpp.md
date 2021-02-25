@@ -50,6 +50,7 @@ int main(void){// 圆括号（）表明main是一个函数，void表明main 函�
 总结以下几点: 
 
 1. **ISO/[ANSI C](https://baike.baidu.com/item/ANSI%20C/7657277)**
+   
    > ANSI C是由美国国家标准协会（ANSI）及国际标准化组织（ISO）推出的关于C语言的标准。ANSI C 主要标准化了现存的实现， 同时增加了一些来自 C++ 的内容 （主要是函数原型） 并支持多国字符集 （包括备受争议的三字符序列）。 ANSI C 标准同时规定了 C 运行期库例程的标准。
 2. 头文件：包含着编译器进行编译时所需的信息。可能指明了函数名和函数调用方法，但是这些函数的**实现代码**在**预先编译**好了的**库文件**里。
 3. **链接器**负责在库文件中寻找我们的程序所需的代码，并且把那些代码和我们写的程序进行链接，从而将我的写的程序**链接成可执行文件**。一句话，头文件用于指导编译器正确地将我们写的源程序编译成可执行文件。
@@ -106,6 +107,7 @@ int main(void){// 圆括号（）表明main是一个函数，void表明main 函�
     1. 换行符是一种被称为“转义序列”的按键组合，`endl`是一个特殊的C++符号，诸如`endl`等对于`cout`来说有特殊含义的特殊符号被称为控制符（manipulator）。和`cout`一样，`endl`也是在头文件iostream中定义的，且位于名称空间`std`中。
     2.  `endl`确保程序继续运行前刷新输出（将其立即显示在屏幕上）；而使用`"\n"`不能提供这样的保证，这意味着在有些系统中，有时可能在您输入信息后才会出现提示。
 11. **C++关键字**（一共32个）：
+    
     > `auto`、`break`、`case`、`char `、`const`、`continue`、`default`、`do` 、`double`、`else`、`enum`、`extern` 、`float`、`for`、`goto`、`if `、`int`、`long`、`register`、`return` 、`short`、`signed`、`sizeof`、`static`、`struct`、`witch`、`typedef`、`union` 、`unsigned`、`void`、`volatile`、`while`.
 
    当你作死想要用关键字作为变量名的时候也不是不可以，不要全局`using namespace std;`，你可以只是用`std::`达到相同的效果，然后用其他关键字做表，变量名……
@@ -315,6 +317,14 @@ Window ：
     **Debug（调试）**以步进方式执行程序
     编译器可能让您选择要生成调试版还是发布版。调试版包含额外的代码，这会增大程序、降低执行速度，但可捷供详细的调试信息
 
+## [Diff between cmake and make](https://stackoverflow.com/questions/25789644/difference-between-using-makefile-and-cmake-to-compile-the-code/25790020#25790020) 
+
+> Make (or rather a Makefile) is a buildsystem - it drives the compiler and other build tools to build your code.
+> CMake is a generator of buildsystems. It can produce Makefiles, it can produce Ninja build files, it can produce KDEvelop or Xcode projects, it can produce Visual Studio solutions. From the same starting point, the same CMakeLists.txt file. So if you have a platform-independent project, CMake **is****** a way to make it buildsystem-independent as well.
+> If you have Windows developers used to Visual Studio and Unix developers who swear by GNU Make, CMake is (one of) the way(s) to go.
+> I would always recommend using CMake (or another buildsystem generator, but CMake is my personal preference) if you intend your project to be multi-platform or widely usable. CMake itself also provides some nice features like dependency detection, library interface management, or integration with CTest, CDash and CPack.
+> Using a buildsystem generator makes your project more future-proof. Even if you're GNU-Make-only now, what if you later decide to expand to other platforms (be it Windows or something embedded), or just want to use an IDE?
+
 
 
 ## Make/Compile
@@ -348,7 +358,7 @@ Window ：
         printf("%lf\n",r*r*PI);
         return 0;
     }
-    ```  
+    ```
 + 第二种方法
     ```cpp
     #include<stdio.h>
@@ -909,8 +919,9 @@ return 0;
 
 
 - **右值引用**：
-    >右值引用（及其支持的Move语意和完美转发）是C++0x将要加入的最重大语言特性之一，这点从该特性的提案在C++ - State of the Evolution列表上高居榜首也可以看得出来。从实践角度讲，它能够完美解决C++中长久以来为人所诟病的临时对象效率问题。从语言本身讲，它健全了C++中的引用类型在左值右值方面的缺陷。从库设计者的角度讲，它给库设计者又带来了一把利器。从库使用者的角度讲，不动一兵一卒便可以获得“免费的”效率提升… 　在标准C++语言中，临时量（术语为右值，因其出现在赋值表达式的右边）可以被传给函数，但只能被接受为const &类型。这样函数便无法区分传给const &的是真实的右值还是常规变量。而且，由于类型为const &，函数也无法改变所传对象的值。C++0x将增加一种名为右值引用的新的引用类型，记作typename &&。这种类型可以被接受为非const值，从而允许改变其值。
-
+    
+>右值引用（及其支持的Move语意和完美转发）是C++0x将要加入的最重大语言特性之一，这点从该特性的提案在C++ - State of the Evolution列表上高居榜首也可以看得出来。从实践角度讲，它能够完美解决C++中长久以来为人所诟病的临时对象效率问题。从语言本身讲，它健全了C++中的引用类型在左值右值方面的缺陷。从库设计者的角度讲，它给库设计者又带来了一把利器。从库使用者的角度讲，不动一兵一卒便可以获得“免费的”效率提升… 　在标准C++语言中，临时量（术语为右值，因其出现在赋值表达式的右边）可以被传给函数，但只能被接受为const &类型。这样函数便无法区分传给const &的是真实的右值还是常规变量。而且，由于类型为const &，函数也无法改变所传对象的值。C++0x将增加一种名为右值引用的新的引用类型，记作typename &&。这种类型可以被接受为非const值，从而允许改变其值。
+    
 - **左值与右值：**
   - C++ 11中引入的一个非常重要的概念就是右值引用。理解右值引用是学习“移动语义”（move semantics）的基础。而要理解右值引用，就必须先区分左值与右值。
   - 对左值和右值的一个最常见的误解是：等号左边的就是左值，等号右边的就是右值。

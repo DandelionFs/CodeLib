@@ -266,3 +266,4 @@ v2ray uninstall#卸载V2Ray
 
 - Telegram
   - [shuziyimin](https://github.com/bates33/shuziyimin)
+- [看国外](https://www.kanguowai.com)
